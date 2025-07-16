@@ -1,6 +1,6 @@
 import { svgPaths } from "@shared/constants/svgPaths";
 
-function Transfer4SvgrepoCom1() {
+function Transfer4SvgrepoCom1({ active = false }) {
   return (
     <div
       className="relative shrink-0 size-6"
@@ -15,8 +15,9 @@ function Transfer4SvgrepoCom1() {
         <g id="transfer-4-svgrepo-com 1">
           <path
             d={svgPaths.pea3a400}
-            fill="var(--fill-0, #9BA5B3)"
+            fill={active ? "#316DCC" : "#b6b6b6ff"}
             id="å½¢ç¶"
+            stroke={active ? "#316DCC" : "#b6b6b6ff"}
           />
         </g>
       </svg>

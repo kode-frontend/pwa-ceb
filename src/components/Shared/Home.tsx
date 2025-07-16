@@ -1,6 +1,6 @@
 import { svgPaths } from "@shared/constants/svgPaths";
 
-function Home() {
+function Home({ active = false }) {
   return (
     <div
       className="absolute h-[17.661px] left-[2.998px] top-[3.166px] w-[18px]"
@@ -17,7 +17,7 @@ function Home() {
             <path
               d="M10.0015 15.2325V12.5329"
               id="Vector"
-              stroke="var(--stroke-0, #316DCC)"
+              stroke={active ? "#316DCC" : "#b6b6b6ff"}
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="1.8"
@@ -25,7 +25,7 @@ function Home() {
             <path
               d={svgPaths.p4c1e880}
               id="Vector_2"
-              stroke="var(--stroke-0, #316DCC)"
+              stroke={active ? "#316DCC" : "#b6b6b6ff"}
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="1.8"
