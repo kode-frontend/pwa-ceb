@@ -1,12 +1,12 @@
 import Home from "../Shared/Home";
 
-function VuesaxLinearHome() {
+function VuesaxLinearHome({ active = false }) {
   return (
     <div
       className="absolute contents left-[2.998px] top-[3.166px]"
       data-name="vuesax/linear/home"
     >
-      <Home />
+      <Home active={active}/>
     </div>
   );
 }

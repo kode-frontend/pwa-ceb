@@ -5,6 +5,7 @@ import { Home } from "@pages/Home";
 
 import Tabbar1 from "@components/Content/Tabbar1";
 import NavigationBar from "@components/NavigationBar/NavigationBar";
+import { PaymentsScreen } from "@pages/Payments";
 
 const App = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -27,6 +28,7 @@ const App = () => {
         <div className="h-full w-full pt-[99px] pb-[86px]">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/payments" element={<PaymentsScreen />} />
             {/* Другие роуты */}
           </Routes>
         </div>
