@@ -22,7 +22,7 @@ export default defineConfig({
         background_color: '#ffffff',
         display: 'standalone',
         scope: '/',
-        start_url: '/',
+        start_url: 'https://kode-frontend.github.io/pwa-ceb/',
       },
     }),
   ],
