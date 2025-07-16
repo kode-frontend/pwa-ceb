@@ -27,8 +27,8 @@ const App = () => {
         {/* Основной контент (роуты) */}
         <div className="h-full w-full pt-[99px] pb-[86px]">
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/payments" element={<PaymentsScreen />} />
+            <Route path="/pwa-ceb/" element={<Home />} />
+            <Route path="/pwa-ceb/payments" element={<PaymentsScreen />} />
             {/* Другие роуты */}
           </Routes>
         </div>
