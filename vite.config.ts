@@ -1,10 +1,30 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import { VitePWA } from "vite-plugin-pwa";
+
 import path from "path";
+
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  plugins: [react(), tailwindcss()],
+  plugins: [
+    react(),
+    tailwindcss(),
+    VitePWA({
+      registerType: 'autoUpdate',
+      includeAssets: ['favicon.svg', 'robots.txt'],
+      manifest: {
+        name: 'CEB',
+        short_name: 'CEB',
+        description: 'Your PWA App',
+        theme_color: '#316DCC',
+        background_color: '#ffffff',
+        display: 'standalone',
+        scope: '/',
+        start_url: '/',
+      },
+    }),
+  ],
   resolve: {
     alias: {
       "@pages": path.resolve(__dirname, "./src/pages/"),
