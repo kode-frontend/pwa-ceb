@@ -1,15 +1,18 @@
-import type { Config } from 'tailwindcss';
+import type { Config } from "tailwindcss";
 
 const config: Config = {
-  darkMode: ['class', '.dark'],
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  darkMode: ["class", ".dark"],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
-        'custom-background': 'var(--background)',
-        'custom-foreground': 'var(--foreground)',
-        'custom-border': 'var(--border)',
-        'custom-ring': 'var(--ring)',
+        "custom-background": "var(--background)",
+        "custom-foreground": "var(--foreground)",
+        "custom-border": "var(--border)",
+        "custom-ring": "var(--ring)",
+      },
+      spacing: {
+        "safe-bottom": "env(safe-area-inset-bottom)",
       },
     },
   },
