@@ -2,7 +2,7 @@
   "name": "CEB",
   "short_name": "CEB",
   "description": "Your PWA App",
-  "start_url": "/",
+  "start_url": "/pwa-ceb/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#316DCC"
