@@ -4,12 +4,12 @@ import { AutoPayIcon, ChevronDownIcon, TemplateIcon } from "./Serviceicons";
 function Content10() {
   return (
     <>
-      <h1 className="text-white text-xl font-semibold py-3 z-9999 ml-5">Мои операции</h1>
       <div
-        className="box-border content-stretch flex flex-row gap-2 items-center justify-start px-4 py-2 relative shrink-0 w-full overflow-x-auto scrollbar-hide"
+        className="w-full px-4 py-2"
         data-name="suggest"
       >
-        <div className="flex gap-3 overflow-x-auto scrollbar-hide">
+        <h1 className="text-white text-xl font-semibold mb-3 relative">Мои операции</h1>
+        <div className="flex flex-row gap-3 overflow-x-auto scrollbar-hide">
           {/* Карточка операции 1 - Ефим */}
           <div
             className="bg-[rgba(255,255,255,0.08)] box-border content-stretch flex flex-col items-start justify-around p-0 relative rounded-[20px] shrink-0 size-[110px]"
@@ -85,10 +85,10 @@ function Content10() {
       </div>
       {/* Белая область */}
       <div className="flex-1 bg-white w-full">
-        <div className="p-4 space-y-4 flex flex-col">
+        <div className="p-4 space-y-4 flex flex-col relative">
           {/* Первый блок "Шаблоны и автоплатежи" */}
           <div
-            className="bg-white rounded-xl border overflow-hidden z-9999"
+            className="bg-white rounded-xl border overflow-hidden"
             style={{
               border: "0.5px solid var(--colorMode-border-primary, #C9E6F94D)",
             }}
@@ -115,7 +115,7 @@ function Content10() {
 
           {/* Второй блок "Шаблоны и автоплатежи" */}
           <div
-            className="bg-white rounded-xl border overflow-hidden z-9999"
+            className="bg-white rounded-xl border overflow-hidden"
             style={{
               border: "0.5px solid var(--colorMode-border-primary, #C9E6F94D)",
             }}
