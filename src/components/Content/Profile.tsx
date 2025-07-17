@@ -1,9 +1,17 @@
 import { svgPaths } from "@shared/constants/svgPaths";
+import { useNavigate } from "react-router-dom";
 
 function Profile() {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/pwa-ceb/profile");
+  };
+
   return (
     <div
-      className="absolute bottom-[12.5%] left-[23.752%] right-[23.748%] top-[12.5%]"
+      onClick={handleClick}
+      className="absolute bottom-[12.5%] left-[23.752%] right-[23.748%] top-[12.5%] cursor-pointer"
       data-name="profile"
     >
       <div className="absolute bottom-[-5%] left-[-7.144%] right-[-7.142%] top-[-5%]">
