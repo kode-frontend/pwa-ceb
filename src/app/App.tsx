@@ -5,6 +5,7 @@ import { PaymentsScreen } from "@pages/PaymentsScreen";
 import { SettingsScreen } from "@pages/SettingsScreen";
 import { HomeScreen } from "@pages/HomeScreen";
 import ProfileScreen from "@pages/ProfileScreen";
+import ScanQrScreen from "@pages/ScanQrScreen";
 
 import Tabbar1 from "@components/Content/Tabbar1";
 import NavigationBar from "@components/NavigationBar/NavigationBar";
@@ -28,12 +29,14 @@ const AppWithRouter = () => {
 
   const settingsRoute = location.pathname.includes("settings");
   const profileRoute = location.pathname.includes("profile");
+  const scanQrRoute = location.pathname.includes("scan-qr");
 
   const Header = useMemo(() => {
     if (settingsRoute) return <SettingsHeader />;
     if (profileRoute) return null;
+    if (scanQrRoute) return null;
     return <NavigationBar scrollY={scrollY} />;
-  }, [settingsRoute, profileRoute, scrollY]);
+  }, [settingsRoute, profileRoute, scanQrRoute, scrollY]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -54,10 +57,11 @@ const AppWithRouter = () => {
           <Route path="/pwa-ceb/payments" element={<PaymentsScreen />} />
           <Route path="/pwa-ceb/settings" element={<SettingsScreen />} />
           <Route path="/pwa-ceb/profile" element={<ProfileScreen />} />
+          <Route path="/pwa-ceb/scan-qr" element={<ScanQrScreen />} />
         </Routes>
       </div>
 
-      {!profileRoute && <Tabbar1 />}
+      {!profileRoute && !scanQrRoute && <Tabbar1 />}
     </div>
   );
 };

@@ -1,7 +1,13 @@
 import Icon2 from "../Content/Icon2";
+import { useNavigate } from "react-router-dom";
 
 function Button5({ scrollY = 0 }: { scrollY?: number }) {
+  const navigate = useNavigate();
   const isCompressed = scrollY > 99;
+
+  const handleClick = () => {
+    navigate("/pwa-ceb/scan-qr");
+  };
 
   return (
     <div
@@ -29,12 +35,15 @@ function Button5({ scrollY = 0 }: { scrollY?: number }) {
           overflow: "hidden",
         }}
       >
-        <div className="flex-shrink-0">
+        <div className="flex-shrink-0 cursor-pointer" onClick={handleClick}>
           <Icon2 />
         </div>
+
         {!isCompressed && (
           <div
-            className="font-['SF_Pro_Display:Medium',_sans-serif] leading-[0] not-italic text-[#191919] text-[12px] text-left text-nowrap tracking-[-0.12px] transition-opacity duration-300 whitespace-nowrap"
+            onClick={handleClick}
+            role="button"
+            className="font-['SF_Pro_Display:Medium',_sans-serif] leading-[0] not-italic text-[#191919] text-[12px] text-left text-nowrap tracking-[-0.12px] transition-opacity duration-300 whitespace-nowrap cursor-pointer"
             style={{
               opacity: isCompressed ? 0 : 1,
               width: isCompressed ? 0 : "auto",
