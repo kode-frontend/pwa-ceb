@@ -1,9 +1,9 @@
 import Settings from "../Content/Settings";
 
-function IconexLightSettings() {
+function IconexLightSettings({active = false}) {
   return (
     <div className="relative shrink-0 size-6" data-name="Iconex/Light/Settings">
-      <Settings />
+      <Settings active={active}/>
     </div>
   );
 }

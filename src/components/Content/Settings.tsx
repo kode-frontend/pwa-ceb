@@ -1,6 +1,6 @@
 import { svgPaths } from "@shared/constants/svgPaths";
 
-function Settings() {
+function Settings({active = false}) {
   return (
     <div
       className="absolute h-[18px] left-[3.466px] top-[3px] w-[17.067px]"
@@ -19,13 +19,13 @@ function Settings() {
               cy="2.7"
               id="Ellipse 33"
               r="2.7"
-              stroke="var(--stroke-0, #9BA5B3)"
+              stroke={active ? "#316DCC" : "#b6b6b6ff"}
               strokeWidth="1.8"
               transform="matrix(-1 0 0 1 12.2337 7.3)"
             />
             <path
               d={svgPaths.p3069ad00}
-              fill="var(--stroke-0, #9BA5B3)"
+              fill={active ? "#316DCC" : "#b6b6b6ff"}
               id="Subtract"
             />
           </g>

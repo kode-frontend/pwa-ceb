@@ -24,8 +24,8 @@ const Tabbar = () => {
       <Link to="/home3">
         <TabbarItem3 />
       </Link>
-      <Link to="/home4">
-        <TabbarItem4 />
+      <Link to="/pwa-ceb/settings">
+        <TabbarItem4 active={location.pathname === "/pwa-ceb/settings"} />
       </Link>
     </div>
   );

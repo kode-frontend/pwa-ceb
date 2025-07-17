@@ -1,14 +1,27 @@
 import { useEffect, useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 
-import { Home } from "@pages/Home";
+import { PaymentsScreen } from "@pages/PaymentsScreen";
+import { SettingsScreen } from "@pages/SettingsScreen";
+import { HomeScreen } from "@pages/HomeScreen";
 
 import Tabbar1 from "@components/Content/Tabbar1";
 import NavigationBar from "@components/NavigationBar/NavigationBar";
-import { PaymentsScreen } from "@pages/Payments";
+import SettingsHeader from "@components/Shared/SettingsHeader";
 
 const App = () => {
+  return (
+    <BrowserRouter>
+      <AppWithRouter />
+    </BrowserRouter>
+  );
+};
+
+const AppWithRouter = () => {
   const [scrollY, setScrollY] = useState(0);
+  const location = useLocation();
+
+  const settingsRoute = location.pathname.includes("settings");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,26 +31,19 @@ const App = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   return (
-    <BrowserRouter>
-      <div className="min-h-screen w-full overflow-y-auto">
-        {/* Навигация */}
-        <NavigationBar scrollY={scrollY} />
-
-        {/* Основной контент (роуты) */}
-        <div className="h-full w-full pt-[99px] pb-[86px]">
-          <Routes>
-            <Route path="/pwa-ceb/" element={<Home />} />
-            <Route path="/pwa-ceb/payments" element={<PaymentsScreen />} />
-            {/* Другие роуты */}
-          </Routes>
-        </div>
-
-        {/* Таббар */}
-        <Tabbar1 />
+    <div className="min-h-screen w-full overflow-y-auto">
+      {settingsRoute ? <SettingsHeader /> : <NavigationBar scrollY={scrollY} />}
+      <div className="h-full w-full">
+        <Routes>
+          <Route path="/pwa-ceb/" element={<HomeScreen />} />
+          <Route path="/pwa-ceb/payments" element={<PaymentsScreen />} />
+          <Route path="/pwa-ceb/settings" element={<SettingsScreen />} />
+        </Routes>
       </div>
-    </BrowserRouter>
+      <Tabbar1 />
+    </div>
   );
 };
-
 export default App;
