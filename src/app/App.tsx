@@ -57,7 +57,7 @@ const AppWithRouter = () => {
         </Routes>
       </div>
 
-      <Tabbar1 />
+      {!profileRoute && <Tabbar1 />}
     </div>
   );
 };
