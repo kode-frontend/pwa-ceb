@@ -1,5 +1,6 @@
 import { svgPaths } from "@shared/constants/svgPaths";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 // Alert Icon Component
 function AlertIcon() {
@@ -41,27 +42,34 @@ function NotificationBanner({ children }: { children: React.ReactNode }) {
 }
 
 export function NotificationBanners() {
+  const navigate = useNavigate();
+
+  const handleCreditsBack = () => {
+    navigate("/pwa-ceb/credit");
+  };
+  const handleCreditsCardBack = () => {
+    navigate("/pwa-ceb/credit-card");
+  };
   return (
     <div className="bg-[rgba(49, 109, 204, 0.1)] box-border content-stretch flex flex-col gap-2 items-start justify-start pb-4 pt-2 relative shrink-0 w-full">
-      <NotificationBanner>
-        <p className="leading-[16px] font-sans font-medium">
-          <span>
-            18 июля 2025 спишется платеж по Ипотеке в размере{" "}
-          </span>
-          <span>36 571.28 ₽</span>. Не забудьте пополнить счет
-        </p>
-      </NotificationBanner>
+      <div onClick={handleCreditsBack} className="cursor-pointer">
+        <NotificationBanner>
+          <p className="leading-[16px] font-sans font-medium">
+            <span>18 июля 2025 спишется платеж по Ипотеке в размере </span>
+            <span>36 571.28 ₽</span>. Не забудьте пополнить счет
+          </p>
+        </NotificationBanner>
+      </div>
 
-      <NotificationBanner>
-        <p className="leading-[16px] font-sans font-medium">
-          21 июля 2025 спишется платеж по Кредитной карте *
-          <span>
-            3312
-          </span>
-          <span> в размере </span>
-          <span>12 311.00 ₽</span>. Не забудьте пополнить счет
-        </p>
-      </NotificationBanner>
+      <div onClick={handleCreditsCardBack} className="cursor-pointer">
+        <NotificationBanner>
+          <p className="leading-[16px] font-sans font-medium">
+            21 июля 2025 спишется платеж по Кредитной карте *<span>3312</span>
+            <span> в размере </span>
+            <span>12 311.00 ₽</span>. Не забудьте пополнить счет
+          </p>
+        </NotificationBanner>
+      </div>
     </div>
   );
 }

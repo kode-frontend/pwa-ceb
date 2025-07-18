@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function SimpleInvestmentSvg() {
   return (
@@ -122,10 +123,16 @@ function InvestmentContent() {
 }
 
 function InvestmentButton() {
+  const navigate = useNavigate();
+
+  const handleBack = () => {
+    navigate("/pwa-ceb/invest");
+  };
   return (
     <div
-      className="absolute bg-[#316dcc] box-border content-stretch flex flex-row gap-2.5 h-11 items-center justify-center left-4 px-6 py-0 rounded-2xl top-40"
+      className="absolute bg-[#316dcc] box-border content-stretch flex flex-row gap-2.5 h-11 items-center justify-center left-4 px-6 py-0 rounded-2xl top-40 cursor-pointer"
       data-name="button"
+      onClick={handleBack}
     >
       <div className="font-sans leading-[0] not-italic relative shrink-0 text-[#ffffff] text-[14px] text-center text-nowrap tracking-[-0.28px]">
         <p className="adjustLetterSpacing block leading-[20px] whitespace-pre">

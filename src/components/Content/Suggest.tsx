@@ -14,7 +14,6 @@ function Suggest() {
       </div>
       <Card />
       <Card1 />
-      <Card2 />
     </div>
   );
 }

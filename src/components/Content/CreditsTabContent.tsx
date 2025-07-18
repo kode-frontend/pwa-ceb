@@ -1,4 +1,5 @@
 import { svgPaths } from "@shared/constants/svgPaths";
+import { useNavigate } from "react-router-dom";
 
 function CreditAccount() {
   return (
@@ -80,6 +81,11 @@ function CreditAccount() {
 }
 
 function CreditPromoCard() {
+  const navigate = useNavigate();
+
+  const handleBack = () => {
+    navigate("/pwa-ceb/credit");
+  };
   return (
     <div
       className="box-border content-stretch flex flex-col gap-2.5 items-start justify-start pb-2 pt-0 px-2 relative shrink-0 w-full"
@@ -119,8 +125,9 @@ function CreditPromoCard() {
               data-name="content"
             >
               <div
-                className="basis-0 box-border content-stretch flex flex-col gap-1 grow items-start justify-start min-h-px min-w-px p-0 relative shrink-0"
+                className="basis-0 box-border content-stretch flex flex-col gap-1 grow items-start justify-start min-h-px min-w-px p-0 relative shrink-0 cursor-pointer"
                 data-name="text"
+                onClick={handleBack}
               >
                 <div
                   className="box-border content-stretch flex flex-col items-start justify-start leading-[0] not-italic p-0 relative shrink-0 text-left w-full"

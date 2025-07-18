@@ -1,5 +1,6 @@
 import { svgPaths } from "@shared/constants/svgPaths";
 import { CardsTabContentProps } from "./InteractiveAccountCards";
+import { useNavigate } from "react-router-dom";
 
 function IcnRub24() {
   return (
@@ -23,10 +24,16 @@ function IcnRub24() {
 }
 
 function MainAccountCard() {
+  const navigate = useNavigate();
+
+  const handleBack = () => {
+    navigate("/pwa-ceb/debet-card");
+  };
   return (
     <div
-      className="box-border content-stretch flex flex-col items-start justify-start p-0 relative shrink-0 w-full"
+      className="box-border content-stretch flex flex-col items-start justify-start p-0 relative shrink-0 w-full cursor-pointer"
       data-name="account"
+      onClick={handleBack}
     >
       <div className="absolute border-[0px_0px_0.5px] border-[rgba(25,25,25,0.01)] border-solid bottom-[-0.5px] left-0 pointer-events-none right-0 top-0" />
       <div className="relative shrink-0 w-full" data-name="content">
@@ -47,7 +54,9 @@ function MainAccountCard() {
                 data-name="text"
               >
                 <div className=" relative shrink-0 text-[#191919] text-[16px] tracking-[-0.16px] w-full">
-                  <p className="block leading-[24px] font-sans font-semibold">67 538.00 ₽</p>
+                  <p className="block leading-[24px] font-sans font-semibold">
+                    67 538.00 ₽
+                  </p>
                 </div>
                 <div className="font-sans relative shrink-0 text-[#6f7884] text-[14px] tracking-[-0.14px] w-full">
                   <p className="block leading-[20px]">Текущий счет · 1766</p>
@@ -111,10 +120,22 @@ function MainAccountCard() {
               >
                 <g id="bank_logo">
                   <g id="mir">
-                    <path d={svgPaths.p39cb4e00} fill="var(--fill-0, #191919)" />
-                    <path d={svgPaths.p301c8f00} fill="var(--fill-0, #191919)" />
-                    <path d={svgPaths.p21a46600} fill="var(--fill-0, #191919)" />
-                    <path d={svgPaths.p36490800} fill="var(--fill-0, #191919)" />
+                    <path
+                      d={svgPaths.p39cb4e00}
+                      fill="var(--fill-0, #191919)"
+                    />
+                    <path
+                      d={svgPaths.p301c8f00}
+                      fill="var(--fill-0, #191919)"
+                    />
+                    <path
+                      d={svgPaths.p21a46600}
+                      fill="var(--fill-0, #191919)"
+                    />
+                    <path
+                      d={svgPaths.p36490800}
+                      fill="var(--fill-0, #191919)"
+                    />
                   </g>
                 </g>
               </svg>
@@ -143,7 +164,10 @@ function MainAccountCard() {
           <div className="relative shrink-0 w-full" data-name="bank_logo">
             <div className="flex flex-row items-end relative size-full">
               <div className="box-border content-stretch flex flex-row items-end justify-between p-[4px] relative w-full">
-                <div className="h-[7.813px] relative shrink-0 w-[6.667px]" data-name="lock">
+                <div
+                  className="h-[7.813px] relative shrink-0 w-[6.667px]"
+                  data-name="lock"
+                >
                   <svg
                     className="block size-full"
                     fill="none"
@@ -159,7 +183,10 @@ function MainAccountCard() {
                     </g>
                   </svg>
                 </div>
-                <div className="h-1.5 relative shrink-0 w-[21px]" data-name="mir">
+                <div
+                  className="h-1.5 relative shrink-0 w-[21px]"
+                  data-name="mir"
+                >
                   <svg
                     className="block size-full"
                     fill="none"
@@ -168,10 +195,22 @@ function MainAccountCard() {
                     viewBox="0 0 21 6"
                   >
                     <g id="mir">
-                      <path d={svgPaths.p2f2b2680} fill="var(--fill-0, #6F7884)" />
-                      <path d={svgPaths.pee5d700} fill="var(--fill-0, #6F7884)" />
-                      <path d={svgPaths.pd29d200} fill="var(--fill-0, #6F7884)" />
-                      <path d={svgPaths.p39101200} fill="var(--fill-0, #6F7884)" />
+                      <path
+                        d={svgPaths.p2f2b2680}
+                        fill="var(--fill-0, #6F7884)"
+                      />
+                      <path
+                        d={svgPaths.pee5d700}
+                        fill="var(--fill-0, #6F7884)"
+                      />
+                      <path
+                        d={svgPaths.pd29d200}
+                        fill="var(--fill-0, #6F7884)"
+                      />
+                      <path
+                        d={svgPaths.p39101200}
+                        fill="var(--fill-0, #6F7884)"
+                      />
                     </g>
                   </svg>
                 </div>
@@ -185,10 +224,16 @@ function MainAccountCard() {
 }
 
 function CreditCard() {
+  const navigate = useNavigate();
+
+  const handleBack = () => {
+    navigate("/pwa-ceb/credit-card");
+  };
   return (
     <div
-      className="box-border content-stretch flex flex-row gap-4 items-center justify-start px-4 py-3 relative shrink-0 w-full"
+      className="box-border content-stretch flex flex-row gap-4 items-center justify-start px-4 py-3 relative shrink-0 w-full cursor-pointer"
       data-name="content"
+      onClick={handleBack}
     >
       <div
         className="bg-[#f1f5fc] overflow-clip relative rounded-[100px] shrink-0 size-10"
@@ -206,7 +251,10 @@ function CreditCard() {
                 left: "calc(50% + 4px)",
               }}
             />
-            <div className="absolute h-[18px] left-0 top-0 w-14" data-name="bank_logo">
+            <div
+              className="absolute h-[18px] left-0 top-0 w-14"
+              data-name="bank_logo"
+            >
               <svg
                 className="block size-full"
                 fill="none"
@@ -240,7 +288,9 @@ function CreditCard() {
             data-name="title"
           >
             <div className="basis-0 grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#191919] text-[16px] text-left tracking-[-0.16px]">
-              <p className="block leading-[24px] font-sans font-semibold">90 938.00 ₽</p>
+              <p className="block leading-[24px] font-sans font-semibold">
+                90 938.00 ₽
+              </p>
             </div>
             <div
               className="box-border content-stretch flex flex-row gap-1 h-6 items-center justify-start px-1.5 py-1 relative rounded-[100px] shrink-0"
@@ -271,22 +321,40 @@ function CreditCard() {
   );
 }
 
-function ToggleButton({ isExpanded, onToggle }: { isExpanded: boolean; onToggle: () => void }) {
+function ToggleButton({
+  isExpanded,
+  onToggle,
+}: {
+  isExpanded: boolean;
+  onToggle: () => void;
+}) {
   function ArrowIcon() {
     return (
-      <div className="relative size-6" data-name="Iconly/Regular/Light/Arrow - Right 2">
+      <div
+        className="relative size-6"
+        data-name="Iconly/Regular/Light/Arrow - Right 2"
+      >
         <div className="absolute bottom-[16.667%] flex items-center justify-center left-1/2 top-[16.667%] translate-x-[-50%] w-4">
           <div className="flex-none rotate-[90deg] scale-y-[-100%] size-4">
-            <div className="relative size-full" data-name="Iconly/Light/Arrow - Right 2">
-              <div className="absolute bottom-[20.833%] contents left-[35.417%] right-[35.417%] top-[20.833%]" data-name="Arrow - Right 2">
+            <div
+              className="relative size-full"
+              data-name="Iconly/Light/Arrow - Right 2"
+            >
+              <div
+                className="absolute bottom-[20.833%] contents left-[35.417%] right-[35.417%] top-[20.833%]"
+                data-name="Arrow - Right 2"
+              >
                 <div className="absolute bottom-[20.833%] flex items-center justify-center left-[35.417%] right-[35.417%] top-[20.833%]">
                   <div className="flex-none h-[4.667px] rotate-[270deg] w-[9.333px]">
                     <div className="relative size-full" data-name="Stroke 1">
                       <div
                         className="absolute bottom-[-19.286%] left-[-9.643%] right-[-9.643%] top-[-19.286%]"
-                        style={{
-                          "--stroke-0": "rgba(111.00000098347664, 120.00000044703484, 132.0000073313713, 1)",
-                        } as React.CSSProperties}
+                        style={
+                          {
+                            "--stroke-0":
+                              "rgba(111.00000098347664, 120.00000044703484, 132.0000073313713, 1)",
+                          } as React.CSSProperties
+                        }
                       >
                         <svg
                           className="block size-full"
@@ -395,7 +463,10 @@ function AdditionalAccount() {
   );
 }
 
-export function CardsTabContent({ isExpanded, onToggle }: CardsTabContentProps) {
+export function CardsTabContent({
+  isExpanded,
+  onToggle,
+}: CardsTabContentProps) {
   return (
     <>
       <MainAccountCard />

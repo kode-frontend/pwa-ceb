@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+
 type CardType = "current" | "credit1" | "credit2";
 
 interface CardData {
@@ -148,14 +150,29 @@ interface ChartBlocksProps {
 
 export function ChartBlocks({ selectedCard }: ChartBlocksProps) {
   const cardData = CARD_DATA[selectedCard];
+  const navigate = useNavigate();
+
+  const analytics = () => {
+    navigate("/pwa-ceb/analytics");
+  };
+
+  const analytics2 = () => {
+    navigate("/pwa-ceb/analytics", {
+      state: { image: "analytics2wrapper.png" },
+    });
+  };
 
   return (
     <div
       className="box-border content-stretch flex flex-row gap-2 items-center justify-start p-[16px] relative shrink-0 w-full"
       data-name="container"
     >
-      <ExpenseBlock data={cardData.expenses} />
-      <IncomeBlock data={cardData.income} />
+      <div onClick={analytics} className="cursor-pointer">
+        <ExpenseBlock data={cardData.expenses} />
+      </div>
+      <div onClick={analytics2} className="cursor-pointer w-full">
+        <IncomeBlock data={cardData.income} />
+      </div>
     </div>
   );
 }

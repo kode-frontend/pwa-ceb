@@ -1,4 +1,11 @@
+import { useNavigate } from "react-router-dom";
+
 function SectionHeader() {
+  const navigate = useNavigate();
+
+  const handleBack = () => {
+    navigate("/pwa-ceb/analytics");
+  };
   return (
     <div className="relative shrink-0 w-full" data-name="section_header">
       <div className="flex flex-row items-center justify-center relative size-full">
@@ -8,7 +15,7 @@ function SectionHeader() {
               Аналитика финансов
             </h4>
           </div>
-          <div className="font-sans relative shrink-0 text-[#316dcc] text-[14px] text-nowrap tracking-[-0.14px]">
+          <div className="font-sans relative shrink-0 text-[#316dcc] text-[14px] text-nowrap tracking-[-0.14px] cursor-pointer" onClick={handleBack}>
             <p className="adjustLetterSpacing block leading-[20px] whitespace-pre font-semibold">
               Подробнее
             </p>
