@@ -7,7 +7,7 @@ function TextContainer5() {
       data-name="text_container"
     >
       <div
-        className="font-['SF_Pro_Display:Medium',_sans-serif] leading-[0] min-w-full not-italic relative shrink-0 text-[#ffffff] text-[12px] text-left tracking-[-0.12px]"
+        className="font-sans leading-[0] min-w-full not-italic relative shrink-0 text-[#ffffff] text-[12px] text-left tracking-[-0.12px]"
         style={{ width: "min-content" }}
       >
         <p className="block leading-[16px]">Меняйте баллы на рубли</p>

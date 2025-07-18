@@ -8,7 +8,7 @@ function Content10() {
         className="w-full px-4 py-2"
         data-name="suggest"
       >
-        <h1 className="text-white text-xl font-semibold mb-3 relative">Мои операции</h1>
+        <h1 className="text-white font-sans font-medium mb-3 relative">Мои операции</h1>
         <div className="flex flex-row gap-3 overflow-x-auto scrollbar-hide">
           {/* Карточка операции 1 - Ефим */}
           <div
@@ -84,7 +84,7 @@ function Content10() {
         </div>
       </div>
       {/* Белая область */}
-      <div className="flex-1 bg-white w-full">
+      <div className="flex-1 w-full">
         <div className="p-4 space-y-4 flex flex-col relative">
           {/* Первый блок "Шаблоны и автоплатежи" */}
           <div

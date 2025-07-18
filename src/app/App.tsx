@@ -51,13 +51,14 @@ const AppWithRouter = () => {
     <div className="min-h-screen w-full overflow-y-auto">
       {Header}
 
-      <div className="h-full w-full">
+      <div className="h-full w-full font-sans">
         <Routes>
           <Route path="/pwa-ceb/" element={<HomeScreen />} />
           <Route path="/pwa-ceb/payments" element={<PaymentsScreen />} />
           <Route path="/pwa-ceb/settings" element={<SettingsScreen />} />
           <Route path="/pwa-ceb/profile" element={<ProfileScreen />} />
           <Route path="/pwa-ceb/scan-qr" element={<ScanQrScreen />} />
+          <Route path="/pwa-ceb/search" element={<ScanQrScreen />} />
         </Routes>
       </div>
 

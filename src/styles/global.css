@@ -1,5 +1,33 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('/fonts/SF-Pro/SF-Pro-Display-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('/fonts/SF-Pro/SF-Pro-Display-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('/fonts/SF-Pro/SF-Pro-Display-Bold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('/fonts/SF-Pro/SF-Pro-Display-Semibold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
 /* Цветовые переменные */
 #root {
   --font-size: 14px;
@@ -63,6 +91,7 @@
   --border: oklch(0.269 0 0);
   --input: oklch(0.269 0 0);
   --ring: oklch(0.439 0 0);
+  --font-weight-bold: 600;
   --font-weight-medium: 500;
   --font-weight-normal: 400;
   --chart-1: oklch(0.488 0.243 264.376);
@@ -96,6 +125,7 @@
 body {
   background-color: var(--background);
   color: var(--foreground);
+  font-family: "SF Pro Display", sans-serif !important;
 }
 
 /* Типографика */
@@ -105,24 +135,28 @@ body {
       font-size: var(--text-2xl);
       font-weight: var(--font-weight-medium);
       line-height: 1.5;
+      font-family: "SF Pro Display";
     }
 
     h2 {
       font-size: var(--text-xl);
       font-weight: var(--font-weight-medium);
       line-height: 1.5;
+      font-family: "SF Pro Display";
     }
 
     h3 {
       font-size: var(--text-lg);
       font-weight: var(--font-weight-medium);
       line-height: 1.5;
+      font-family: "SF Pro Display";
     }
 
     h4 {
       font-size: var(--text-base);
       font-weight: var(--font-weight-medium);
       line-height: 1.5;
+      font-family: "SF Pro Display";
     }
 
     p,
@@ -132,6 +166,7 @@ body {
       font-size: var(--text-base);
       font-weight: var(--font-weight-normal);
       line-height: 1.5;
+      font-family: "SF Pro Display";
     }
   }
 }

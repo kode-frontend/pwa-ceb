@@ -39,7 +39,7 @@ function SettingsRow({
             {/* Text */}
             <div className="basis-0 box-border content-stretch flex flex-col gap-1 grow items-start justify-center min-h-px min-w-px p-0 relative shrink-0">
               <div className="box-border content-stretch flex flex-row gap-1.5 items-center justify-start p-0 relative shrink-0 w-full">
-                <div className="-webkit-box basis-0 css-3k2ayj font-['SF_Pro_Display:Regular',_sans-serif] grow leading-[0] min-h-px min-w-px not-italic overflow-ellipsis overflow-hidden relative shrink-0 text-[#191919] text-[16px] text-left tracking-[-0.16px]">
+                <div className="-webkit-box basis-0 css-3k2ayj font-sans grow leading-[0] min-h-px min-w-px not-italic overflow-ellipsis overflow-hidden relative shrink-0 text-[#191919] text-[16px] text-left tracking-[-0.16px]">
                   <p className="block leading-[24px]">{title}</p>
                 </div>
               </div>

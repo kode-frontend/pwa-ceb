@@ -8,7 +8,7 @@ function TabbarItem4({ active = false }) {
     >
       <IconexLightSettings active={active} />
       <div
-        className={`flex flex-col font-['SF_Pro_Display:Medium',_sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[${
+        className={`flex flex-col font-sans justify-center leading-[0] not-italic relative shrink-0 text-[${
           active ? "#191919" : "#9ba5b3"
         }] text-[10px] text-left text-nowrap tracking-[-0.1px]`}
       >

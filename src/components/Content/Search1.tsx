@@ -1,8 +1,17 @@
 import { svgPaths } from "@shared/constants/svgPaths";
+import { useNavigate } from "react-router-dom";
 
 function Search1() {
+  const navigate = useNavigate();
+  const handleClickSearch = () => {
+    navigate("/pwa-ceb/search");
+  };
   return (
-    <div className="relative shrink-0 size-5" data-name="search">
+    <div
+      className="relative shrink-0 size-5 cursor-pointer"
+      data-name="search"
+      onClick={handleClickSearch}
+    >
       <svg
         className="block size-full"
         fill="none"

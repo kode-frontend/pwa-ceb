@@ -7,7 +7,7 @@ function Button1() {
       data-name="button"
     >
       <IconLinePlus1 />
-      <div className="font-['SF_Pro_Display:Medium',_sans-serif] leading-[0] not-italic relative shrink-0 text-[#191919] text-[14px] text-center tracking-[-0.14px] w-[86px]">
+      <div className="font-sans leading-[0] not-italic relative shrink-0 text-[#191919] text-[14px] text-center tracking-[-0.14px] w-[86px]">
         <p className="adjustLetterSpacing block leading-[20px]">
           Добавить действие
         </p>

@@ -14,6 +14,9 @@ const config: Config = {
       spacing: {
         "safe-bottom": "env(safe-area-inset-bottom)",
       },
+      fontFamily: {
+        sans: ['"SF Pro Display"', 'sans-serif'],
+      },
     },
   },
   plugins: [],

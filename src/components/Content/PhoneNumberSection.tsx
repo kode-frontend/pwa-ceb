@@ -7,7 +7,7 @@ function PhoneNumberSection() {
         <div className="relative size-full">
           <div className="box-border content-stretch flex flex-col gap-2 items-start justify-start px-4 md:px-6 lg:px-8 py-3 md:py-4 relative w-full">
             <div className="box-border content-stretch flex flex-row gap-1 items-center justify-start p-0 relative shrink-0 w-full">
-              <div className="basis-0 font-['SF_Pro_Display:Medium',_sans-serif] grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#191919] text-[16px] md:text-[17px] lg:text-[18px] text-left tracking-[-0.16px]">
+              <div className="basis-0 font-sans grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#191919] text-[16px] md:text-[17px] lg:text-[18px] text-left tracking-[-0.16px]">
                 <p className="block leading-[24px] md:leading-[26px]">
                   Номер телефона
                 </p>
@@ -31,7 +31,7 @@ function PhoneNumberSection() {
         <div className="flex flex-row items-center relative size-full">
           <div className="box-border content-stretch flex flex-row items-center justify-start px-4 md:px-6 lg:px-8 py-3 md:py-4 relative w-full">
             <div className="basis-0 box-border content-stretch flex flex-row gap-1 grow items-center justify-start min-h-px min-w-px p-0 relative shrink-0">
-              <div className="basis-0 font-['SF_Pro_Display:Regular',_sans-serif] grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#191919] text-[16px] md:text-[17px] lg:text-[18px] text-left tracking-[-0.16px]">
+              <div className="basis-0 font-sans grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#191919] text-[16px] md:text-[17px] lg:text-[18px] text-left tracking-[-0.16px]">
                 <p className="block leading-[24px] md:leading-[26px]">
                   +7 (929) 1** 45 00
                 </p>

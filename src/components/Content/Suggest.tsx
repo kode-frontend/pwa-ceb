@@ -2,7 +2,6 @@ import Button from "../Content/Button";
 import Card from "../Content/Card";
 import Card1 from "../Content/Card1";
 import Card2 from "../Content/Card2";
-import Button1 from "../Content/Button1";
 
 function Suggest() {
   return (
@@ -16,7 +15,6 @@ function Suggest() {
       <Card />
       <Card1 />
       <Card2 />
-      <Button1 />
     </div>
   );
 }
