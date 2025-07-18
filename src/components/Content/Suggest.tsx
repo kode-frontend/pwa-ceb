@@ -1,7 +1,6 @@
 import Button from "../Content/Button";
 import Card from "../Content/Card";
 import Card1 from "../Content/Card1";
-import Card2 from "../Content/Card2";
 
 function Suggest() {
   return (
