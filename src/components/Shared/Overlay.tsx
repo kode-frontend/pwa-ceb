@@ -1,15 +1,23 @@
-import { imgColor } from "@shared/constants/imgColor";
+import { overlayThemes } from "@context/overlayThemes";
+import { useTheme } from "@context/ThemeProvider";
 
 function Overlay() {
+  const { theme } = useTheme();
+  const maskUrl = overlayThemes[theme];
+
   return (
     <div
-      className="absolute h-[100vh] left-0 overflow-clip right-0 top-0"
-      data-name="overlay"
+      className="absolute size-full h-[100vh]"
+      style={{
+        background: `url('${maskUrl}')`,
+      }}
     >
       <div
-        className="absolute bg-[#316dcc] h-[100vh] left-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0%_0px] mask-size-[100%_100%] right-0 top-1/2 translate-y-[-50%]"
-        data-name="color"
-        style={{ maskImage: `url('${imgColor}')` }}
+        className="absolute inset-0 z-0"
+        style={{
+          backgroundColor: `url('${maskUrl}')`,
+          backdropFilter: "blur(0.5px)",
+        }}
       />
     </div>
   );

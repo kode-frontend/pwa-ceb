@@ -261,7 +261,6 @@ export function SmallAccountCards({
 }: SmallAccountCardsProps) {
   const handleCardClick = (cardId: CardType) => {
     onCardChange?.(cardId);
-    console.log(`Selected card: ${cardId}`);
   };
 
   return (

@@ -18,7 +18,6 @@ const Camera = () => {
       if (videoRef.current) {
         videoRef.current.srcObject = stream;
       }
-      console.log("Camera started");
     } catch (err) {
       alert(
         "Не удалось получить доступ к камере. Обновите страницу и дайте разрешение на использование камеры."
@@ -27,14 +26,12 @@ const Camera = () => {
   }, []);
 
   const stopCamera = useCallback(() => {
-    console.log("Stopping camera...");
     if (videoRef.current) {
       videoRef.current.srcObject = null;
     }
     const srcObject = videoRef.current?.srcObject;
     if (srcObject && srcObject instanceof MediaStream) {
       srcObject.getTracks().forEach((track) => {
-        console.log("Stopping track:", track);
         track.stop();
       });
     }

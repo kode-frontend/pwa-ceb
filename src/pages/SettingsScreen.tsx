@@ -4,15 +4,40 @@ import SectionHeader from "@components/Shared/SectionHeader";
 import SettingsRow from "@components/Shared/SettingsRow";
 
 import { svgPaths } from "@shared/constants/svgPaths";
+import { useNavigate } from "react-router-dom";
 
 export const SettingsScreen = () => {
   const [showBlockedCards, setShowBlockedCards] = useState(false);
   const [hideBalance, setHideBalance] = useState(false);
+  const navigate = useNavigate();
+
+  const settingsTheme = () => {
+    navigate("/pwa-ceb/settings-theme");
+  };
+
   return (
     <div className="bg-[#F1F5FC] size-full  pt-[51px] pb-[51px] h-[100vh]">
       <div className="box-border content-stretch flex flex-col gap-2 h-[628px] items-start justify-start left-0 px-4 py-3 w-full">
         <div className="bg-[#ffffff] box-border content-stretch flex flex-col items-start justify-start overflow-clip p-0 relative rounded-[20px] shrink-0 w-full">
           <SectionHeader title="Главный экран" />
+
+          <SettingsRow
+            icon={
+              <div className="max-h-6 max-w-6 min-h-6 min-w-6 relative shrink-0 size-6">
+                <svg
+                  className="block size-full"
+                  fill="none"
+                  preserveAspectRatio="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path d={svgPaths.pd10700} fill="#191919" />
+                </svg>
+              </div>
+            }
+            title="Настройка темы"
+            hasArrow={true}
+            onClick={settingsTheme}
+          />
 
           <SettingsRow
             icon={

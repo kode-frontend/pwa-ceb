@@ -59,12 +59,16 @@ import OrderScreen from "@pages/OrderScreen";
 import { CreditsScreen } from "@pages/CreditsScreen";
 import ChatsHeader from "@components/Shared/ChatsHeader";
 import { ChatsScreen } from "@pages/ChatsScreen";
+import { ThemeProvider } from "@context/ThemeProvider";
+import { ColorSelectionScreen } from "@pages/ColorSelectionScreen";
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <AppWithRouter />
-    </BrowserRouter>
+    <ThemeProvider>
+      <BrowserRouter>
+        <AppWithRouter />
+      </BrowserRouter>
+    </ThemeProvider>
   );
 };
 
@@ -157,7 +161,7 @@ const AppWithRouter = () => {
     if (creditStoryRoute) return <CreditStoryNavigation />;
     if (officeRoute) return <OfficeNavigation />;
     if (orderRoute) return <OrderNavigation />;
-    if (chatsRoute) return <ChatsHeader />
+    if (chatsRoute) return <ChatsHeader />;
     return <NavigationBar scrollY={scrollY} />;
   }, [
     chatsRoute,
@@ -244,6 +248,7 @@ const AppWithRouter = () => {
           <Route path="/pwa-ceb/order" element={<OrderScreen />} />
           <Route path="/pwa-ceb/loans" element={<CreditsScreen />} />
           <Route path="/pwa-ceb/chats" element={<ChatsScreen />} />
+          <Route path="/pwa-ceb/settings-theme" element={<ColorSelectionScreen />} />
         </Routes>
       </div>
 

@@ -1,8 +1,19 @@
+import { useTheme } from "@context/ThemeProvider";
+import { colorOptions } from "@pages/ColorSelectionScreen";
 import { svgPaths } from "@shared/constants/svgPaths";
 
 function ChatsHeader() {
+  const { theme } = useTheme();
+
+  const backgroundColor =
+    colorOptions.find((c) => c.id === theme)?.value || "#316dcc";
   return (
-    <div className="fixed bg-[#316dcc] box-border content-stretch flex flex-col items-start justify-start left-0 p-0 w-full z-[9999]">
+    <div
+      className="fixed box-border content-stretch flex flex-col items-start justify-start left-0 p-0 w-full z-[9999]"
+      style={{
+        backgroundColor,
+      }}
+    >
       <div className="box-border content-stretch flex flex-row items-start justify-start p-0 relative shrink-0 w-full">
         {/* Back Button */}
         <div className="basis-0 grow min-h-px min-w-px opacity-0 relative shrink-0">
