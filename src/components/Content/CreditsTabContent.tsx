@@ -14,8 +14,14 @@ function CreditAccount() {
               className="bg-[rgba(49,109,204,0.1)] overflow-clip relative rounded-[100px] shrink-0 size-10"
               data-name="container"
             >
-              <div className="absolute left-[8.5px] size-6 top-2" data-name="coins">
-                <div className="absolute bottom-[12.5%] left-[12.775%] right-[12.825%] top-[12.5%]" data-name="coins">
+              <div
+                className="absolute left-[8.5px] size-6 top-2"
+                data-name="coins"
+              >
+                <div
+                  className="absolute bottom-[12.5%] left-[12.775%] right-[12.825%] top-[12.5%]"
+                  data-name="coins"
+                >
                   <div className="absolute bottom-[-5%] left-[-5.041%] right-[-5.041%] top-[-5%]">
                     <svg
                       className="block size-full"
@@ -67,7 +73,9 @@ function CreditAccount() {
               data-name="text"
             >
               <div className="font-sans relative shrink-0 text-[#191919] text-[16px] tracking-[-0.16px] w-full">
-                <p className="block leading-[24px] font-semibold">72 874.12 ₽</p>
+                <p className="block leading-[24px] font-semibold">
+                  72 874.12 ₽
+                </p>
               </div>
               <div className="font-sans relative shrink-0 text-[#6f7884] text-[14px] tracking-[-0.14px] w-full">
                 <p className="block leading-[20px]">Моментальный · *4742</p>
@@ -98,26 +106,20 @@ function CreditPromoCard() {
         <div className="flex flex-row items-center relative size-full">
           <div className="box-border content-stretch flex flex-row gap-4 h-[68px] items-center justify-start px-4 py-3 relative w-full">
             <div
-              className="bg-[#ffffff] overflow-clip relative rounded-[100px] shrink-0 size-10"
+              className="bg-[rgba(49,109,204,0.1)] overflow-clip relative rounded-[100px] shrink-0 size-10"
               data-name="container"
             >
               <div
-                className="absolute contents left-1/2 translate-x-[-50%] translate-y-[-50%]"
-                data-name="img"
-                style={{ top: "calc(50% + 4px)" }}
+                className="absolute size-10"
+                data-name="coins"
               >
-                <div
-                  className="absolute bg-center bg-cover bg-no-repeat left-1/2 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px] mask-size-[48px_48px] size-12 translate-x-[-50%] translate-y-[-50%]"
-                  data-name="img"
-                  style={{
-                    top: "calc(50% + 4px)",
-                  }}
-                />
-                <div
-                  className="absolute bg-[#316dcc] left-1/2 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px] mask-size-[48px_48px] mix-blend-color opacity-50 size-12 translate-x-[-50%] translate-y-[-50%]"
-                  data-name="color"
-                  style={{ top: "calc(50% + 4px)" }}
-                />
+                <div className="relative w-[100%] h-[100%] overflow-hidden">
+                  <img
+                    src="/pwa-ceb/assets/flowersmall.png"
+                    alt="Карта"
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                </div>
               </div>
             </div>
             <div
@@ -134,7 +136,9 @@ function CreditPromoCard() {
                   data-name="text"
                 >
                   <div className="font-sans relative shrink-0 text-[#191919] text-[16px] tracking-[-0.16px] w-full">
-                    <p className="block leading-[24px] font-semibold">Кредит за 5 минут</p>
+                    <p className="block leading-[24px] font-semibold">
+                      Кредит за 5 минут
+                    </p>
                   </div>
                   <div className="font-sans relative shrink-0 text-[#6f7884] text-[14px] tracking-[-0.14px] w-full">
                     <p className="block leading-[20px] whitespace-pre-wrap">{`До 4 000 000 ₽ –  на любые цели`}</p>
@@ -143,8 +147,14 @@ function CreditPromoCard() {
               </div>
               <div className="flex h-[16px] items-center justify-center relative shrink-0 w-[16px]">
                 <div className="flex-none rotate-[270deg]">
-                  <div className="overflow-clip relative size-4" data-name="close">
-                    <div className="absolute bottom-[24.353%] left-[24.374%] right-[24.356%] top-[24.375%]" data-name="close">
+                  <div
+                    className="overflow-clip relative size-4"
+                    data-name="close"
+                  >
+                    <div
+                      className="absolute bottom-[24.353%] left-[24.374%] right-[24.356%] top-[24.375%]"
+                      data-name="close"
+                    >
                       <div className="absolute bottom-[-0.002%] left-0 right-[-0.001%] top-0">
                         <svg
                           className="block size-full"

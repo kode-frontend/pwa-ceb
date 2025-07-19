@@ -1,6 +1,6 @@
 export function EditButton() {
   return (
-    <div className="relative shrink-0 w-full">
+    <div className="relative shrink-0 w-full pb-20">
       <div className="relative size-full">
         <div className="box-border content-stretch flex flex-col items-start justify-start px-4 py-3 relative w-full">
           <div className="bg-[#316dcc] relative rounded-xl shrink-0 w-full">
