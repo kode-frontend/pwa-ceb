@@ -1,3 +1,5 @@
+import { useTheme } from "@context/ThemeProvider";
+import { colorOptions } from "@pages/ColorSelectionScreen";
 import { svgPaths } from "@shared/constants/svgPaths";
 import { useNavigate } from "react-router-dom";
 
@@ -8,8 +10,18 @@ function ScanQrNavigation() {
     navigate("/pwa-ceb/");
   };
 
+  const { theme } = useTheme();
+
+  const backgroundColor =
+    colorOptions.find((c) => c.id === theme)?.value || "#316dcc";
+
   return (
-    <div className="bg-[#316dcc] box-border content-stretch flex flex-row items-start justify-start p-0 relative shrink-0 w-full">
+    <div
+      className="box-border content-stretch flex flex-row items-start justify-start p-0 relative shrink-0 w-full"
+      style={{
+        backgroundColor,
+      }}
+    >
       {/* Back Button */}
       <div className="basis-0 grow min-h-px min-w-px relative shrink-0">
         <div className="flex flex-col justify-center relative size-full">
