@@ -56,6 +56,9 @@ import OfficeNavigation from "@components/Shared/OfficeNavigation";
 import OfficeScreen from "@pages/OfficeScreen";
 import OrderNavigation from "@components/Shared/OrderNavigation";
 import OrderScreen from "@pages/OrderScreen";
+import { CreditsScreen } from "@pages/CreditsScreen";
+import ChatsHeader from "@components/Shared/ChatsHeader";
+import { ChatsScreen } from "@pages/ChatsScreen";
 
 const App = () => {
   return (
@@ -98,6 +101,7 @@ const AppWithRouter = () => {
   const creditStoryRoute = location.pathname.includes("credit-story");
   const officeRoute = location.pathname.includes("office");
   const orderRoute = location.pathname.includes("order");
+  const chatsRoute = location.pathname.includes("chats");
 
   const hasTabbar =
     !profileRoute &&
@@ -153,8 +157,10 @@ const AppWithRouter = () => {
     if (creditStoryRoute) return <CreditStoryNavigation />;
     if (officeRoute) return <OfficeNavigation />;
     if (orderRoute) return <OrderNavigation />;
+    if (chatsRoute) return <ChatsHeader />
     return <NavigationBar scrollY={scrollY} />;
   }, [
+    chatsRoute,
     orderRoute,
     officeRoute,
     creditStoryRoute,
@@ -194,7 +200,7 @@ const AppWithRouter = () => {
   }, []);
 
   return (
-    <div className="min-h-screen w-full overflow-y-auto">
+    <div className=" w-full overflow-y-auto">
       {Header}
 
       <div className="h-full w-full font-sans">
@@ -236,6 +242,8 @@ const AppWithRouter = () => {
           <Route path="/pwa-ceb/credit-story" element={<CreditStoryScreen />} />
           <Route path="/pwa-ceb/office" element={<OfficeScreen />} />
           <Route path="/pwa-ceb/order" element={<OrderScreen />} />
+          <Route path="/pwa-ceb/loans" element={<CreditsScreen />} />
+          <Route path="/pwa-ceb/chats" element={<ChatsScreen />} />
         </Routes>
       </div>
 

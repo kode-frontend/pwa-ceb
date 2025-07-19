@@ -1,6 +1,3 @@
-import Details from "../Content/Details";
-import Illustration4 from "../Content/Illustration4";
-
 function Banner() {
   return (
     <div
@@ -11,8 +8,13 @@ function Banner() {
           "linear-gradient(133.858deg, rgb(197, 91, 249) 0%, rgb(173, 45, 236) 100%)",
       }}
     >
-      <Details />
-      <Illustration4 />
+      <div className="relativerounded-lg overflow-hidden">
+        <img
+          src="/pwa-ceb/assets/banner1.png"
+          alt="Карта"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+      </div>
     </div>
   );
 }

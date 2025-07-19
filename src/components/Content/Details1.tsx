@@ -1,9 +1,7 @@
-import Text7 from "../Content/Text7";
-import Button3 from "../Content/Button3";
 import { useNavigate } from "react-router-dom";
 
 function Details1() {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const handleBack = () => {
     navigate("/pwa-ceb/additional-points");
@@ -14,8 +12,13 @@ function Details1() {
       data-name="details"
       onClick={handleBack}
     >
-      <Text7 />
-      <Button3 />
+      <div className="relative w-[100%] h-[100%] overflow-hidden">
+        <img
+          src="/pwa-ceb/assets/additionalpic.png"
+          alt="Карта"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+      </div>
     </div>
   );
 }

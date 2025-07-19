@@ -1,6 +1,3 @@
-import Illustration1 from "../Content/Illustration1";
-import TextContainer4 from "../Content/TextContainer4";
-
 function Stories1() {
   return (
     <div
@@ -11,8 +8,13 @@ function Stories1() {
           "linear-gradient(121.304deg, rgb(245, 94, 67) 0%, rgb(226, 66, 38) 100%)",
       }}
     >
-      <Illustration1 />
-      <TextContainer4 />
+      <div className="relativerounded-lg overflow-hidden">
+        <img
+          src="/pwa-ceb/assets/stories2.png"
+          alt="Карта"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+      </div>
     </div>
   );
 }

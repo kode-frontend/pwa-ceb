@@ -5,10 +5,10 @@ export default function AnalyticsScreen() {
   const imageName = location.state?.image || "analyticswrapper.png";
 
   return (
-    <div className="bg-[#ffffff] flex min-h-screen w-full p-0 m-0 overflow-hidden">
+    <div className="bg-[#ffffff] flex  w-full p-0 m-0 overflow-hidden">
       <div className="flex flex-col p-0 m-0 leading-none">
         <img
-          src={`./src/assets/${imageName}`}
+          src={`/pwa-ceb/assets/${imageName}`}
           alt="Картинка 3"
           className="block w-full"
         />

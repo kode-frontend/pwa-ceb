@@ -36,15 +36,12 @@ export function ServicesGrid() {
             className="basis-0 bg-[#f1f5fc] grow h-[228px] min-h-px min-w-px overflow-clip relative rounded-[20px] shrink-0 cursor-pointer"
             onClick={cashback}
           >
-            <div className="absolute bg-center bg-cover bg-no-repeat bottom-[-37px] right-[-64.5px] size-[228px]" />
-            <div className="absolute box-border content-stretch flex flex-col gap-2 items-start justify-start left-0 p-[12px] top-0 w-[173px]">
-              <div className="box-border content-stretch flex flex-col gap-0.5 items-start justify-start p-0 relative shrink-0 w-full">
-                <div className="font-sans leading-[0] not-italic relative shrink-0 text-[#191919] text-[14px] text-left tracking-[-0.28px] w-full">
-                  <p className="block leading-[20px] font-semibold">
-                    Кешбэк от партнеров
-                  </p>
-                </div>
-              </div>
+            <div className="relative w-[100%] h-[100%] rounded-lg overflow-hidden">
+              <img
+                src="/pwa-ceb/assets/tree.png"
+                alt="Карта"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
             </div>
           </div>
 
@@ -53,14 +50,12 @@ export function ServicesGrid() {
               className="bg-[#f1f5fc] h-[110px] overflow-clip relative rounded-[20px] shrink-0 w-full cursor-pointer"
               onClick={formular}
             >
-              <div className="absolute box-border content-stretch flex flex-col gap-2 items-start justify-start left-0 p-[12px] top-0 w-[167px]">
-                <div className="box-border content-stretch flex flex-col gap-0.5 items-start justify-start p-0 relative shrink-0 w-full">
-                  <div className="font-sans leading-[0] not-italic relative shrink-0 text-[#191919] text-[14px] text-left tracking-[-0.28px] w-full">
-                    <p className="block leading-[20px] font-semibold">
-                      Заказ справок
-                    </p>
-                  </div>
-                </div>
+              <div className="relative w-[100%] h-[100%] rounded-lg overflow-hidden">
+                <img
+                  src="/pwa-ceb/assets/books.png"
+                  alt="Карта"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
               </div>
               <div className="absolute flex items-center justify-center left-[47.5px] size-[145px] top-2.5">
                 <div className="flex-none rotate-[180deg] scale-y-[-100%]">
@@ -73,14 +68,12 @@ export function ServicesGrid() {
               className="bg-[#f1f5fc] h-[110px] overflow-clip relative rounded-[20px] shrink-0 w-full cursor-pointer"
               onClick={questions}
             >
-              <div className="absolute box-border content-stretch flex flex-col gap-2 items-start justify-start left-0 p-[12px] top-0 w-[167px]">
-                <div className="box-border content-stretch flex flex-col gap-0.5 items-start justify-start p-0 relative shrink-0 w-full">
-                  <div className="font-sans leading-[0] not-italic relative shrink-0 text-[#191919] text-[14px] text-left tracking-[-0.28px] w-full">
-                    <p className="block leading-[20px] font-semibold">
-                      Вопросы и ответы
-                    </p>
-                  </div>
-                </div>
+              <div className="relative w-[100%] h-[100%] rounded-lg overflow-hidden">
+                <img
+                  src="/pwa-ceb/assets/q.png"
+                  alt="Карта"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
               </div>
               <div className="absolute bg-center bg-cover bg-no-repeat left-[72.5px] size-[110px] top-[27px]" />
             </div>
@@ -93,14 +86,12 @@ export function ServicesGrid() {
             className="basis-0 bg-[#f1f5fc] grow h-[110px] min-h-px min-w-px overflow-clip relative rounded-[20px] shrink-0 cursor-pointer"
             onClick={connect}
           >
-            <div className="absolute box-border content-stretch flex flex-col gap-2 items-start justify-start left-0 p-[12px] top-0 w-[167px]">
-              <div className="box-border content-stretch flex flex-col gap-0.5 items-start justify-start p-0 relative shrink-0 w-full">
-                <div className="font-sans leading-[0] not-italic relative shrink-0 text-[#191919] text-[14px] text-left tracking-[-0.28px] w-full">
-                  <p className="block leading-[20px] font-semibold">
-                    Связь с банком
-                  </p>
-                </div>
-              </div>
+            <div className="relative w-[100%] h-[100%] rounded-lg overflow-hidden">
+              <img
+                src="/pwa-ceb/assets/connections.png"
+                alt="Карта"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
             </div>
             <div className="absolute bg-center bg-cover bg-no-repeat left-[47.5px] size-36 top-2.5" />
           </div>
@@ -110,14 +101,12 @@ export function ServicesGrid() {
             onClick={creditStory}
           >
             <div className="absolute bg-center bg-cover bg-no-repeat left-[57px] size-[132px] top-3" />
-            <div className="absolute box-border content-stretch flex flex-col gap-2 items-start justify-start left-0 p-[12px] top-0 w-[167px]">
-              <div className="box-border content-stretch flex flex-col gap-0.5 items-start justify-start p-0 relative shrink-0 w-full">
-                <div className="font-sans leading-[0] not-italic relative shrink-0 text-[#191919] text-[14px] text-left tracking-[-0.28px] w-full">
-                  <p className="block leading-[20px] font-semibold">
-                    Кредитная история
-                  </p>
-                </div>
-              </div>
+            <div className="relative w-[100%] h-[100%] rounded-lg overflow-hidden">
+              <img
+                src="/pwa-ceb/assets/creditstoryimg.png"
+                alt="Карта"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
@@ -127,14 +116,12 @@ export function ServicesGrid() {
         >
           <div className="basis-0 bg-[#f1f5fc] grow h-[110px] min-h-px min-w-px overflow-clip relative rounded-[20px] shrink-0">
             <div className="absolute bg-center bg-cover bg-no-repeat left-[57px] size-[132px] top-3" />
-            <div className="absolute box-border content-stretch flex flex-col gap-2 items-start justify-start left-0 p-[12px] top-0 w-[167px]">
-              <div className="box-border content-stretch flex flex-col gap-0.5 items-start justify-start p-0 relative shrink-0 w-full">
-                <div className="font-sans leading-[0] not-italic relative shrink-0 text-[#191919] text-[14px] text-left tracking-[-0.28px] w-full">
-                  <p className="block leading-[20px] font-semibold">
-                    Офисы и банкоматы
-                  </p>
-                </div>
-              </div>
+            <div className="relative w-[100%] h-[100%] rounded-lg overflow-hidden">
+              <img
+                src="/pwa-ceb/assets/officepic.png"
+                alt="Карта"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>

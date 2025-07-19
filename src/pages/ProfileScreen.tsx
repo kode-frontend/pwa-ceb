@@ -4,7 +4,7 @@ import ProfileNavigation from "@components/Shared/ProfileNavigation";
 
 export default function ProfileScreen() {
   return (
-    <div className="bg-[#f1f5fc] overflow-clip relative min-h-screen w-full">
+    <div className="bg-[#f1f5fc] overflow-clip relative  w-full">
       <div className="absolute box-border content-stretch flex flex-col items-start justify-start left-0 p-0 top-0 w-full">
         <ProfileNavigation />
       </div>

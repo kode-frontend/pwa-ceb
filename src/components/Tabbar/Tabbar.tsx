@@ -18,11 +18,11 @@ const Tabbar = () => {
       <Link to="/pwa-ceb/payments">
         <TabbarItem1 active={location.pathname === "/pwa-ceb/payments"} />
       </Link>
-      <Link to="/home2">
-        <TabbarItem2 />
+      <Link to="/pwa-ceb/loans">
+        <TabbarItem2 active={location.pathname === "/pwa-ceb/loans"}/>
       </Link>
-      <Link to="/home3">
-        <TabbarItem3 />
+      <Link to="/pwa-ceb/chats">
+        <TabbarItem3 active={location.pathname === "/pwa-ceb/chats"}/>
       </Link>
       <Link to="/pwa-ceb/settings">
         <TabbarItem4 active={location.pathname === "/pwa-ceb/settings"} />

@@ -108,37 +108,12 @@ function MainAccountCard() {
                 </p>
               </div>
             </div>
-            <div
-              className="absolute h-3.5 left-0 top-[22px] w-14"
-              data-name="bank_logo"
-            >
-              <svg
-                className="block size-full"
-                fill="none"
-                preserveAspectRatio="none"
-                viewBox="0 0 56 14"
-              >
-                <g id="bank_logo">
-                  <g id="mir">
-                    <path
-                      d={svgPaths.p39cb4e00}
-                      fill="var(--fill-0, #191919)"
-                    />
-                    <path
-                      d={svgPaths.p301c8f00}
-                      fill="var(--fill-0, #191919)"
-                    />
-                    <path
-                      d={svgPaths.p21a46600}
-                      fill="var(--fill-0, #191919)"
-                    />
-                    <path
-                      d={svgPaths.p36490800}
-                      fill="var(--fill-0, #191919)"
-                    />
-                  </g>
-                </g>
-              </svg>
+            <div className="relative w-14 h-9 rounded-lg overflow-hidden">
+              <img
+                src="/pwa-ceb/assets/card (1).png"
+                alt="Карта"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
             </div>
           </div>
           <div className="absolute border-[0.5px] border-[rgba(25,25,25,0.01)] border-solid inset-0 pointer-events-none rounded-lg" />
@@ -239,40 +214,12 @@ function CreditCard() {
         className="bg-[#f1f5fc] overflow-clip relative rounded-[100px] shrink-0 size-10"
         data-name="container"
       >
-        <div
-          className="absolute bg-[#f1f5fc] h-9 left-2 rounded-lg top-2 w-14"
-          data-name="card"
-        >
-          <div className="h-9 overflow-clip relative w-14">
-            <div
-              className="absolute bg-center bg-cover bg-no-repeat h-[43px] top-0 translate-x-[-50%] w-[64.5px]"
-              data-name="ChatGPT Image 16 июл. 2025 г., 10_37_57 1"
-              style={{
-                left: "calc(50% + 4px)",
-              }}
-            />
-            <div
-              className="absolute h-[18px] left-0 top-0 w-14"
-              data-name="bank_logo"
-            >
-              <svg
-                className="block size-full"
-                fill="none"
-                preserveAspectRatio="none"
-                viewBox="0 0 56 18"
-              >
-                <g id="bank_logo">
-                  <g id="mir">
-                    <path d={svgPaths.p12032a00} fill="var(--fill-0, white)" />
-                    <path d={svgPaths.pd228600} fill="var(--fill-0, white)" />
-                    <path d={svgPaths.p20406b80} fill="var(--fill-0, white)" />
-                    <path d={svgPaths.p384be600} fill="var(--fill-0, white)" />
-                  </g>
-                </g>
-              </svg>
-            </div>
-          </div>
-          <div className="absolute border-[0.5px] border-[rgba(25,25,25,0.01)] border-solid inset-0 pointer-events-none rounded-lg" />
+        <div className="relative w-11 h-13 rounded-lg overflow-hidden">
+          <img
+            src="/pwa-ceb/assets/mir.png"
+            alt="Карта"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
         </div>
       </div>
       <div

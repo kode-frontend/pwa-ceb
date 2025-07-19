@@ -1,6 +1,3 @@
-import Details1 from "../Content/Details1";
-import Illustration5 from "../Content/Illustration5";
-
 function Banner1() {
   return (
     <div
@@ -8,11 +5,16 @@ function Banner1() {
       data-name="banner"
       style={{
         backgroundImage:
-          "linear-gradient(133.858deg, rgb(245, 94, 67) 0%, rgb(226, 66, 38) 100%)",
+          "linear-gradient(133.858deg, rgb(197, 91, 249) 0%, rgb(173, 45, 236) 100%)",
       }}
     >
-      <Details1 />
-      <Illustration5 />
+      <div className="relativerounded-lg overflow-hidden">
+        <img
+          src="/pwa-ceb/assets/additionalpic.png"
+          alt="Карта"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+      </div>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import { svgPaths } from "@shared/constants/svgPaths";
 
-function Messages2() {
+function Messages2({active = false}) {
   return (
     <div
       className="absolute bottom-[12.497%] left-[12.5%] right-[12.5%] top-[12.5%]"
@@ -17,7 +17,7 @@ function Messages2() {
             <path
               d={svgPaths.p4a3d00}
               id="Vector"
-              stroke="var(--stroke-0, #9BA5B3)"
+              stroke={active ? "#316DCC" : "#b6b6b6ff"}
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="1.8"
@@ -25,7 +25,7 @@ function Messages2() {
             <path
               d={svgPaths.p5be9d70}
               id="Vector_2"
-              stroke="var(--stroke-0, #9BA5B3)"
+              stroke={active ? "#316DCC" : "#b6b6b6ff"}
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="1.8"

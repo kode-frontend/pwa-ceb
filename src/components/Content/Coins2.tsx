@@ -1,6 +1,6 @@
 import { svgPaths } from "@shared/constants/svgPaths";
 
-function Coins2() {
+function Coins2({active = false}) {
   return (
     <div
       className="absolute h-[18px] left-[3.066px] top-[3px] w-[17.856px]"
@@ -17,25 +17,25 @@ function Coins2() {
             <path
               d={svgPaths.p4974400}
               id="vector"
-              stroke="var(--stroke-0, #9BA5B3)"
+              stroke={active ? "#316DCC" : "#b6b6b6ff"}
               strokeWidth="1.8"
             />
             <path
               d={svgPaths.p21deb000}
               id="vector_2"
-              stroke="var(--stroke-0, #9BA5B3)"
+              stroke={active ? "#316DCC" : "#b6b6b6ff"}
               strokeWidth="1.8"
             />
             <path
               d={svgPaths.p19b993f0}
               id="vector_3"
-              stroke="var(--stroke-0, #9BA5B3)"
+              stroke={active ? "#316DCC" : "#b6b6b6ff"}
               strokeWidth="1.8"
             />
             <path
               d={svgPaths.p381ed800}
               id="vector_4"
-              stroke="var(--stroke-0, #9BA5B3)"
+              stroke={active ? "#316DCC" : "#b6b6b6ff"}
               strokeWidth="1.8"
             />
             <circle
@@ -43,7 +43,7 @@ function Coins2() {
               cy="14.95"
               id="vector_5"
               r="4.05"
-              stroke="var(--stroke-0, #9BA5B3)"
+              stroke={active ? "#316DCC" : "#b6b6b6ff"}
               strokeWidth="1.8"
             />
           </g>
