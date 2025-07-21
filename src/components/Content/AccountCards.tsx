@@ -46,16 +46,6 @@ function CurrentAccountCard() {
 
               <div className="box-border content-stretch flex flex-row gap-1 h-6 items-center justify-start px-1.5 py-1 relative rounded-[100px] shrink-0">
                 <div className="absolute border-[0.5px] border-[rgb(25 25 25 / 14%)] border-solid inset-0 pointer-events-none rounded-[100px]" />
-                <div className="font-sans leading-[0] not-italic relative shrink-0 text-[#191919] text-[10px] text-left text-nowrap tracking-[-0.1px]">
-                  <p className="adjustLetterSpacing block leading-[12px] whitespace-pre">
-                    1 321.37
-                  </p>
-                </div>
-                <div className="font-sans leading-[0] not-italic relative shrink-0 text-[#191919] text-[12px] text-left text-nowrap tracking-[-0.12px]">
-                  <p className="adjustLetterSpacing block leading-[16px] whitespace-pre">
-                    💎
-                  </p>
-                </div>
               </div>
             </div>
           </div>

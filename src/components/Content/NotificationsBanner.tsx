@@ -45,7 +45,9 @@ export function NotificationBanners() {
   const navigate = useNavigate();
 
   const handleCreditsBack = () => {
-    navigate("/pwa-ceb/credit");
+    navigate("/pwa-ceb/credit", {
+      state: { image: "credit2.png" },
+    });
   };
   const handleCreditsCardBack = () => {
     navigate("/pwa-ceb/credit-card");
@@ -72,9 +74,8 @@ export function NotificationBanners() {
       >
         <NotificationBanner>
           <p className="leading-[16px] font-sans font-medium">
-            21 июля 2025 спишется платеж по Кредитной карте *<span>3312</span>
-            <span> в размере </span>
-            <span>12 311.00 ₽</span>. Не забудьте пополнить счет
+            21 июля 2025 спишется платеж по Urban Card *3312 в размере
+            12 311.00 ₽. Не забудьте пополнить счет
           </p>
         </NotificationBanner>
       </div>

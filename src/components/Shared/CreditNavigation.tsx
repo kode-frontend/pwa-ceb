@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 import { useTheme } from "@context/ThemeProvider";
 import { colorOptions } from "@pages/ColorSelectionScreen";
@@ -6,6 +6,7 @@ import { BackArrow } from "@components/Content/BackArrow";
 
 function CreditNavigation() {
   const navigate = useNavigate();
+  const location = useLocation();
 
   const handleBack = () => {
     navigate("/pwa-ceb/");
@@ -15,6 +16,8 @@ function CreditNavigation() {
 
   const backgroundColor =
     colorOptions.find((c) => c.id === theme)?.value || "#316dcc";
+
+  const navigationText = location.state?.image ? "Кредиты" : "Спецпредложения";
 
   return (
     <div
@@ -40,7 +43,7 @@ function CreditNavigation() {
       <div className="basis-0 box-border content-stretch flex flex-col grow h-11 md:h-12 items-center justify-center min-h-px min-w-px p-0 relative shrink-0">
         <div className="font-sans leading-[0] not-italic relative shrink-0 text-[16px] md:text-[18px] lg:text-[20px] text-center text-nowrap tracking-[-0.16px]">
           <h3 className="adjustLetterSpacing block leading-[24px] whitespace-pre">
-            Кредиты
+            {navigationText}
           </h3>
         </div>
       </div>
