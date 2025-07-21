@@ -5,14 +5,14 @@ import { svgPaths } from "@shared/constants/svgPaths";
 export const colorOptions: { id: ThemeId; name: string; value: string }[] = [
   { id: "calm-blue", name: "Спокойный синий", value: "#316dcc" },
   { id: "deep-turquoise", name: "Глубокая бирюза", value: "#008080" },
-  { id: "standard", name: "Стандартный", value: "#333333" },
+  { id: "standard", name: "Стандартный", value: "#F1F5FC" },
   { id: "sea-blue", name: "Морской синий", value: "#1e90ff" },
 ];
 
 export const ColorSelectionScreen = () => {
   const { theme, setTheme } = useTheme();
   return (
-    <div className="relative size-full bg-[#f7f9fc]">
+    <div className="relative size-full bg-[#f7f9fc] pt-[70px] h-[100vh]">
       <div className="relative size-full">
         <div className="box-border content-stretch flex flex-col gap-2 items-start justify-start px-4 py-3 relative size-full">
           <div className="bg-white box-border content-stretch flex flex-col items-start justify-start overflow-clip p-0 relative rounded-[20px] shrink-0 w-full">
@@ -94,12 +94,14 @@ const RadioButton = ({
         <div className="relative shrink-0 size-6">
           <svg
             className="block size-full"
-            fill="none"
             preserveAspectRatio="none"
             viewBox="0 0 24 24"
           >
             {checked ? (
-              <path d={svgPaths.pf1830f2} fill={color} />
+              <path
+                d={svgPaths.pf1830f2}
+                fill={color === "#F1F5FC" ? "#1e90ff" : color}
+              />
             ) : (
               <path d={svgPaths.p1ee5e230} fill="#E2E4EA" />
             )}

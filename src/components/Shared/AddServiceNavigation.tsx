@@ -1,14 +1,28 @@
-import { svgPaths } from "@shared/constants/svgPaths";
 import { useNavigate } from "react-router-dom";
+
+import { useTheme } from "@context/ThemeProvider";
+
+import { colorOptions } from "@pages/ColorSelectionScreen";
+
+import { svgPaths } from "@shared/constants/svgPaths";
+import { BackArrow } from "@components/Content/BackArrow";
 
 function AddServiceNavigation() {
   const navigate = useNavigate();
+  const { theme } = useTheme();
 
   const handleBack = () => {
     navigate("/pwa-ceb/");
   };
+  const backgroundColor =
+    colorOptions.find((c) => c.id === theme)?.value || "#316dcc";
   return (
-    <div className="fixed bg-[#316dcc] box-border content-stretch flex flex-col items-start justify-start left-0 p-0 w-full z-[9999]">
+    <div
+      className="fixed box-border content-stretch flex flex-col items-start justify-start left-0 p-0 w-full z-[9999]"
+      style={{
+        backgroundColor,
+      }}
+    >
       <div className="box-border content-stretch flex flex-row items-start justify-start p-0 relative shrink-0 w-full">
         <div className="basis-0 grow min-h-px min-w-px relative shrink-0">
           <div className="flex flex-col justify-center relative size-full">
@@ -18,14 +32,7 @@ function AddServiceNavigation() {
                 role="button"
                 className="h-[22px] relative shrink-0 w-[17px] cursor-pointer"
               >
-                <svg
-                  className="block size-full"
-                  fill="none"
-                  preserveAspectRatio="none"
-                  viewBox="0 0 17 22"
-                >
-                  <path d={svgPaths.p18459280} fill="#ffffff" />
-                </svg>
+                <BackArrow />
               </div>
             </div>
           </div>
@@ -33,10 +40,10 @@ function AddServiceNavigation() {
 
         {/* Title */}
         <div className="basis-0 box-border content-stretch flex flex-col grow h-11 items-center justify-center min-h-px min-w-px p-0 relative shrink-0">
-          <div className="font-sans leading-[0] not-italic relative shrink-0 text-[#ffffff] text-[16px] text-center text-nowrap tracking-[-0.16px]">
-            <p className="adjustLetterSpacing block leading-[24px] whitespace-pre">
+          <div className="font-sans leading-[0] not-italic relative shrink-0 text-[16px] text-center text-nowrap tracking-[-0.16px]">
+            <h3 className="adjustLetterSpacing block leading-[24px] whitespace-pre">
               Добавить сервис
-            </p>
+            </h3>
           </div>
         </div>
 
@@ -52,7 +59,7 @@ function AddServiceNavigation() {
                     preserveAspectRatio="none"
                     viewBox="0 0 24 24"
                   >
-                    <path d={svgPaths.p2774e700} fill="white" />
+                    <path d={svgPaths.p2774e700} />
                   </svg>
                 </div>
               </div>

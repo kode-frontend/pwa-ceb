@@ -11,6 +11,7 @@ function Suggest() {
       <div className="flex flex-row items-center self-stretch shrink-0">
         <Button />
       </div>
+
       <Card />
       <Card1 />
     </div>

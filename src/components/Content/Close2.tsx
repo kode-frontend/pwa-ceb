@@ -1,6 +1,9 @@
+import { useTheme } from "@context/ThemeProvider";
 import { svgPaths } from "@shared/constants/svgPaths";
 
 function Close2() {
+  const { theme } = useTheme();
+  const backgroundColor = theme === "standard" ? "#6F7884" : "white";
   return (
     <div
       className="absolute h-[8.204px] left-[3.9px] top-[3.9px] w-[8.203px]"
@@ -16,7 +19,7 @@ function Close2() {
           <g id="close">
             <path
               d={svgPaths.p1b65d400}
-              fill="var(--fill-0, white)"
+              fill={backgroundColor}
               fillOpacity="0.7"
               id="Union"
             />

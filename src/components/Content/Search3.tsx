@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import Icn from "../Content/Icn";
 
-function Search3() {
+function Search3(backgroundColor: any) {
   const navigate = useNavigate();
 
   const handleClick = () => {
@@ -12,6 +12,7 @@ function Search3() {
       onClick={handleClick}
       className="bg-[rgba(255,255,255,0.08)] box-border content-stretch flex flex-row gap-1 items-center justify-start px-2 py-0 relative rounded-[100px] shrink-0 size-9 cursor-pointer"
       data-name="search"
+      style={backgroundColor}
     >
       <Icn />
     </div>

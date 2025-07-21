@@ -1,6 +1,9 @@
+import { useTheme } from "@context/ThemeProvider";
 import { svgPaths } from "@shared/constants/svgPaths";
 
 function Icn() {
+  const { theme } = useTheme();
+  const svgStrokeColor = theme === "standard" ? "black" : "white";
   return (
     <div className="relative shrink-0 size-5" data-name="icn">
       <svg
@@ -13,13 +16,13 @@ function Icn() {
           <g id="source">
             <path
               d={svgPaths.p213e3b00}
-              fill="var(--stroke-0, white)"
+              fill={svgStrokeColor}
               id="Union"
             />
             <path
               d={svgPaths.p2eb72c80}
               id="Ellipse 33"
-              stroke="var(--stroke-0, white)"
+              fill={svgStrokeColor}
               strokeLinecap="round"
               strokeWidth="1.5"
             />

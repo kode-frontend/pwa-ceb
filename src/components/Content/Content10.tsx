@@ -1,18 +1,22 @@
+import { useTheme } from "@context/ThemeProvider";
 import OperationCardIcon from "./OperationCardIcon";
-import { AutoPayIcon, ChevronDownIcon, TemplateIcon } from "./Serviceicons";
+import { AutoPayIcon, ChevronDownIcon, PhoneIcon, PlaneIcon, QRIcon, TemplateIcon } from "./Serviceicons";
 
 function Content10() {
+  const { theme } = useTheme();
+  const textColor = theme === "standard" ? 'black' : 'white'
+  const backgroundColor = theme === "standard" ? "rgba(120, 120, 120, 0.08)" : "rgba(255,255,255,0.08)"
   return (
     <>
       <div
-        className="w-full px-4 py-2"
+        className="w-full py-2"
         data-name="suggest"
       >
-        <h1 className="text-white font-sans font-medium mb-3 relative">Мои операции</h1>
-        <div className="flex flex-row gap-3 overflow-x-auto scrollbar-hide">
+        <h1 className=" font-sans font-medium mb-3 relative pl-4" style={{color: textColor}}>Мои операции</h1>
+        <div className="flex flex-row gap-3 overflow-x-auto scrollbar-hide pl-4" style={{color: textColor}}>
           {/* Карточка операции 1 - Ефим */}
           <div
-            className="bg-[rgba(255,255,255,0.08)] box-border content-stretch flex flex-col items-start justify-around p-0 relative rounded-[20px] shrink-0 size-[110px]"
+            className="box-border content-stretch flex flex-col items-start justify-around p-0 relative rounded-[20px] shrink-0 size-[110px]"
             data-name="card"
             style={{
               width: "153px",
@@ -20,15 +24,16 @@ function Content10() {
               minHeight: "120px",
               border: "0.5px solid var(--colorMode-border-primary, #C9E6F94D)",
               padding: "5px",
+              backgroundColor
             }}
           >
             <div className="flex items-center justify-between mb-3 w-full">
               <OperationCardIcon />
-              <span className="text-white text-xs font-medium pr-2">
+              <span className=" text-xs font-medium pr-2">
                 20 000,00 ₽
               </span>
             </div>
-            <div className="text-white p-2">
+            <div className=" p-2">
               <div className="text-sm font-medium">Ефим</div>
               <div className="text-sm font-medium">Владиславович...</div>
             </div>
@@ -36,7 +41,7 @@ function Content10() {
 
           {/* Карточка операции 2 - Максим */}
           <div
-            className="bg-[rgba(255,255,255,0.08)] box-border content-stretch flex flex-col items-start justify-around p-0 relative rounded-[20px] shrink-0 size-[110px]"
+            className="box-border content-stretch flex flex-col items-start justify-around p-0 relative rounded-[20px] shrink-0 size-[110px]"
             data-name="card"
             style={{
               width: "153px",
@@ -44,15 +49,16 @@ function Content10() {
               minHeight: "120px",
               border: "0.5px solid var(--colorMode-border-primary, #C9E6F94D)",
               padding: "5px",
+              backgroundColor
             }}
           >
             <div className="flex items-center justify-between mb-3 w-full">
               <OperationCardIcon />
-              <span className="text-white text-xs font-medium pr-2">
+              <span className=" text-xs font-medium pr-2">
                 20 000,00 ₽
               </span>
             </div>
-            <div className="text-white p-2">
+            <div className=" p-2">
               <div className="text-sm font-medium">Ефим</div>
               <div className="text-sm font-medium">Владиславович...</div>
             </div>
@@ -60,7 +66,7 @@ function Content10() {
 
           {/* Карточка операции 3 - Алина */}
           <div
-            className="bg-[rgba(255,255,255,0.08)] box-border content-stretch flex flex-col items-start justify-around p-0 relative rounded-[20px] shrink-0 size-[110px]"
+            className="box-border content-stretch flex flex-col items-start justify-around p-0 relative rounded-[20px] shrink-0 size-[110px]"
             data-name="card"
             style={{
               width: "153px",
@@ -68,15 +74,16 @@ function Content10() {
               minHeight: "120px",
               border: "0.5px solid var(--colorMode-border-primary, #C9E6F94D)",
               padding: "5px",
+              backgroundColor
             }}
           >
             <div className="flex items-center justify-between mb-3 w-full">
               <OperationCardIcon />
-              <span className="text-white text-xs font-medium pr-2">
+              <span className=" text-xs font-medium pr-2">
                 20 000,00 ₽
               </span>
             </div>
-            <div className="text-white p-2">
+            <div className=" p-2">
               <div className="text-sm font-medium">Ефим</div>
               <div className="text-sm font-medium">Владиславович...</div>
             </div>
@@ -122,20 +129,25 @@ function Content10() {
           >
             <div className="flex items-center justify-between p-4">
               <h2 className="text-gray-900 font-medium">
-                Шаблоны и автоплатежи
+                Перевести
               </h2>
               <ChevronDownIcon />
             </div>
 
             <div className="p-4 space-y-4">
               <div className="flex items-center gap-4">
-                <TemplateIcon />
-                <span className="text-gray-900 font-small">Шаблоны</span>
+                <PhoneIcon />
+                <span className="text-gray-900 font-small">Перевести по номеру телефона</span>
               </div>
 
               <div className="flex items-center gap-4">
-                <AutoPayIcon />
-                <span className="text-gray-900 font-small">Автоплатежи</span>
+                <PlaneIcon />
+                <span className="text-gray-900 font-small">Пополнение с моего счета в другом банке</span>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <QRIcon />
+                <span className="text-gray-900 font-small">Операции по QR коду</span>
               </div>
             </div>
           </div>

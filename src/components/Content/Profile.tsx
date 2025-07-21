@@ -1,12 +1,16 @@
+import { useTheme } from "@context/ThemeProvider";
 import { svgPaths } from "@shared/constants/svgPaths";
 import { useNavigate } from "react-router-dom";
 
 function Profile() {
   const navigate = useNavigate();
+  const { theme } = useTheme();
 
   const handleClick = () => {
     navigate("/pwa-ceb/profile");
   };
+
+  const svgStrokeColor = theme === "standard" ? "black" : "white";
 
   return (
     <div
@@ -25,7 +29,7 @@ function Profile() {
             <path
               d={svgPaths.p22c05c00}
               id="vector"
-              stroke="var(--stroke-0, white)"
+              stroke={svgStrokeColor}
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="1.5"
@@ -33,7 +37,7 @@ function Profile() {
             <path
               d={svgPaths.p34361300}
               id="rec"
-              stroke="var(--stroke-0, white)"
+              stroke={svgStrokeColor}
               strokeWidth="1.5"
             />
           </g>

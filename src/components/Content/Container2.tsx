@@ -1,8 +1,13 @@
+import { useTheme } from "@context/ThemeProvider";
+
 function Container2() {
+  const { theme } = useTheme();
+  const backgroundColor = theme === "standard" ? "#316DCC1A" : "#FFFFFF14";
   return (
     <div
       className="overflow-clip relative rounded-[133.333px] shrink-0 size-8"
       data-name="container"
+      style={{ backgroundColor, borderRadius: "50%" }}
     >
       <svg
         width="33"

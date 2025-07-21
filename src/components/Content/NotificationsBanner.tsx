@@ -32,7 +32,7 @@ function AlertIcon() {
 // Notification Banner Component
 function NotificationBanner({ children }: { children: React.ReactNode }) {
   return (
-    <div className="bg-[#316DCC1A] box-border content-stretch flex flex-row gap-2.5 items-center justify-center p-[12px] relative rounded-2xl shrink-0 w-full h-[72px]">
+    <div className="bg-[#316DCC1A] box-border content-stretch flex flex-row gap-2.5 items-center justify-center p-[12px] relative rounded-2xl shrink-0 w-[100%] h-[72px]">
       <AlertIcon />
       <div className="basis-0 font-sans grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#191919] text-[12px] text-left tracking-[-0.12px]">
         {children}
@@ -52,7 +52,11 @@ export function NotificationBanners() {
   };
   return (
     <div className="bg-[rgba(49, 109, 204, 0.1)] box-border content-stretch flex flex-col gap-2 items-start justify-start pb-4 pt-2 relative shrink-0 w-full">
-      <div onClick={handleCreditsBack} className="cursor-pointer">
+      <div
+        onClick={handleCreditsBack}
+        className="cursor-pointer"
+        style={{ width: "100%" }}
+      >
         <NotificationBanner>
           <p className="leading-[16px] font-sans font-medium">
             <span>18 июля 2025 спишется платеж по Ипотеке в размере </span>
@@ -61,7 +65,11 @@ export function NotificationBanners() {
         </NotificationBanner>
       </div>
 
-      <div onClick={handleCreditsCardBack} className="cursor-pointer">
+      <div
+        onClick={handleCreditsCardBack}
+        className="cursor-pointer"
+        style={{ width: "100%" }}
+      >
         <NotificationBanner>
           <p className="leading-[16px] font-sans font-medium">
             21 июля 2025 спишется платеж по Кредитной карте *<span>3312</span>

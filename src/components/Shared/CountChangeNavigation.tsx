@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom";
 
-import { svgPaths } from "@shared/constants/svgPaths";
 import { useTheme } from "@context/ThemeProvider";
 import { colorOptions } from "@pages/ColorSelectionScreen";
+import { BackArrow } from "@components/Content/BackArrow";
 
 function CountChangeNavigation() {
   const navigate = useNavigate();
@@ -31,24 +31,17 @@ function CountChangeNavigation() {
               role="button"
               className="h-[22px] relative shrink-0 w-[17px] cursor-pointer"
             >
-              <svg
-                className="block size-full"
-                fill="none"
-                preserveAspectRatio="none"
-                viewBox="0 0 17 22"
-              >
-                <path d={svgPaths.p18459280} fill="#ffffff" />
-              </svg>
+              <BackArrow />
             </div>
           </div>
         </div>
       </div>
 
       <div className="basis-0 box-border content-stretch flex flex-col grow h-11 md:h-12 items-center justify-center min-h-px min-w-px p-0 relative shrink-0">
-        <div className="font-sans leading-[0] not-italic relative shrink-0 text-[#ffffff] text-[16px] md:text-[18px] lg:text-[20px] text-center text-nowrap tracking-[-0.16px]">
-          <p className="adjustLetterSpacing block leading-[24px] whitespace-pre">
+        <div className="font-sans leading-[0] not-italic relative shrink-0 text-[16px] md:text-[18px] lg:text-[20px] text-center text-nowrap tracking-[-0.16px]">
+          <h3 className="adjustLetterSpacing block leading-[24px] whitespace-pre">
             Обмен валют
-          </p>
+          </h3>
         </div>
       </div>
 

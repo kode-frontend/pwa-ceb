@@ -59,8 +59,9 @@ import OrderScreen from "@pages/OrderScreen";
 import { CreditsScreen } from "@pages/CreditsScreen";
 import ChatsHeader from "@components/Shared/ChatsHeader";
 import { ChatsScreen } from "@pages/ChatsScreen";
-import { ThemeProvider } from "@context/ThemeProvider";
+import { ThemeProvider, useTheme } from "@context/ThemeProvider";
 import { ColorSelectionScreen } from "@pages/ColorSelectionScreen";
+import ThemeNavigation from "@components/Shared/ThemeNavigation";
 
 const App = () => {
   return (
@@ -75,6 +76,7 @@ const App = () => {
 const AppWithRouter = () => {
   const [scrollY, setScrollY] = useState(0);
   const location = useLocation();
+  const { theme } = useTheme();
 
   useSwipeBack();
 
@@ -106,6 +108,7 @@ const AppWithRouter = () => {
   const officeRoute = location.pathname.includes("office");
   const orderRoute = location.pathname.includes("order");
   const chatsRoute = location.pathname.includes("chats");
+  const themeRoute = location.pathname.includes("theme");
 
   const hasTabbar =
     !profileRoute &&
@@ -162,8 +165,10 @@ const AppWithRouter = () => {
     if (officeRoute) return <OfficeNavigation />;
     if (orderRoute) return <OrderNavigation />;
     if (chatsRoute) return <ChatsHeader />;
+    if (themeRoute) return <ThemeNavigation />;
     return <NavigationBar scrollY={scrollY} />;
   }, [
+    themeRoute,
     chatsRoute,
     orderRoute,
     officeRoute,
@@ -204,55 +209,66 @@ const AppWithRouter = () => {
   }, []);
 
   return (
-    <div className=" w-full overflow-y-auto">
-      {Header}
+    <div className={theme === "standard" ? "theme-standard" : "theme-primary"}>
+      <div className=" w-full overflow-y-auto">
+        {Header}
 
-      <div className="h-full w-full font-sans">
-        <Routes>
-          <Route path="/pwa-ceb/" element={<HomeScreen />} />
-          <Route path="/pwa-ceb/payments" element={<PaymentsScreen />} />
-          <Route path="/pwa-ceb/settings" element={<SettingsScreen />} />
-          <Route path="/pwa-ceb/profile" element={<ProfileScreen />} />
-          <Route path="/pwa-ceb/scan-qr" element={<ScanQrScreen />} />
-          <Route path="/pwa-ceb/search" element={<SearchScreen />} />
-          <Route
-            path="/pwa-ceb/notifications"
-            element={<NotificationsScreen />}
-          />
-          <Route path="/pwa-ceb/add-service" element={<AddServiceScreen />} />
-          <Route path="/pwa-ceb/count-change" element={<CountChangeScreen />} />
-          <Route path="/pwa-ceb/sbp" element={<SbpScreen />} />
-          <Route path="/pwa-ceb/debet-card" element={<DebetScreen />} />
-          <Route path="/pwa-ceb/credit-card" element={<CreditCardScreen />} />
-          <Route path="/pwa-ceb/credit" element={<CreditScreen />} />
-          <Route path="/pwa-ceb/bank-deposit" element={<BankDepositScreen />} />
-          <Route path="/pwa-ceb/invest" element={<InvestScreen />} />
-          <Route path="/pwa-ceb/new-product" element={<NewProductScreen />} />
-          <Route path="/pwa-ceb/promise-pay" element={<PromisePayScreen />} />
-          <Route
-            path="/pwa-ceb/promise-pay-points"
-            element={<PromisePayPointsScreen />}
-          />
-          <Route path="/pwa-ceb/analytics" element={<AnalyticsScreen />} />
-          <Route path="/pwa-ceb/invite" element={<InviteScreen />} />
-          <Route
-            path="/pwa-ceb/additional-points"
-            element={<AdditionalPointsScreen />}
-          />
-          <Route path="/pwa-ceb/cashback" element={<CashBackScreen />} />
-          <Route path="/pwa-ceb/formular" element={<FormularScreen />} />
-          <Route path="/pwa-ceb/questions" element={<QuestionsScreen />} />
-          <Route path="/pwa-ceb/connect" element={<ConnectScreen />} />
-          <Route path="/pwa-ceb/credit-story" element={<CreditStoryScreen />} />
-          <Route path="/pwa-ceb/office" element={<OfficeScreen />} />
-          <Route path="/pwa-ceb/order" element={<OrderScreen />} />
-          <Route path="/pwa-ceb/loans" element={<CreditsScreen />} />
-          <Route path="/pwa-ceb/chats" element={<ChatsScreen />} />
-          <Route path="/pwa-ceb/settings-theme" element={<ColorSelectionScreen />} />
-        </Routes>
+        <div className="h-full w-full font-sans">
+          <Routes>
+            <Route path="/pwa-ceb/" element={<HomeScreen />} />
+            <Route path="/pwa-ceb/payments" element={<PaymentsScreen />} />
+            <Route path="/pwa-ceb/settings" element={<SettingsScreen />} />
+            <Route path="/pwa-ceb/profile" element={<ProfileScreen />} />
+            <Route path="/pwa-ceb/scan-qr" element={<ScanQrScreen />} />
+            <Route path="/pwa-ceb/search" element={<SearchScreen />} />
+            <Route
+              path="/pwa-ceb/notifications"
+              element={<NotificationsScreen />}
+            />
+            <Route path="/pwa-ceb/add-service" element={<AddServiceScreen />} />
+            <Route
+              path="/pwa-ceb/count-change"
+              element={<CountChangeScreen />}
+            />
+            <Route path="/pwa-ceb/sbp" element={<SbpScreen />} />
+            <Route path="/pwa-ceb/debet-card" element={<DebetScreen />} />
+            <Route path="/pwa-ceb/credit-card" element={<CreditCardScreen />} />
+            <Route path="/pwa-ceb/credit" element={<CreditScreen />} />
+            <Route
+              path="/pwa-ceb/bank-deposit"
+              element={<BankDepositScreen />}
+            />
+            <Route path="/pwa-ceb/invest" element={<InvestScreen />} />
+            <Route path="/pwa-ceb/new-product" element={<NewProductScreen />} />
+            <Route path="/pwa-ceb/promise-pay" element={<PromisePayScreen />} />
+            <Route
+              path="/pwa-ceb/promise-pay-points"
+              element={<PromisePayPointsScreen />}
+            />
+            <Route path="/pwa-ceb/analytics" element={<AnalyticsScreen />} />
+            <Route path="/pwa-ceb/invite" element={<InviteScreen />} />
+            <Route
+              path="/pwa-ceb/additional-points"
+              element={<AdditionalPointsScreen />}
+            />
+            <Route path="/pwa-ceb/cashback" element={<CashBackScreen />} />
+            <Route path="/pwa-ceb/formular" element={<FormularScreen />} />
+            <Route path="/pwa-ceb/questions" element={<QuestionsScreen />} />
+            <Route path="/pwa-ceb/connect" element={<ConnectScreen />} />
+            <Route
+              path="/pwa-ceb/credit-story"
+              element={<CreditStoryScreen />}
+            />
+            <Route path="/pwa-ceb/office" element={<OfficeScreen />} />
+            <Route path="/pwa-ceb/order" element={<OrderScreen />} />
+            <Route path="/pwa-ceb/loans" element={<CreditsScreen />} />
+            <Route path="/pwa-ceb/chats" element={<ChatsScreen />} />
+            <Route path="/pwa-ceb/theme" element={<ColorSelectionScreen />} />
+          </Routes>
+        </div>
+
+        {hasTabbar && <Tabbar1 />}
       </div>
-
-      {hasTabbar && <Tabbar1 />}
     </div>
   );
 };

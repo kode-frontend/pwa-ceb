@@ -1,13 +1,18 @@
+import { useTheme } from "@context/ThemeProvider";
 import Icon2 from "../Content/Icon2";
 import { useNavigate } from "react-router-dom";
 
 function Button5({ scrollY = 0 }: { scrollY?: number }) {
+  const { theme } = useTheme();
   const navigate = useNavigate();
   const isCompressed = scrollY > 99;
 
   const handleClick = () => {
     navigate("/pwa-ceb/scan-qr");
   };
+
+  const backgroundColor = theme === "standard" ? "#316dcc" : "white";
+  const textColor = theme === "standard" ? "white" : "black"
 
   return (
     <div
@@ -25,7 +30,7 @@ function Button5({ scrollY = 0 }: { scrollY?: number }) {
           height: "36px",
           padding: isCompressed ? "6px" : "6px 12px 6px 12px",
           gap: isCompressed ? "0px" : "4px",
-          backgroundColor: "#ffffff",
+          backgroundColor,
           borderRadius: "100px",
           display: "flex",
           flexDirection: "row",
@@ -49,7 +54,7 @@ function Button5({ scrollY = 0 }: { scrollY?: number }) {
               width: isCompressed ? 0 : "auto",
             }}
           >
-            <p className="adjustLetterSpacing block leading-[16px]">
+            <p className="adjustLetterSpacing block leading-[16px]" style={{color: textColor}}>
               Оплата по QR
             </p>
           </div>

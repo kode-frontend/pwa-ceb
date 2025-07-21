@@ -1,4 +1,8 @@
+import { useTheme } from "@context/ThemeProvider";
+
 function OperationCardIcon() {
+  const { theme } = useTheme();
+    const svgColor = theme === "standard" ? 'black' : 'white'
   return (
     <div
       className="w-8 h-8 bg-opacity-30 rounded-lg flex items-center justify-center"
@@ -14,10 +18,10 @@ function OperationCardIcon() {
           width="20"
           height="16"
           rx="2"
-          stroke="white"
+          stroke={svgColor}
           strokeWidth="1.5"
         />
-        <line x1="2" y1="10" x2="22" y2="10" stroke="white" strokeWidth="1.5" />
+        <line x1="2" y1="10" x2="22" y2="10" stroke={svgColor} strokeWidth="1.5" />
       </svg>
     </div>
   );

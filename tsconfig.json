@@ -30,7 +30,8 @@
       "@widgets/*": ["src/widgets/*"],
       "@features/*": ["src/features/*"],
       "@components/*": ["src/components/*"],
-      "@context/*": ["src/context/*"]
+      "@context/*": ["src/context/*"],
+      "@config/*": ["src/config/*"],
     }
   },
   "include": ["src"],

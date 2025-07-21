@@ -6,7 +6,7 @@ function TextContainer2() {
     >
       <div className="flex flex-row items-end relative size-full">
         <div className="box-border content-stretch flex flex-row gap-2.5 items-end justify-start p-[12px] relative size-full">
-          <div className="basis-0 font-sans grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#ffffff] text-[14px] text-left tracking-[-0.14px]">
+          <div className="basis-0 font-sans grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[14px] text-left tracking-[-0.14px]">
             <p className="block leading-[20px]">Пополнить МТС</p>
           </div>
         </div>

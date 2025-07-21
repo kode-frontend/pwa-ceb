@@ -10,6 +10,7 @@ const config: Config = {
         "custom-foreground": "var(--foreground)",
         "custom-border": "var(--border)",
         "custom-ring": "var(--ring)",
+        DEFAULT: 'var(--color-primary)',
       },
       spacing: {
         "safe-bottom": "env(safe-area-inset-bottom)",
