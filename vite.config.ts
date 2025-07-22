@@ -1,9 +1,7 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { VitePWA } from "vite-plugin-pwa";
-
 import path from "path";
-
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
@@ -13,7 +11,7 @@ export default defineConfig({
     tailwindcss(),
     VitePWA({
       registerType: "autoUpdate",
-      includeAssets: ["favicon.svg", "robots.txt"],
+      includeAssets: ["assets/**/*.png"],
       manifest: {
         name: "CEB",
         short_name: "CEB",
@@ -23,7 +21,26 @@ export default defineConfig({
         display: "standalone",
         display_override: ["fullscreen","standalone","window-controls-overlay"],
         scope: "https://kode-frontend.github.io/pwa-ceb/",
-        start_url: "https://kode-frontend.github.io/pwa-ceb/",
+        start_url: "https://kode-frontend.github.io/pwa-ceb/index.html",
+      },
+      workbox: {
+        globPatterns: ["**/*.{js,css,html}", "assets/**/*.png"],
+        runtimeCaching: [
+          {
+            urlPattern: /\/assets\/.*\.png/i,
+            handler: "CacheFirst",
+            options: {
+              cacheName: "images-cache",
+              expiration: {
+                maxEntries: 100,
+                maxAgeSeconds: 30 * 24 * 60 * 60,
+              },
+              cacheableResponse: {
+                statuses: [0, 200],
+              },
+            },
+          },
+        ],
       },
     }),
   ],

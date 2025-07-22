@@ -64,6 +64,7 @@ import { ColorSelectionScreen } from "@pages/ColorSelectionScreen";
 import ThemeNavigation from "@components/Shared/ThemeNavigation";
 import CreditMomentNavigation from "@components/Shared/CreditMomentNavigation";
 import CreditMomentScreen from "@pages/CreditMomentScreen";
+import SearchNavigation from "@components/Shared/SearchNavigation";
 
 const App = () => {
   return (
@@ -143,7 +144,7 @@ const AppWithRouter = () => {
 
   const Header = useMemo(() => {
     if (settingsRoute) return <SettingsHeader />;
-    if (searchRoute) return null;
+    if (searchRoute) return <SearchNavigation />;
     if (profileRoute) return null;
     if (scanQrRoute) return null;
     if (notificationsRoute) return <NotificationsNavigation />;
