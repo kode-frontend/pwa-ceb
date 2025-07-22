@@ -7,19 +7,13 @@ function Overlay() {
 
   return (
     <div
-      className="absolute size-full h-[100vh]"
+      className="fixed top-0 left-0 w-full h-[400px] pointer-events-none z-0"
       style={{
-        background: `url('${maskUrl}')`,
+        backgroundImage: `url('${maskUrl}')`,
+        backgroundSize: "100% 100%",
+        backgroundRepeat: "no-repeat",
       }}
-    >
-      <div
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundColor: `url('${maskUrl}')`,
-          backdropFilter: "blur(0.5px)",
-        }}
-      />
-    </div>
+    />
   );
 }
 
