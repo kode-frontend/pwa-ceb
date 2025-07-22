@@ -1,6 +1,15 @@
+import { useNavigate } from "react-router-dom";
+
 export function EditButton() {
+  const navigate = useNavigate();
+  const handleBack = () => {
+    navigate("/pwa-ceb/theme");
+  };
   return (
-    <div className="relative shrink-0 w-full pb-20">
+    <div
+      className="relative shrink-0 w-full pb-20 cursor-pointer"
+      onClick={handleBack}
+    >
       <div className="relative size-full">
         <div className="box-border content-stretch flex flex-col items-start justify-start px-4 py-3 relative w-full">
           <div className="bg-[#316dcc] relative rounded-xl shrink-0 w-full">
@@ -9,7 +18,7 @@ export function EditButton() {
                 <div className="font-sans leading-[0] not-italic relative shrink-0 text-[16px] text-center text-nowrap tracking-[-0.4px]">
                   <p
                     className="adjustLetterSpacing block leading-[24px] whitespace-pre font-medium"
-                    style={{color: 'white'}}
+                    style={{ color: "white" }}
                   >
                     Редактировать главный экран
                   </p>
