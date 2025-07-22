@@ -4,7 +4,7 @@
   "description": "Your PWA App",
   "start_url": "https://kode-frontend.github.io/pwa-ceb/",
   "display": "standalone",
-  "display_override": ["standalone", "window-controls-overlay"],
+  "display_override": ["fullscreen","standalone","window-controls-overlay"],
   "background_color": "#ffffff",
   "theme_color": "#316DCC"
 }

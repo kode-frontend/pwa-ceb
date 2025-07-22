@@ -19,7 +19,7 @@ export default defineConfig({
         theme_color: "#316DCC",
         background_color: "#ffffff",
         display: "standalone",
-        display_override: ["standalone", "window-controls-overlay"],
+        display_override: ["fullscreen","standalone","window-controls-overlay"],
         scope: "https://kode-frontend.github.io/pwa-ceb/",
         start_url: "https://kode-frontend.github.io/pwa-ceb/index.html",
       },
