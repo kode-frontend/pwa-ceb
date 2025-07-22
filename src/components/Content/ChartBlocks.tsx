@@ -153,10 +153,22 @@ export function ChartBlocks({ selectedCard }: ChartBlocksProps) {
   const navigate = useNavigate();
 
   const analytics = () => {
+    if (selectedCard === "credit1") {
+      navigate("/pwa-ceb/analytics", {
+        state: { image: "analytics2.png" },
+      });
+      return;
+    }
     navigate("/pwa-ceb/analytics");
   };
 
   const analytics2 = () => {
+    if (selectedCard === "credit1") {
+      navigate("/pwa-ceb/analytics", {
+        state: { image: "analytics3.png" },
+      });
+      return;
+    }
     navigate("/pwa-ceb/analytics", {
       state: { image: "analytics2wrapper.png" },
     });

@@ -61,8 +61,7 @@ export function NotificationBanners() {
       >
         <NotificationBanner>
           <p className="leading-[16px] font-sans font-medium">
-            <span>18 июля 2025 спишется платеж по Ипотеке в размере </span>
-            <span>36 571.28 ₽</span>. Не забудьте пополнить счет
+            26 августа 2025 спишется платеж по Кредит Моментальный в размере 36 571.28 ₽. Не забудьте пополнить счет
           </p>
         </NotificationBanner>
       </div>
@@ -74,8 +73,7 @@ export function NotificationBanners() {
       >
         <NotificationBanner>
           <p className="leading-[16px] font-sans font-medium">
-            21 июля 2025 спишется платеж по Urban Card *3312 в размере
-            12 311.00 ₽. Не забудьте пополнить счет
+            29 августа 2025 спишется платеж по Urban Card *3312 в размере 12 311.00 ₽. Не забудьте пополнить счет
           </p>
         </NotificationBanner>
       </div>
