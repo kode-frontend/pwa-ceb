@@ -62,6 +62,8 @@ import { ChatsScreen } from "@pages/ChatsScreen";
 import { ThemeProvider, useTheme } from "@context/ThemeProvider";
 import { ColorSelectionScreen } from "@pages/ColorSelectionScreen";
 import ThemeNavigation from "@components/Shared/ThemeNavigation";
+import CreditMomentNavigation from "@components/Shared/CreditMomentNavigation";
+import CreditMomentScreen from "@pages/CreditMomentScreen";
 
 const App = () => {
   return (
@@ -109,6 +111,7 @@ const AppWithRouter = () => {
   const orderRoute = location.pathname.includes("order");
   const chatsRoute = location.pathname.includes("chats");
   const themeRoute = location.pathname.includes("theme");
+  const creditMomemntRoute = location.pathname.includes("moment");
 
   const hasTabbar =
     !profileRoute &&
@@ -135,7 +138,8 @@ const AppWithRouter = () => {
     !connectRoute &&
     !creditStoryRoute &&
     !officeRoute &&
-    !orderRoute;
+    !orderRoute &&
+    !creditMomemntRoute;
 
   const Header = useMemo(() => {
     if (settingsRoute) return <SettingsHeader />;
@@ -166,8 +170,10 @@ const AppWithRouter = () => {
     if (orderRoute) return <OrderNavigation />;
     if (chatsRoute) return <ChatsHeader />;
     if (themeRoute) return <ThemeNavigation />;
+    if (creditMomemntRoute) return <CreditMomentNavigation />;
     return <NavigationBar scrollY={scrollY} />;
   }, [
+    creditMomemntRoute,
     themeRoute,
     chatsRoute,
     orderRoute,
@@ -208,6 +214,10 @@ const AppWithRouter = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
   return (
     <div className={theme === "standard" ? "theme-standard" : "theme-primary"}>
       <div className=" w-full overflow-y-auto">
@@ -234,6 +244,7 @@ const AppWithRouter = () => {
             <Route path="/pwa-ceb/debet-card" element={<DebetScreen />} />
             <Route path="/pwa-ceb/credit-card" element={<CreditCardScreen />} />
             <Route path="/pwa-ceb/credit" element={<CreditScreen />} />
+            <Route path="/pwa-ceb/moment" element={<CreditMomentScreen />} />
             <Route
               path="/pwa-ceb/bank-deposit"
               element={<BankDepositScreen />}

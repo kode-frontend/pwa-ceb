@@ -2,6 +2,11 @@ import { svgPaths } from "@shared/constants/svgPaths";
 import { useNavigate } from "react-router-dom";
 
 function CreditAccount() {
+    const navigate = useNavigate();
+
+  const handleBack = () => {
+    navigate("/pwa-ceb/moment");
+  };
   return (
     <div
       className="box-border content-stretch flex flex-col items-start justify-start p-0 relative shrink-0 w-full"
@@ -69,8 +74,9 @@ function CreditAccount() {
               </div>
             </div>
             <div
-              className="basis-0 box-border content-stretch flex flex-col grow items-start justify-start leading-[0] min-h-px min-w-px not-italic p-0 relative shrink-0 text-left"
+              className="basis-0 box-border content-stretch flex flex-col grow items-start justify-start leading-[0] min-h-px min-w-px not-italic p-0 relative shrink-0 text-left cursor-pointer"
               data-name="text"
+              onClick={handleBack}
             >
               <div className="font-sans relative shrink-0 text-[#191919] text-[16px] tracking-[-0.16px] w-full">
                 <p className="block leading-[24px] font-semibold">

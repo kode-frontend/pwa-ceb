@@ -137,7 +137,7 @@ function Content10() {
             <div className="p-4 space-y-4">
               <div className="flex items-center gap-4">
                 <PhoneIcon />
-                <span className="text-gray-900 font-small">Перевести по номеру телефона</span>
+                <span className="text-gray-900 font-small">Переводы по номеру телефону</span>
               </div>
 
               <div className="flex items-center gap-4">
