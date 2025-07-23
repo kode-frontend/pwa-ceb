@@ -1,5 +1,3 @@
-import TextContainer8 from "../Content/TextContainer8";
-import Illustration8 from "../Content/Illustration8";
 import { useNavigate } from "react-router-dom";
 
 function Card12() {
@@ -14,8 +12,22 @@ function Card12() {
       data-name="card"
       onClick={handleBack}
     >
-      <TextContainer8 />
-      <Illustration8 />
+      <div className="relative w-[100%] h-[100%] overflow-hidden">
+        <img
+          src="/pwa-ceb/assets/cardspic.png"
+          alt="Карта"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+      </div>
+      <div
+        className="absolute left-[32.5px] size-[184px] top-[19px]"
+        data-name="illustration"
+      >
+        <div
+          className="absolute bg-center bg-cover bg-no-repeat left-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px] mask-size-[184px_184px] size-[184px] top-0"
+          data-name="img"
+        />
+      </div>
     </div>
   );
 }

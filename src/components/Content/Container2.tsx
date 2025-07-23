@@ -23,7 +23,7 @@ function Container2() {
           height="32"
           rx="16"
           fill="white"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
         />
         <rect
           x="6.5"

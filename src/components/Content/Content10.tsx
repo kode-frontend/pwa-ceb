@@ -1,19 +1,34 @@
 import { useTheme } from "@context/ThemeProvider";
-import OperationCardIcon from "./OperationCardIcon";
-import { AutoPayIcon, ChevronDownIcon, PhoneIcon, PlaneIcon, QRIcon, TemplateIcon } from "./Serviceicons";
+import {
+  AutoPayIcon,
+  ChevronDownIcon,
+  PhoneIcon,
+  PlaneIcon,
+  QRIcon,
+  TemplateIcon,
+} from "./Serviceicons";
 
 function Content10() {
   const { theme } = useTheme();
-  const textColor = theme === "standard" ? 'black' : 'white'
-  const backgroundColor = theme === "standard" ? "rgba(120, 120, 120, 0.08)" : "rgba(255,255,255,0.08)"
+  const textColor = theme === "standard" ? "black" : "white";
+  const backgroundColor =
+    theme === "standard"
+      ? "rgba(120, 120, 120, 0.08)"
+      : "rgba(255,255,255,0.08)";
+  const svgColor = theme === "standard" ? "black" : "white";
   return (
     <>
-      <div
-        className="w-full py-2"
-        data-name="suggest"
-      >
-        <h1 className=" font-sans font-medium mb-3 relative pl-4  z-1" style={{color: textColor}}>Мои операции</h1>
-        <div className="flex flex-row gap-3 overflow-x-auto scrollbar-hide pl-4" style={{color: textColor}}>
+      <div className="w-full py-2" data-name="suggest">
+        <h1
+          className=" font-sans font-medium mb-3 relative pl-4  z-1"
+          style={{ color: textColor }}
+        >
+          Мои операции
+        </h1>
+        <div
+          className="flex flex-row gap-3 overflow-x-auto scrollbar-hide pl-4"
+          style={{ color: textColor }}
+        >
           {/* Карточка операции 1 - Ефим */}
           <div
             className="box-border content-stretch flex flex-col items-start justify-around p-0 relative rounded-[20px] shrink-0 size-[110px]  z-1"
@@ -24,14 +39,38 @@ function Content10() {
               minHeight: "120px",
               border: "0.5px solid var(--colorMode-border-primary, #C9E6F94D)",
               padding: "5px",
-              backgroundColor
+              backgroundColor,
             }}
           >
             <div className="flex items-center justify-between mb-3 w-full">
-              <OperationCardIcon />
-              <span className=" text-xs font-medium pr-2">
-                20 000,00 ₽
-              </span>
+              <div
+                className="w-8 h-8 bg-opacity-30 rounded-lg flex items-center justify-center"
+                style={{
+                  background: "var(--surface-opacity, #FFFFFF14)",
+                  margin: "5px",
+                }}
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <rect
+                    x="2"
+                    y="4"
+                    width="20"
+                    height="16"
+                    rx="2"
+                    stroke={svgColor}
+                    strokeWidth="1.5"
+                  />
+                  <line
+                    x1="2"
+                    y1="10"
+                    x2="22"
+                    y2="10"
+                    stroke={svgColor}
+                    strokeWidth="1.5"
+                  />
+                </svg>
+              </div>
+              <span className=" text-xs font-medium pr-2">20 000,00 ₽</span>
             </div>
             <div className=" p-2">
               <div className="text-sm font-medium">Ефим</div>
@@ -49,14 +88,38 @@ function Content10() {
               minHeight: "120px",
               border: "0.5px solid var(--colorMode-border-primary, #C9E6F94D)",
               padding: "5px",
-              backgroundColor
+              backgroundColor,
             }}
           >
             <div className="flex items-center justify-between mb-3 w-full">
-              <OperationCardIcon />
-              <span className=" text-xs font-medium pr-2">
-                20 000,00 ₽
-              </span>
+              <div
+                className="w-8 h-8 bg-opacity-30 rounded-lg flex items-center justify-center"
+                style={{
+                  background: "var(--surface-opacity, #FFFFFF14)",
+                  margin: "5px",
+                }}
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <rect
+                    x="2"
+                    y="4"
+                    width="20"
+                    height="16"
+                    rx="2"
+                    stroke={svgColor}
+                    strokeWidth="1.5"
+                  />
+                  <line
+                    x1="2"
+                    y1="10"
+                    x2="22"
+                    y2="10"
+                    stroke={svgColor}
+                    strokeWidth="1.5"
+                  />
+                </svg>
+              </div>
+              <span className=" text-xs font-medium pr-2">20 000,00 ₽</span>
             </div>
             <div className=" p-2">
               <div className="text-sm font-medium">Ефим</div>
@@ -74,14 +137,38 @@ function Content10() {
               minHeight: "120px",
               border: "0.5px solid var(--colorMode-border-primary, #C9E6F94D)",
               padding: "5px",
-              backgroundColor
+              backgroundColor,
             }}
           >
             <div className="flex items-center justify-between mb-3 w-full">
-              <OperationCardIcon />
-              <span className=" text-xs font-medium pr-2">
-                20 000,00 ₽
-              </span>
+              <div
+                className="w-8 h-8 bg-opacity-30 rounded-lg flex items-center justify-center"
+                style={{
+                  background: "var(--surface-opacity, #FFFFFF14)",
+                  margin: "5px",
+                }}
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <rect
+                    x="2"
+                    y="4"
+                    width="20"
+                    height="16"
+                    rx="2"
+                    stroke={svgColor}
+                    strokeWidth="1.5"
+                  />
+                  <line
+                    x1="2"
+                    y1="10"
+                    x2="22"
+                    y2="10"
+                    stroke={svgColor}
+                    strokeWidth="1.5"
+                  />
+                </svg>
+              </div>
+              <span className=" text-xs font-medium pr-2">20 000,00 ₽</span>
             </div>
             <div className=" p-2">
               <div className="text-sm font-medium">Ефим</div>
@@ -99,9 +186,9 @@ function Content10() {
             }}
           >
             <div className="flex items-center justify-between p-4">
-              <h2 className="text-gray-900 font-medium">
+              <h4 className="text-gray-900 font-medium">
                 Шаблоны и автоплатежи
-              </h2>
+              </h4>
               <ChevronDownIcon />
             </div>
 
@@ -125,26 +212,30 @@ function Content10() {
             }}
           >
             <div className="flex items-center justify-between p-4">
-              <h2 className="text-gray-900 font-medium">
-                Перевести
-              </h2>
+              <h4 className="text-gray-900 font-medium">Перевести</h4>
               <ChevronDownIcon />
             </div>
 
             <div className="p-4 space-y-4">
               <div className="flex items-center gap-4">
                 <PhoneIcon />
-                <span className="text-gray-900 font-small">Переводы по номеру телефону</span>
+                <span className="text-gray-900 font-small">
+                  Переводы по номеру телефону
+                </span>
               </div>
 
               <div className="flex items-center gap-4">
                 <PlaneIcon />
-                <span className="text-gray-900 font-small">Пополнение с моего счета в другом банке</span>
+                <span className="text-gray-900 font-small">
+                  Пополнение с моего счета в другом банке
+                </span>
               </div>
 
               <div className="flex items-center gap-4">
                 <QRIcon />
-                <span className="text-gray-900 font-small">Операции по QR коду</span>
+                <span className="text-gray-900 font-small">
+                  Операции по QR коду
+                </span>
               </div>
             </div>
           </div>

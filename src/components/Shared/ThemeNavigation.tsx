@@ -65,26 +65,26 @@ function ThemeNavigation() {
                   <path
                     d="M14.9414 11.62L17.5014 9.06L14.9414 6.5"
                     stroke={textColor}
-                    stroke-width="2"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeMiterlimit="10"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M7.26172 9.06H17.4317"
                     stroke={textColor}
-                    stroke-width="2"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeMiterlimit="10"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M9.26172 17C4.84172 17 1.26172 14 1.26172 9C1.26172 4 4.84172 1 9.26172 1"
                     stroke={textColor}
-                    stroke-width="2"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeMiterlimit="10"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </div>

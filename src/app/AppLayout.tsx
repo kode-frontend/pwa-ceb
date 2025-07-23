@@ -7,9 +7,9 @@ import {
 } from "react-router-dom";
 import { ThemeProvider, useTheme } from "@context/ThemeProvider";
 
-import Tabbar1 from "@components/Content/Tabbar1";
+import TabbarNavigation from "@components/Content/TabbarNavigation";
 import NavigationBar from "@components/NavigationBar/NavigationBar";
-import SettingsHeader from "@components/Shared/SettingsHeader";
+import SettingsNavigation from "@components/Shared/SettingsNavigation";
 import { useSwipeBack } from "@shared/hooks/useSwipeBack";
 import NotificationsNavigation from "@components/Shared/NotificationsNavigation";
 import AddServiceNavigation from "@components/Shared/AddServiceNavigation";
@@ -32,7 +32,7 @@ import ConnectNavigation from "@components/Shared/ConnectNavigation";
 import CreditStoryNavigation from "@components/Shared/CreditStoryNavigation";
 import OfficeNavigation from "@components/Shared/OfficeNavigation";
 import OrderNavigation from "@components/Shared/OrderNavigation";
-import ChatsHeader from "@components/Shared/ChatsHeader";
+import ChatsNavigation from "@components/Shared/ChatsNavigation";
 import ThemeNavigation from "@components/Shared/ThemeNavigation";
 import CreditMomentNavigation from "@components/Shared/CreditMomentNavigation";
 import SearchNavigation from "@components/Shared/SearchNavigation";
@@ -68,9 +68,10 @@ import OfficeScreen from "@pages/OfficeScreen";
 import OrderScreen from "@pages/OrderScreen";
 import { CreditsScreen } from "@pages/CreditsScreen";
 import { ChatsScreen } from "@pages/ChatsScreen";
-import { ColorSelectionScreen } from "@pages/ColorSelectionScreen";
+import { colorOptions, ColorSelectionScreen } from "@pages/ColorSelectionScreen";
 import CreditMomentScreen from "@pages/CreditMomentScreen";
 import NotFoundScreen from "@pages/NotFoundScreen";
+import QuestionsNavigation from "@components/Shared/QuestionsNavigation";
 
 export const AppLayout = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -105,7 +106,7 @@ export const AppLayout = () => {
       formular: path.includes("formular"),
       questions: path.includes("questions"),
       connect: path.includes("connect"),
-      creditStory: path.includes("credit-story"),
+      creditStory: path.includes("story"),
       office: path.includes("office"),
       order: path.includes("order"),
       theme: path.includes("theme"),
@@ -117,7 +118,7 @@ export const AppLayout = () => {
   const hasTabbar = !Object.values(routeFlags).some(Boolean);
 
   const Header = useMemo(() => {
-    if (path.includes("settings")) return <SettingsHeader />;
+    if (path.includes("settings")) return <SettingsNavigation />;
     if (routeFlags.search) return <SearchNavigation />;
     if (routeFlags.profile || routeFlags.scanQr) return null;
     if (routeFlags.notifications) return <NotificationsNavigation />;
@@ -137,16 +138,19 @@ export const AppLayout = () => {
     if (routeFlags.additionalPoints) return <AdditionalPointsNavigation />;
     if (routeFlags.cashback) return <CashbackNavigation />;
     if (routeFlags.formular) return <FormularNavigation />;
-    if (routeFlags.questions) return <FormularNavigation />;
+    if (routeFlags.questions) return <QuestionsNavigation />;
     if (routeFlags.connect) return <ConnectNavigation />;
     if (routeFlags.creditStory) return <CreditStoryNavigation />;
     if (routeFlags.office) return <OfficeNavigation />;
     if (routeFlags.order) return <OrderNavigation />;
-    if (path.includes("chats")) return <ChatsHeader />;
+    if (path.includes("chats")) return <ChatsNavigation />;
     if (routeFlags.theme) return <ThemeNavigation />;
     if (routeFlags.creditMoment) return <CreditMomentNavigation />;
     return <NavigationBar scrollY={scrollY} />;
   }, [routeFlags, scrollY, path]);
+
+  const backgroundColor =
+      colorOptions.find((c) => c.id === theme)?.value || "#316dcc";
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
@@ -160,12 +164,12 @@ export const AppLayout = () => {
       {Header}
       <div
         className="h-full w-full font-sans h-screen w-full"
-        style={{ backgroundColor: "#F1F5FC" }}
+        style={{ backgroundColor}}
       >
         <Outlet key={location.pathname} />
       </div>
 
-      {hasTabbar && <Tabbar1 />}
+      {hasTabbar && <TabbarNavigation />}
     </div>
   );
 };
@@ -216,7 +220,7 @@ export const router = createBrowserRouter([
       { path: "formular", element: <FormularScreen /> },
       { path: "questions", element: <QuestionsScreen /> },
       { path: "connect", element: <ConnectScreen /> },
-      { path: "credit-story", element: <CreditStoryScreen /> },
+      { path: "story", element: <CreditStoryScreen /> },
       { path: "office", element: <OfficeScreen /> },
       { path: "order", element: <OrderScreen /> },
       { path: "loans", element: <CreditsScreen /> },

@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import SectionHeader from './SectionHeader';
 import { SmallAccountCards } from './SmallAccountCards';
 import { ChartBlocks } from './ChartBlocks';
+import SectionHeader from './SectionHeader';
 
 
 type CardType = 'current' | 'credit1' | 'credit2';

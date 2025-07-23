@@ -1,5 +1,5 @@
 import Content10 from "@components/Content/Content10";
-import Overlay from "@components/Shared/Overlay";
+import Overlay from "@components/Content/Overlay";
 
 export const PaymentsScreen = () => {
   return (

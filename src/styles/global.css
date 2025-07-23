@@ -30,7 +30,7 @@
 
 /* Цветовые переменные */
 #root {
-  --font-size: 14px;
+  --font-size: 16px;
   --background: #ffffff;
   --foreground: oklch(0.145 0 0);
   --card: #ffffff;

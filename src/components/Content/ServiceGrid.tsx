@@ -16,7 +16,7 @@ export function ServicesGrid() {
     navigate("/pwa-ceb/connect");
   };
   const creditStory = () => {
-    navigate("/pwa-ceb/credit-story");
+    navigate("/pwa-ceb/story");
   };
   const office = () => {
     navigate("/pwa-ceb/office");

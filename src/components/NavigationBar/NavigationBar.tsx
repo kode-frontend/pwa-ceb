@@ -5,7 +5,7 @@ import { colorOptions } from "@pages/ColorSelectionScreen";
 function NavigationBar({ scrollY = 0 }: { scrollY?: number }) {
   const { theme } = useTheme();
 
-  const backgroundColor =
+  const backgroundColor = theme === "standard" ? "#F1F5FC" :
     colorOptions.find((c) => c.id === theme)?.value || "#316dcc";
   return (
     <div

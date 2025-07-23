@@ -1,6 +1,8 @@
 import { useNavigate } from "react-router-dom";
 
 import { BackArrow } from "@components/Content/BackArrow";
+import { useTheme } from "@context/ThemeProvider";
+import { colorOptions } from "@pages/ColorSelectionScreen";
 
 function CreditStoryNavigation() {
   const navigate = useNavigate();
@@ -9,8 +11,18 @@ function CreditStoryNavigation() {
     navigate("/pwa-ceb/");
   };
 
+  const { theme } = useTheme();
+
+  const backgroundColor =
+    colorOptions.find((c) => c.id === theme)?.value || "#316dcc";
+
   return (
-    <div className="bg-[#316dcc] box-border content-stretch flex flex-row items-start justify-start p-0 relative shrink-0 w-full">
+    <div
+      className="bg-[#316dcc] box-border content-stretch flex flex-row items-start justify-start p-0 relative shrink-0 w-full"
+      style={{
+        backgroundColor,
+      }}
+    >
       <div className="basis-0 grow min-h-px min-w-px relative shrink-0">
         <div className="flex flex-col justify-center relative size-full">
           <div className="box-border content-stretch flex flex-col gap-1 items-start justify-center pl-4 pr-0 py-[11px] relative w-full">

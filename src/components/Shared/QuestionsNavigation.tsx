@@ -1,6 +1,8 @@
 import { useNavigate } from "react-router-dom";
 
-import { svgPaths } from "@shared/constants/svgPaths";
+import { useTheme } from "@context/ThemeProvider";
+import { colorOptions } from "@pages/ColorSelectionScreen";
+import { BackArrow } from "@components/Content/BackArrow";
 
 function QuestionsNavigation() {
   const navigate = useNavigate();
@@ -9,8 +11,18 @@ function QuestionsNavigation() {
     navigate("/pwa-ceb/");
   };
 
+  const { theme } = useTheme();
+
+  const backgroundColor =
+    colorOptions.find((c) => c.id === theme)?.value || "#316dcc";
+
   return (
-    <div className="bg-[#316dcc] box-border content-stretch flex flex-row items-start justify-start p-0 relative shrink-0 w-full">
+    <div
+      className="bg-[#316dcc] box-border content-stretch flex flex-row items-start justify-start p-0 relative shrink-0 w-full"
+      style={{
+        backgroundColor,
+      }}
+    >
       <div className="basis-0 grow min-h-px min-w-px relative shrink-0">
         <div className="flex flex-col justify-center relative size-full">
           <div className="box-border content-stretch flex flex-col gap-1 items-start justify-center pl-4 pr-0 py-[11px] relative w-full">
@@ -19,14 +31,7 @@ function QuestionsNavigation() {
               role="button"
               className="h-[22px] relative shrink-0 w-[17px] cursor-pointer"
             >
-              <svg
-                className="block size-full"
-                fill="none"
-                preserveAspectRatio="none"
-                viewBox="0 0 17 22"
-              >
-                <path d={svgPaths.p18459280} fill="#ffffff" />
-              </svg>
+              <BackArrow />
             </div>
           </div>
         </div>

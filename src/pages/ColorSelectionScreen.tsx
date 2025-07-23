@@ -5,7 +5,7 @@ import { svgPaths } from "@shared/constants/svgPaths";
 export const colorOptions: { id: ThemeId; name: string; value: string }[] = [
   { id: "calm-blue", name: "Спокойный синий", value: "#316dcc" },
   { id: "deep-turquoise", name: "Глубокая бирюза", value: "#008080" },
-  { id: "standard", name: "Стандартный", value: "#F1F5FC" },
+  { id: "standard", name: "Стандартный", value: "#FFFFFF" },
   { id: "sea-blue", name: "Морской синий", value: "#1e90ff" },
 ];
 
@@ -100,7 +100,7 @@ const RadioButton = ({
             {checked ? (
               <path
                 d={svgPaths.pf1830f2}
-                fill={color === "#F1F5FC" ? "#1e90ff" : color}
+                fill={color === "#FFFFFF" ? "#1e90ff" : color}
               />
             ) : (
               <path d={svgPaths.p1ee5e230} fill="#E2E4EA" />

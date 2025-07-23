@@ -1,6 +1,4 @@
 import { useNavigate } from "react-router-dom";
-import Banner from "../Content/Banner";
-import Banner1 from "../Content/Banner1";
 
 function BannerRow() {
   const navigate = useNavigate();
@@ -16,10 +14,40 @@ function BannerRow() {
       <div className="flex flex-row items-center relative size-full">
         <div className="box-border content-stretch flex flex-row gap-2 items-center justify-start px-4 py-0 relative w-full overflow-x-auto scrollbar-hide">
           <div onClick={banner} className="cursor-pointer">
-            <Banner />
+            <div
+              className="h-[132px] overflow-clip relative rounded-3xl shrink-0 w-[343px]"
+              data-name="banner"
+              style={{
+                backgroundImage:
+                  "linear-gradient(133.858deg, rgb(197, 91, 249) 0%, rgb(173, 45, 236) 100%)",
+              }}
+            >
+              <div className="relativerounded-lg overflow-hidden">
+                <img
+                  src="/pwa-ceb/assets/banner1.png"
+                  alt="Карта"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+              </div>
+            </div>
           </div>
           <div onClick={banner1} className="cursor-pointer">
-            <Banner1 />
+            <div
+              className="h-[132px] overflow-clip relative rounded-3xl shrink-0 w-[343px]"
+              data-name="banner"
+              style={{
+                backgroundImage:
+                  "linear-gradient(133.858deg, rgb(197, 91, 249) 0%, rgb(173, 45, 236) 100%)",
+              }}
+            >
+              <div className="relativerounded-lg overflow-hidden">
+                <img
+                  src="/pwa-ceb/assets/additionalpic.png"
+                  alt="Карта"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>

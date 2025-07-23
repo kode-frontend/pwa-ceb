@@ -1,5 +1,5 @@
 import Content8 from "@components/Content/Content8";
-import Overlay from "@components/Shared/Overlay";
+import Overlay from "@components/Content/Overlay";
 
 export const HomeScreen = () => {
   return (

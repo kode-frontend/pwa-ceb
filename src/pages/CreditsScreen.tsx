@@ -1,4 +1,4 @@
-import Overlay from "@components/Shared/Overlay";
+import Overlay from "@components/Content/Overlay";
 
 export const CreditsScreen = () => {
   return (

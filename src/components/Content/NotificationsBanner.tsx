@@ -45,9 +45,7 @@ export function NotificationBanners() {
   const navigate = useNavigate();
 
   const handleCreditsBack = () => {
-    navigate("/pwa-ceb/credit", {
-      state: { image: "credit2.png" },
-    });
+    navigate("/pwa-ceb/credit");
   };
   const handleCreditsCardBack = () => {
     navigate("/pwa-ceb/credit-card");
