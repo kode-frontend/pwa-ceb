@@ -1,3 +1,7 @@
+import { useEffect, useMemo, useState } from "react";
+import { Outlet, ScrollRestoration, useLocation } from "react-router-dom";
+import { useTheme } from "@context/ThemeProvider";
+
 import Tabbar1 from "@components/Content/Tabbar1";
 import NavigationBar from "@components/NavigationBar/NavigationBar";
 import SettingsHeader from "@components/Shared/SettingsHeader";
@@ -27,10 +31,7 @@ import ChatsHeader from "@components/Shared/ChatsHeader";
 import ThemeNavigation from "@components/Shared/ThemeNavigation";
 import CreditMomentNavigation from "@components/Shared/CreditMomentNavigation";
 import SearchNavigation from "@components/Shared/SearchNavigation";
-import { useEffect, useMemo, useState } from "react";
-import { Outlet, ScrollRestoration, useLocation } from "react-router-dom";
 
-import { useTheme } from "@context/ThemeProvider";
 export const AppLayout = () => {
   const [scrollY, setScrollY] = useState(0);
   const location = useLocation();
@@ -40,35 +41,38 @@ export const AppLayout = () => {
 
   const path = location.pathname;
 
-  const routeFlags = {
-    profile: path.includes("profile"),
-    scanQr: path.includes("scan-qr"),
-    search: path.includes("search"),
-    notifications: path.includes("notifications"),
-    addService: path.includes("add-service"),
-    countChange: path.includes("count-change"),
-    sbp: path.includes("sbp"),
-    debet: path.includes("debet-card"),
-    creditCard: path.includes("credit-card"),
-    credit: path.includes("credit"),
-    bankDeposit: path.includes("bank-deposit"),
-    invest: path.includes("invest"),
-    newProduct: path.includes("new-product"),
-    promisePay: path.includes("promise-pay"),
-    promisePayPoints: path.includes("promise-pay-points"),
-    analytics: path.includes("analytics"),
-    invite: path.includes("invite"),
-    additionalPoints: path.includes("additional-points"),
-    cashback: path.includes("cashback"),
-    formular: path.includes("formular"),
-    questions: path.includes("questions"),
-    connect: path.includes("connect"),
-    creditStory: path.includes("credit-story"),
-    office: path.includes("office"),
-    order: path.includes("order"),
-    theme: path.includes("theme"),
-    creditMoment: path.includes("moment"),
-  };
+  const routeFlags = useMemo(
+    () => ({
+      profile: path.includes("profile"),
+      scanQr: path.includes("scan-qr"),
+      search: path.includes("search"),
+      notifications: path.includes("notifications"),
+      addService: path.includes("add-service"),
+      countChange: path.includes("count-change"),
+      sbp: path.includes("sbp"),
+      debet: path.includes("debet-card"),
+      creditCard: path.includes("credit-card"),
+      credit: path.includes("credit"),
+      bankDeposit: path.includes("bank-deposit"),
+      invest: path.includes("invest"),
+      newProduct: path.includes("new-product"),
+      promisePay: path.includes("promise-pay"),
+      promisePayPoints: path.includes("promise-pay-points"),
+      analytics: path.includes("analytics"),
+      invite: path.includes("invite"),
+      additionalPoints: path.includes("additional-points"),
+      cashback: path.includes("cashback"),
+      formular: path.includes("formular"),
+      questions: path.includes("questions"),
+      connect: path.includes("connect"),
+      creditStory: path.includes("credit-story"),
+      office: path.includes("office"),
+      order: path.includes("order"),
+      theme: path.includes("theme"),
+      creditMoment: path.includes("moment"),
+    }),
+    [path]
+  );
 
   const hasTabbar = !Object.values(routeFlags).some(Boolean);
 
@@ -102,7 +106,7 @@ export const AppLayout = () => {
     if (routeFlags.theme) return <ThemeNavigation />;
     if (routeFlags.creditMoment) return <CreditMomentNavigation />;
     return <NavigationBar scrollY={scrollY} />;
-  }, [routeFlags, scrollY]);
+  }, [routeFlags, scrollY, path]);
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
@@ -114,8 +118,10 @@ export const AppLayout = () => {
     <div className={theme === "standard" ? "theme-standard" : "theme-primary"}>
       <ScrollRestoration getKey={(location) => location.pathname} />
       {Header}
-
-      <div className="h-full w-full font-sans h-screen w-full" style={{backgroundColor: '#F1F5FC'}}>
+      <div
+        className="h-full w-full font-sans h-screen w-full"
+        style={{ backgroundColor: "#F1F5FC" }}
+      >
         <Outlet key={location.pathname} />
       </div>
 

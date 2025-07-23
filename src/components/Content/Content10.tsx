@@ -9,14 +9,14 @@ function Content10() {
   return (
     <>
       <div
-        className="w-full py-2 z-1"
+        className="w-full py-2"
         data-name="suggest"
       >
-        <h1 className=" font-sans font-medium mb-3 relative pl-4" style={{color: textColor}}>Мои операции</h1>
+        <h1 className=" font-sans font-medium mb-3 relative pl-4  z-1" style={{color: textColor}}>Мои операции</h1>
         <div className="flex flex-row gap-3 overflow-x-auto scrollbar-hide pl-4" style={{color: textColor}}>
           {/* Карточка операции 1 - Ефим */}
           <div
-            className="box-border content-stretch flex flex-col items-start justify-around p-0 relative rounded-[20px] shrink-0 size-[110px]"
+            className="box-border content-stretch flex flex-col items-start justify-around p-0 relative rounded-[20px] shrink-0 size-[110px]  z-1"
             data-name="card"
             style={{
               width: "153px",
@@ -41,7 +41,7 @@ function Content10() {
 
           {/* Карточка операции 2 - Максим */}
           <div
-            className="box-border content-stretch flex flex-col items-start justify-around p-0 relative rounded-[20px] shrink-0 size-[110px]"
+            className="box-border content-stretch flex flex-col items-start justify-around p-0 relative rounded-[20px] shrink-0 size-[110px]  z-1"
             data-name="card"
             style={{
               width: "153px",
@@ -66,7 +66,7 @@ function Content10() {
 
           {/* Карточка операции 3 - Алина */}
           <div
-            className="box-border content-stretch flex flex-col items-start justify-around p-0 relative rounded-[20px] shrink-0 size-[110px]"
+            className="box-border content-stretch flex flex-col items-start justify-around p-0 relative rounded-[20px] shrink-0 size-[110px]  z-1"
             data-name="card"
             style={{
               width: "153px",
@@ -90,10 +90,10 @@ function Content10() {
           </div>
         </div>
       </div>
-      <div className="flex-1 w-full z-1">
+      <div className="flex-1 w-full">
         <div className="p-4 space-y-4 flex flex-col relative">
           <div
-            className="bg-white rounded-xl border overflow-hidden"
+            className="bg-white rounded-xl border overflow-hidden  z-1"
             style={{
               border: "0.5px solid var(--colorMode-border-primary, #C9E6F94D)",
             }}
@@ -119,7 +119,7 @@ function Content10() {
           </div>
 
           <div
-            className="bg-white rounded-xl border overflow-hidden"
+            className="bg-white rounded-xl border overflow-hidden "
             style={{
               border: "0.5px solid var(--colorMode-border-primary, #C9E6F94D)",
             }}

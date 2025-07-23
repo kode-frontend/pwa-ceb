@@ -18,7 +18,7 @@ function Content8() {
       style={{ backgroundColor: "#F1F5FC" }}
     >
       <Suggest />
-      <div className="box-border content-stretch flex flex-col gap-2 items-start justify-start pb-4 pt-2 px-4 relative shrink-0 w-full z-1">
+      <div className="box-border content-stretch flex flex-col gap-2 items-start justify-start pb-4 pt-2 px-4 relative shrink-0 w-full">
         <InteractiveAccountCards />
         <NotificationBanners />
         <NewProductCard />

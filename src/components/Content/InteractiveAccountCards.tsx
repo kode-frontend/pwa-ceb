@@ -84,7 +84,7 @@ export function InteractiveAccountCards() {
 
   return (
     <div
-      className="bg-[#ffffff] box-border content-stretch flex flex-col items-start justify-start overflow-clip rounded-3xl size-full"
+      className="bg-[#ffffff] box-border content-stretch flex flex-col items-start justify-start overflow-clip rounded-3xl size-full z-1"
       data-name="cards"
     >
       <Tabs activeTab={activeTab} onTabChange={setActiveTab} />
