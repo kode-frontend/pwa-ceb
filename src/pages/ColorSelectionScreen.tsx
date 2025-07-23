@@ -9,8 +9,18 @@ export const colorOptions: { id: ThemeId; name: string; value: string }[] = [
   { id: "sea-blue", name: "Морской синий", value: "#1e90ff" },
 ];
 
+const updateThemeColorMeta = (color: string) => {
+  const metaTag = document.querySelector("meta[name=theme-color]");
+  if (metaTag) {
+    metaTag.setAttribute("content", color);
+  }
+};
+
+
 export const ColorSelectionScreen = () => {
+  
   const { theme, setTheme } = useTheme();
+  
   return (
     <div className="bg-[#f2f3f5] box-border content-stretch flex flex-col items-start justify-start size-full  ">
       <div className="relative size-full">
@@ -56,10 +66,14 @@ const ColorOptionItem = ({
   selected,
   onSelect,
 }: ColorOptionItemProps) => {
+  const handleClick = () => {
+    onSelect(option.id);
+    updateThemeColorMeta(option.value);
+  };
   return (
     <div
       className="relative shrink-0 w-full cursor-pointer"
-      onClick={() => onSelect(option.id)}
+      onClick={handleClick}
     >
       <div className="flex flex-col justify-center relative size-full">
         <div className="box-border content-stretch flex flex-col gap-3 items-start justify-center px-4 py-3 relative w-full">

@@ -3,7 +3,7 @@ import Overlay from "@components/Content/Overlay";
 export const CreditsScreen = () => {
   return (
     <div
-      className="bg-[#f2f3f5] box-border content-stretch flex flex-col items-start justify-start size-full  pt-[51px] pb-[51px]"
+      className="bg-[#f2f3f5] box-border content-stretch flex flex-col items-start justify-start size-full  pt-[51px] pb-[51px] h-[100vh]"
       data-name="кредиты"
     >
       <Overlay />
