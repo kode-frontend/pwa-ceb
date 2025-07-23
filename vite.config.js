@@ -20,7 +20,7 @@ export default defineConfig({
                 display: "standalone",
                 display_override: ["fullscreen", "standalone", "window-controls-overlay"],
                 scope: "https://kode-frontend.github.io/pwa-ceb/",
-                start_url: "https://kode-frontend.github.io/pwa-ceb/index.html",
+                start_url: "https://kode-frontend.github.io/pwa-ceb/",
             },
             workbox: {
                 globPatterns: ["**/*.{js,css,html}", "assets/**/*.png"],
