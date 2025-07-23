@@ -68,7 +68,10 @@ import OfficeScreen from "@pages/OfficeScreen";
 import OrderScreen from "@pages/OrderScreen";
 import { CreditsScreen } from "@pages/CreditsScreen";
 import { ChatsScreen } from "@pages/ChatsScreen";
-import { colorOptions, ColorSelectionScreen } from "@pages/ColorSelectionScreen";
+import {
+  colorOptions,
+  ColorSelectionScreen,
+} from "@pages/ColorSelectionScreen";
 import CreditMomentScreen from "@pages/CreditMomentScreen";
 import NotFoundScreen from "@pages/NotFoundScreen";
 import QuestionsNavigation from "@components/Shared/QuestionsNavigation";
@@ -150,7 +153,7 @@ export const AppLayout = () => {
   }, [routeFlags, scrollY, path]);
 
   const backgroundColor =
-      colorOptions.find((c) => c.id === theme)?.value || "#316dcc";
+    colorOptions.find((c) => c.id === theme)?.value || "#316dcc";
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
@@ -159,13 +162,13 @@ export const AppLayout = () => {
   }, []);
 
   return (
-    <div className={theme === "standard" ? "theme-standard" : "theme-primary"}>
-      <ScrollRestoration getKey={(location) => location.pathname} />
+    <div className={theme === "standard" ? "theme-standard font-sans" : "theme-primary font-sans"}>
       {Header}
       <div
-        className="h-full w-full font-sans h-screen w-full"
-        style={{ backgroundColor}}
+        className="w-full scrollbar-hide h-full"
+        style={{ backgroundColor }}
       >
+        <ScrollRestoration getKey={(location) => location.pathname} />
         <Outlet key={location.pathname} />
       </div>
 
