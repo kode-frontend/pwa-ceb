@@ -1,7 +1,7 @@
 export const ChatsScreen = () => {
   return (
     <div
-      className="bg-[#f2f3f5] box-border content-stretch flex flex-col items-start justify-start size-full  "
+      className="bg-[#f2f3f5] box-border content-stretch flex flex-col items-start justify-start size-full"
       data-name="кредиты"
     >
       <div
