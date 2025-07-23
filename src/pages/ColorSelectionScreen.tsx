@@ -12,7 +12,7 @@ export const colorOptions: { id: ThemeId; name: string; value: string }[] = [
 export const ColorSelectionScreen = () => {
   const { theme, setTheme } = useTheme();
   return (
-    <div className="relative size-full bg-[#f7f9fc] pt-[70px] h-[100vh]">
+    <div className="bg-[#f2f3f5] box-border content-stretch flex flex-col items-start justify-start size-full  ">
       <div className="relative size-full">
         <div className="box-border content-stretch flex flex-col gap-2 items-start justify-start px-4 py-3 relative size-full">
           <div className="bg-white box-border content-stretch flex flex-col items-start justify-start overflow-clip p-0 relative rounded-[20px] shrink-0 w-full">

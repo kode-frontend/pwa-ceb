@@ -9,7 +9,7 @@ function Content10() {
   return (
     <>
       <div
-        className="w-full py-2"
+        className="w-full py-2 z-1"
         data-name="suggest"
       >
         <h1 className=" font-sans font-medium mb-3 relative pl-4" style={{color: textColor}}>Мои операции</h1>
@@ -90,10 +90,8 @@ function Content10() {
           </div>
         </div>
       </div>
-      {/* Белая область */}
-      <div className="flex-1 w-full">
+      <div className="flex-1 w-full z-1">
         <div className="p-4 space-y-4 flex flex-col relative">
-          {/* Первый блок "Шаблоны и автоплатежи" */}
           <div
             className="bg-white rounded-xl border overflow-hidden"
             style={{
@@ -120,7 +118,6 @@ function Content10() {
             </div>
           </div>
 
-          {/* Второй блок "Шаблоны и автоплатежи" */}
           <div
             className="bg-white rounded-xl border overflow-hidden"
             style={{

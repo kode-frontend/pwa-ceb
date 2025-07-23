@@ -16,7 +16,7 @@ export const SettingsScreen = () => {
   };
 
   return (
-    <div className="bg-[#F1F5FC] size-full  pt-[51px] pb-[51px] h-[100vh]">
+    <div className="bg-[#f2f3f5] box-border content-stretch flex flex-col items-start justify-start size-full  pt-[51px] pb-[51px]">
       <div className="box-border content-stretch flex flex-col gap-2 h-[628px] items-start justify-start left-0 px-4 py-3 w-full">
         <div className="bg-[#ffffff] box-border content-stretch flex flex-col items-start justify-start overflow-clip p-0 relative rounded-[20px] shrink-0 w-full">
           <SectionHeader title="Главный экран" />

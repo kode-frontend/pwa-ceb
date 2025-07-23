@@ -1,6 +1,5 @@
 import { generateMaskSvgDataUrl } from "@shared/utils/generateMaskSvgDataUrl";
 
-
 export const overlayThemes: Record<string, string> = {
   "calm-blue": generateMaskSvgDataUrl("#316dcc"),
   "deep-turquoise": generateMaskSvgDataUrl("#008080"),

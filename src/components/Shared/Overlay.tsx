@@ -7,7 +7,7 @@ function Overlay() {
 
   return (
     <div
-      className="absolute top-0 left-0 w-full h-[400px] pointer-events-none z-0"
+      className="absolute top-0 left-0 w-full h-[400px] pointer-events-none z-1"
       style={{
         backgroundImage: `url('${maskUrl}')`,
         backgroundSize: "100% 100%",

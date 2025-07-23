@@ -5,7 +5,7 @@ import Card1 from "../Content/Card1";
 function Suggest() {
   return (
     <div
-      className="box-border content-stretch flex flex-row gap-2 items-center justify-start px-4 py-2 relative shrink-0 w-full overflow-x-auto scrollbar-hide"
+      className="box-border content-stretch flex flex-row gap-2 items-center justify-start px-4 py-2 relative shrink-0 w-full overflow-x-auto scrollbar-hide z-1"
       data-name="suggest"
     >
       <div className="flex flex-row items-center self-stretch shrink-0">
