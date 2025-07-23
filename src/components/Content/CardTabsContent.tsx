@@ -214,7 +214,7 @@ function CreditCard() {
         className="bg-[#f1f5fc] overflow-clip relative rounded-[100px] shrink-0 size-10"
         data-name="container"
       >
-        <div className="relative w-11 h-13 rounded-lg overflow-hidden">
+        <div className="relative w-11 h-11 rounded-lg overflow-hidden">
           <img
             src="/pwa-ceb/assets/mir.png"
             alt="Карта"

@@ -52,10 +52,11 @@ function CurrentAccountCard({
       data-name="content"
     >
       <div
-        className={`bg-[rgba(255,255,255,0.08)] overflow-clip relative rounded-[100px] shrink-0 size-8 ${isActive
-          ? "bg-[#316DCC]"
-          : "bg-[rgba(241, 245, 252, 1)] hover:scale-[1.02] border-1 border-[#19191914]"
-      }`}
+        className={`bg-[rgba(255,255,255,0.08)] overflow-clip relative rounded-[100px] shrink-0 size-8 ${
+          isActive
+            ? "bg-[#316DCC]"
+            : "bg-[rgba(241, 245, 252, 1)] hover:scale-[1.02] border-1 border-[#19191914]"
+        }`}
         data-name="container"
       >
         <div
@@ -147,43 +148,32 @@ function CreditCard1({
 
 function BankLogo1() {
   return (
-    <div
-      className="absolute h-[14.4px] left-0 top-0 w-[44.8px]"
-      data-name="bank_logo"
-    >
-      <svg
-        className="block size-full"
-        fill="none"
-        preserveAspectRatio="none"
-        viewBox="0 0 45 15"
-      >
-        <g id="bank_logo">
-          <g id="mir">
-            <path d={svgPaths.p9ae4000} fill="var(--fill-0, white)" />
-            <path d={svgPaths.p10123c00} fill="var(--fill-0, white)" />
-            <path d={svgPaths.p2ddbeb00} fill="var(--fill-0, white)" />
-            <path d={svgPaths.p3b09e000} fill="var(--fill-0, white)" />
-          </g>
-        </g>
-      </svg>
+    <div className="relative w-9 h-9 rounded-lg overflow-hidden">
+      <img
+        src="/pwa-ceb/assets/mir.png"
+        alt="Карта"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+    </div>
+  );
+}
+
+function BankLogo2() {
+  return (
+    <div className="relative w-9 h-9 rounded-lg overflow-hidden">
+      <img
+        src="/pwa-ceb/assets/container.png"
+        alt="Карта"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
     </div>
   );
 }
 
 function Card1() {
   return (
-    <div
-      className="absolute bg-[#191919] h-[28.8px] left-[6.4px] rounded-[6.4px] top-[6.4px] w-[44.8px]"
-      data-name="card"
-    >
-      <div className="h-[28.8px] overflow-clip relative w-[44.8px]">
-        <div
-          className="absolute bg-center bg-cover bg-no-repeat h-[34.4px] opacity-50 top-0 translate-x-[-50%] w-[51.6px]"
-          data-name="ChatGPT Image 6 июн. 2025 г., 09_04_53 1"
-          style={{
-            left: "calc(50% + 3.19998px)",
-          }}
-        />
+    <div className="absolute" data-name="card">
+      <div className="overflow-clip relative">
         <BankLogo1 />
       </div>
       <div className="absolute border-[0.4px] border-[rgba(25,25,25,0.01)] border-solid inset-0 pointer-events-none rounded-[6.4px]" />
@@ -191,13 +181,24 @@ function Card1() {
   );
 }
 
-function Container2() {
+function Card2() {
+  return (
+    <div className="absolute" data-name="card">
+      <div className="overflow-clip relative">
+        <BankLogo2 />
+      </div>
+      <div className="absolute border-[0.4px] border-[rgba(25,25,25,0.01)] border-solid inset-0 pointer-events-none rounded-[6.4px]" />
+    </div>
+  );
+}
+
+function Container3() {
   return (
     <div
       className="bg-[#f1f5fc] overflow-clip relative rounded-[80px] shrink-0 size-8"
       data-name="container"
     >
-      <Card1 />
+      <Card2 />
     </div>
   );
 }
@@ -244,7 +245,7 @@ function CreditCard2({
       data-name="content"
     >
       <div className="absolute border border-[rgba(25,25,25,0.01)] border-solid inset-0 pointer-events-none rounded-[20px]" />
-      <Container2 />
+      <Container3 />
       <Text2 isActive={isActive} />
     </button>
   );
