@@ -18,7 +18,7 @@ export default defineConfig({
         description: "Your PWA App",
         theme_color: "#316DCC",
         background_color: "#ffffff",
-        display: "fullscreen",
+        display: "standalone",
         display_override: ["fullscreen"],
         scope: "https://kode-frontend.github.io/pwa-ceb/",
         start_url: "https://kode-frontend.github.io/pwa-ceb/",
