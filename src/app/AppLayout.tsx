@@ -161,13 +161,18 @@ export const AppLayout = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  document.documentElement.requestFullscreen();
+
   return (
-    <div className={theme === "standard" ? "theme-standard font-sans" : "theme-primary font-sans"}>
+    <div
+      className={
+        theme === "standard"
+          ? "theme-standard font-sans"
+          : "theme-primary font-sans"
+      }
+    >
       {Header}
-      <div
-        className="w-full scrollbar-hide h-full"
-        style={{ backgroundColor }}
-      >
+      <div className="w-full scrollbar-hide h-full" style={{ backgroundColor }}>
         <ScrollRestoration getKey={(location) => location.pathname} />
         <Outlet key={location.pathname} />
       </div>

@@ -45,7 +45,7 @@ export function NotificationBanners() {
   const navigate = useNavigate();
 
   const handleCreditsBack = () => {
-    navigate("/pwa-ceb/credit");
+    navigate("/pwa-ceb/moment");
   };
   const handleCreditsCardBack = () => {
     navigate("/pwa-ceb/credit-card");
