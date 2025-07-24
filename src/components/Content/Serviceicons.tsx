@@ -107,7 +107,7 @@ export function PhoneIcon() {
 // Иконка самолета
 export function PlaneIcon() {
   return (
-    <div className="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center">
+    <div className="w-13 h-10 bg-gray-100 rounded-lg flex items-center justify-center">
       <svg
         width="25"
         height="24"
@@ -139,7 +139,7 @@ export function PlaneIcon() {
 // Иконка QR кода
 export function QRIcon() {
   return (
-    <div className="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center">
+    <div className="w-11 h-10 bg-gray-100 rounded-lg flex items-center justify-center">
       <svg
         width="25"
         height="24"

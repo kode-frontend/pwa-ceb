@@ -67,7 +67,7 @@ function MainAccountCard() {
                 data-name="bonus"
               >
                 <div className="absolute border-[0.5px] border-[rgb(25 25 25 / 14%)] border-solid inset-0 pointer-events-none rounded-[100px]" />
-                <div className="font-sans leading-[0] not-italic relative shrink-0 text-[#191919] text-[10px] text-left text-nowrap tracking-[-0.1px]">
+                <div className="font-sans font-semibold leading-[0] not-italic relative shrink-0 text-[#191919] text-[12px] text-left text-nowrap tracking-[-0.1px]">
                   <p className="adjustLetterSpacing block leading-[12px] whitespace-pre">
                     1 321.37
                   </p>
@@ -244,7 +244,7 @@ function CreditCard() {
               data-name="bonus"
             >
               <div className="absolute border-[0.5px] border-[rgb(25 25 25 / 14%)] border-solid inset-0 pointer-events-none rounded-[100px]" />
-              <div className="font-sans leading-[0] not-italic relative shrink-0 text-[#191919] text-[10px] text-left text-nowrap tracking-[-0.1px]">
+              <div className="font-sans font-semibold leading-[0] not-italic relative shrink-0 text-[#191919] text-[12px] text-left text-nowrap tracking-[-0.1px]">
                 <p className="adjustLetterSpacing block leading-[12px] whitespace-pre">
                   753.42
                 </p>
