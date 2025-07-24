@@ -17,10 +17,11 @@ export default defineConfig({
                 description: "Your PWA App",
                 theme_color: "#316DCC",
                 background_color: "#ffffff",
-                display: "standalone",
-                display_override: ["fullscreen", "standalone", "window-controls-overlay"],
+                display: "fullscreen",
+                display_override: ["fullscreen"],
                 scope: "https://kode-frontend.github.io/pwa-ceb/",
                 start_url: "https://kode-frontend.github.io/pwa-ceb/",
+                orientation: "portrait",
             },
             workbox: {
                 globPatterns: ["**/*.{js,css,html}", "assets/**/*.png"],
