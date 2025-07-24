@@ -161,8 +161,6 @@ export const AppLayout = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  document.documentElement.requestFullscreen();
-
   return (
     <div
       className={
