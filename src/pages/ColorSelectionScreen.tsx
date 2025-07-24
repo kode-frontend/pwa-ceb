@@ -4,7 +4,7 @@ import { svgPaths } from "@shared/constants/svgPaths";
 
 export const colorOptions: { id: ThemeId; name: string; value: string }[] = [
   { id: "calm-blue", name: "Спокойный синий", value: "#316dcc" },
-  { id: "deep-turquoise", name: "Глубокая бирюза", value: "#008080" },
+  { id: "deep-turquoise", name: "Глубокая бирюза", value: "#166A8E" },
   { id: "standard", name: "Стандартный", value: "#FFFFFF" },
   { id: "sea-blue", name: "Морской синий", value: "#1e90ff" },
 ];
