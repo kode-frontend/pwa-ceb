@@ -159,6 +159,12 @@ export function ChartBlocks({ selectedCard }: ChartBlocksProps) {
       });
       return;
     }
+    if (selectedCard === "credit2") {
+      navigate("/pwa-ceb/analytics", {
+        state: { image: "credit3.png" },
+      });
+      return;
+    }
     navigate("/pwa-ceb/analytics");
   };
 
@@ -166,6 +172,12 @@ export function ChartBlocks({ selectedCard }: ChartBlocksProps) {
     if (selectedCard === "credit1") {
       navigate("/pwa-ceb/analytics", {
         state: { image: "analytics3.png" },
+      });
+      return;
+    }
+    if (selectedCard === "credit2") {
+      navigate("/pwa-ceb/analytics", {
+        state: { image: "credit4.png" },
       });
       return;
     }

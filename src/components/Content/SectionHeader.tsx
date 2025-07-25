@@ -1,9 +1,26 @@
 import { useNavigate } from "react-router-dom";
 
-function SectionHeader() {
+type CardType = "current" | "credit1" | "credit2";
+interface SectionHeaderProps {
+  selectedCard?: CardType;
+}
+
+function SectionHeader({ selectedCard = "current" }: SectionHeaderProps) {
   const navigate = useNavigate();
 
   const handleBack = () => {
+    if (selectedCard === "credit1") {
+      navigate("/pwa-ceb/analytics", {
+        state: { image: "analytics2.png" },
+      });
+      return;
+    }
+    if (selectedCard === "credit2") {
+      navigate("/pwa-ceb/analytics", {
+        state: { image: "credit3.png" },
+      });
+      return;
+    }
     navigate("/pwa-ceb/analytics");
   };
   return (
@@ -15,7 +32,10 @@ function SectionHeader() {
               Аналитика финансов
             </h4>
           </div>
-          <div className="font-sans relative shrink-0 text-[#316dcc] text-[14px] text-nowrap tracking-[-0.14px] cursor-pointer" onClick={handleBack}>
+          <div
+            className="font-sans relative shrink-0 text-[#316dcc] text-[14px] text-nowrap tracking-[-0.14px] cursor-pointer"
+            onClick={handleBack}
+          >
             <p className="adjustLetterSpacing block leading-[20px] whitespace-pre font-semibold">
               Подробнее
             </p>

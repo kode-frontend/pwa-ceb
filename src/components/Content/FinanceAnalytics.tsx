@@ -14,7 +14,7 @@ export function FinanceAnalytics() {
       className="bg-[#ffffff] box-border content-stretch flex flex-col items-start justify-start overflow-clip p-0 relative rounded-[32px] shrink-0 w-full"
       data-name="block"
     >
-      <SectionHeader />
+      <SectionHeader selectedCard={selectedCard} />
       <SmallAccountCards 
         selectedCard={selectedCard} 
         onCardChange={setSelectedCard} 
