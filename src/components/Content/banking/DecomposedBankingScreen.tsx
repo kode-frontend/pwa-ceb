@@ -12,7 +12,7 @@ interface DecomposedBankingScreenProps {
 const DecomposedBankingScreen: React.FC<DecomposedBankingScreenProps> = ({
   className = "",
 }) => {
-  const [screenState, setScreenState] = useState<BankingScreenState>(
+  const [screenState] = useState<BankingScreenState>(
     BankingScreenState.LOADED
   );
   const [settings] = useState<BankingSettings>(bankingSettingsData);

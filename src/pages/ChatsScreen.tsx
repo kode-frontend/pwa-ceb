@@ -19,7 +19,7 @@ export const ChatsScreen = () => {
           <img
             src="/pwa-ceb/assets/chatInput (1).png"
             alt="Картинка 3"
-            style={{ left: 0, right: 0, bottom: '3rem', position: 'fixed' }}
+            style={{ left: 0, right: 0, bottom: '52px', position: 'fixed' }}
           />
         </div>
       </div>
