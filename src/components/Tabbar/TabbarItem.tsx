@@ -1,6 +1,10 @@
+import { useTheme } from "@context/ThemeProvider";
+import { colorOptions } from "@pages/ColorSelectionScreen";
 import { svgPaths } from "@shared/constants/svgPaths";
 
 function TabbarItem({ active = false }) {
+  const { theme } = useTheme();
+    const backgroundColor = active ? colorOptions.find((c) => c.id === theme)?.value : "#b6b6b6ff"
   return (
     <div
       className="basis-0 box-border content-stretch flex flex-col gap-1 grow items-center justify-start min-h-px min-w-px pb-1 pt-2 px-0 relative shrink-0"
@@ -26,7 +30,7 @@ function TabbarItem({ active = false }) {
                   <path
                     d="M10.0015 15.2325V12.5329"
                     id="Vector"
-                    stroke={active ? "#316DCC" : "#b6b6b6ff"}
+                    stroke={backgroundColor}
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="1.8"
@@ -34,7 +38,7 @@ function TabbarItem({ active = false }) {
                   <path
                     d={svgPaths.p4c1e880}
                     id="Vector_2"
-                    stroke={active ? "#316DCC" : "#b6b6b6ff"}
+                    stroke={backgroundColor}
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="1.8"

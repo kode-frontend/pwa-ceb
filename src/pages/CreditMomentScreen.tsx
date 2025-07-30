@@ -12,7 +12,7 @@ export default function CreditMomentScreen() {
       : "momentcreditwrapper.png";
   return (
     <div className="h-full">
-      <div className="flex flex-col justify-between h-full p-0 m-0 leading-none">
+      <div className="flex flex-col justify-around h-[100%] p-0 m-0 leading-none">
         <img
           src={`/pwa-ceb/assets/${wrapperImage}`}
           alt="Картинка 2"

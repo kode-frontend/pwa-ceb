@@ -9,6 +9,7 @@ export const PaymentsScreen = () => {
     >
       <Overlay />
       <Content10 />
+      <div className="h-[200px]" />
     </div>
   );
 };

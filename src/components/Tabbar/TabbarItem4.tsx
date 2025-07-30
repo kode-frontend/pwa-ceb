@@ -1,6 +1,12 @@
 import { svgPaths } from "@shared/constants/svgPaths";
+import { useTheme } from "@context/ThemeProvider";
+import { colorOptions } from "@pages/ColorSelectionScreen";
 
 function TabbarItem4({ active = false }) {
+  const { theme } = useTheme();
+  const backgroundColor = active
+    ? colorOptions.find((c) => c.id === theme)?.value
+    : "#b6b6b6ff";
   return (
     <div
       className="basis-0 box-border content-stretch flex flex-col gap-1 grow items-center justify-start min-h-px min-w-px pb-1 pt-2 px-0 relative shrink-0"
@@ -27,13 +33,13 @@ function TabbarItem4({ active = false }) {
                   cy="2.7"
                   id="Ellipse 33"
                   r="2.7"
-                  stroke={active ? "#316DCC" : "#b6b6b6ff"}
+                  stroke={backgroundColor}
                   strokeWidth="1.8"
                   transform="matrix(-1 0 0 1 12.2337 7.3)"
                 />
                 <path
                   d={svgPaths.p3069ad00}
-                  fill={active ? "#316DCC" : "#b6b6b6ff"}
+                  fill={backgroundColor}
                   id="Subtract"
                 />
               </g>

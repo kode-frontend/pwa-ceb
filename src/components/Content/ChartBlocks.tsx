@@ -17,31 +17,31 @@ const CARD_DATA: Record<CardType, CardData> = {
   current: {
     expenses: {
       amount: "240 030 ₽",
-      title: "Расходы в июне",
+      title: "Потрачено в июне",
     },
     income: {
       amount: "343 482 ₽",
-      title: "Доходы в июне",
+      title: "Поступления в июне",
     },
   },
   credit1: {
     expenses: {
-      amount: "156 740 ₽",
-      title: "Расходы в июне",
+      amount: "72 843 ₽",
+      title: "Потрачено в июне",
     },
     income: {
-      amount: "287 950 ₽",
-      title: "Доходы в июне",
+      amount: "12 482 ₽",
+      title: "Поступления в июне",
     },
   },
   credit2: {
     expenses: {
-      amount: "89 320 ₽",
-      title: "Расходы в июне",
+      amount: "112 312 ₽",
+      title: "Потрачено в июне",
     },
     income: {
-      amount: "198 760 ₽",
-      title: "Доходы в июне",
+      amount: "1 841 ₽",
+      title: "Поступления в июне",
     },
   },
 };

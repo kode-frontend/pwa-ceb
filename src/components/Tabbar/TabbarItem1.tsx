@@ -1,6 +1,10 @@
+import { useTheme } from "@context/ThemeProvider";
+import { colorOptions } from "@pages/ColorSelectionScreen";
 import { svgPaths } from "@shared/constants/svgPaths";
 
 function TabbarItem1({ active = false }) {
+  const { theme } = useTheme();
+  const backgroundColor = active ? colorOptions.find((c) => c.id === theme)?.value : "#b6b6b6ff"
   return (
     <div
       className="basis-0 box-border content-stretch flex flex-col gap-1 grow items-center justify-start min-h-px min-w-px pb-1 pt-2 px-0 relative shrink-0"
@@ -19,9 +23,8 @@ function TabbarItem1({ active = false }) {
           <g id="transfer-4-svgrepo-com 1">
             <path
               d={svgPaths.pea3a400}
-              fill={active ? "#316DCC" : "#b6b6b6ff"}
+              fill={backgroundColor}
               id="å½¢ç¶"
-              stroke={active ? "#316DCC" : "#b6b6b6ff"}
             />
           </g>
         </svg>

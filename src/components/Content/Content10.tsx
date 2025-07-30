@@ -19,7 +19,7 @@ function Content10() {
           Мои операции
         </h1>
         <div
-          className="flex flex-row gap-3 overflow-x-auto scrollbar-hide pl-4"
+          className="flex flex-row gap-3 overflow-x-auto scrollbar-hide px-4"
           style={{ color: textColor }}
         >
           {/* Карточка операции 1 - Ефим */}

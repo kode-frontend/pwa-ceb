@@ -5,7 +5,7 @@ function Container2() {
   const backgroundColor = theme === "standard" ? "#316DCC1A" : "#FFFFFF14";
   return (
     <div
-      className="overflow-clip relative rounded-[133.333px] shrink-0 size-8"
+      className="relative shrink-0"
       data-name="container"
       style={{ backgroundColor, borderRadius: "50%" }}
     >

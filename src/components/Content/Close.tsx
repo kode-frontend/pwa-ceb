@@ -1,13 +1,22 @@
 import { useTheme } from "@context/ThemeProvider";
 import { svgPaths } from "@shared/constants/svgPaths";
 
-function Close() {
+interface CloseProps {
+  onRemove?: () => void;
+}
+
+function Close({ onRemove }: CloseProps) {
   const { theme } = useTheme();
   const backgroundColor = theme === "standard" ? "#6F7884" : "white";
+  const handleClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    e.stopPropagation();
+    onRemove?.();
+  };
   return (
     <div
-      className="absolute h-[8.204px] left-[3.9px] top-[3.9px] w-[8.203px]"
+      className="absolute h-[8.204px] left-[3.9px] top-[3.9px] w-[8.203px] cursor-pointer"
       data-name="close"
+      onClick={handleClick}
     >
       <div className="absolute bottom-[-0.002%] left-0 right-[-0.001%] top-0">
         <svg

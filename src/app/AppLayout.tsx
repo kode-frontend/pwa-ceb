@@ -4,7 +4,9 @@ import {
   RouterProvider,
   ScrollRestoration,
   useLocation,
+  createBrowserRouter,
 } from "react-router-dom";
+
 import { ThemeProvider, useTheme } from "@context/ThemeProvider";
 
 import TabbarNavigation from "@components/Content/TabbarNavigation";
@@ -36,7 +38,7 @@ import ChatsNavigation from "@components/Shared/ChatsNavigation";
 import ThemeNavigation from "@components/Shared/ThemeNavigation";
 import CreditMomentNavigation from "@components/Shared/CreditMomentNavigation";
 import SearchNavigation from "@components/Shared/SearchNavigation";
-import { createBrowserRouter } from "react-router-dom";
+import QuestionsNavigation from "@components/Shared/QuestionsNavigation";
 
 import { PaymentsScreen } from "@pages/PaymentsScreen";
 import { SettingsScreen } from "@pages/SettingsScreen";
@@ -74,7 +76,6 @@ import {
 } from "@pages/ColorSelectionScreen";
 import CreditMomentScreen from "@pages/CreditMomentScreen";
 import NotFoundScreen from "@pages/NotFoundScreen";
-import QuestionsNavigation from "@components/Shared/QuestionsNavigation";
 
 export const AppLayout = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -160,6 +161,10 @@ export const AppLayout = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  useEffect(() => {
+    document.body.style.backgroundColor = backgroundColor;
+  }, [theme]);
 
   return (
     <div
