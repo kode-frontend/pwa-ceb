@@ -5,7 +5,7 @@ import path from "path";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  base: "/pwa-ceb/home",
+  base: "/pwa-ceb/",
   plugins: [
     react(),
     tailwindcss(),
@@ -20,8 +20,8 @@ export default defineConfig({
         background_color: "#ffffff",
         display: "standalone",
         display_override: ["fullscreen"],
-        scope: "https://kode-frontend.github.io/pwa-ceb/home",
-        start_url: "https://kode-frontend.github.io/pwa-ceb/home",
+        scope: "https://kode-frontend.github.io/pwa-ceb/",
+        start_url: "https://kode-frontend.github.io/pwa-ceb/",
         orientation: "portrait",
       },
       workbox: {

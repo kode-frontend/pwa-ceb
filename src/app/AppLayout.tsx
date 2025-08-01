@@ -5,6 +5,7 @@ import {
   ScrollRestoration,
   useLocation,
   createBrowserRouter,
+  Navigate,
 } from "react-router-dom";
 
 import { ThemeProvider, useTheme } from "@context/ThemeProvider";
@@ -203,7 +204,8 @@ export const router = createBrowserRouter([
     element: <AppLayout />,
     errorElement: <NotFoundScreen />,
     children: [
-      { index: true, path: "home", element: <HomeScreen /> },
+      { index: true, element: <Navigate to="home" replace /> },
+      { path: "home", element: <HomeScreen /> },
       { path: "payments", element: <PaymentsScreen /> },
       { path: "settings", element: <SettingsScreen /> },
       { path: "profile", element: <ProfileScreen /> },
@@ -244,4 +246,6 @@ export const router = createBrowserRouter([
       { path: "*", element: <NotFoundScreen /> },
     ],
   },
-]);
+], {
+  basename: "/pwa-ceb"
+});
