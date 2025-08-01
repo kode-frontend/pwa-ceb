@@ -13,7 +13,7 @@ const Tabbar = () => {
       data-name="tabbar"
     >
       <Link to="/pwa-ceb/home">
-        <TabbarItem active={location.pathname === "/pwa-ceb/"} />
+        <TabbarItem active={location.pathname === "/pwa-ceb/home"} />
       </Link>
       <Link to="/pwa-ceb/payments">
         <TabbarItem1 active={location.pathname === "/pwa-ceb/payments"} />

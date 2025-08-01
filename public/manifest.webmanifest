@@ -2,7 +2,7 @@
   "name": "CEB",
   "short_name": "CEB",
   "description": "Your PWA App",
-  "start_url": "https://kode-frontend.github.io/pwa-ceb/",
+  "start_url": "https://kode-frontend.github.io/pwa-ceb/home",
   "scope": "https://kode-frontend.github.io/pwa-ceb/",
   "display": "standalone",
   "display_override": ["fullscreen"],

@@ -21,10 +21,11 @@ export default defineConfig({
         display: "standalone",
         display_override: ["fullscreen"],
         scope: "https://kode-frontend.github.io/pwa-ceb/",
-        start_url: "https://kode-frontend.github.io/pwa-ceb/",
+        start_url: "https://kode-frontend.github.io/pwa-ceb/home",
         orientation: "portrait",
       },
       workbox: {
+        maximumFileSizeToCacheInBytes: 10 * 1024 * 1024, 
         globPatterns: ["**/*.{js,css,html}", "assets/**/*.png"],
         runtimeCaching: [
           {
