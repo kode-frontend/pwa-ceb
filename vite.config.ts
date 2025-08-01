@@ -5,7 +5,7 @@ import path from "path";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  base: "/pwa-ceb/",
+  base: "/pwa-ceb/home",
   plugins: [
     react(),
     tailwindcss(),
