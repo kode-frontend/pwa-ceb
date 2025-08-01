@@ -3,11 +3,11 @@ import { useNavigate } from "react-router-dom";
 export function EditButton() {
   const navigate = useNavigate();
   const handleBack = () => {
-    navigate("/pwa-ceb/theme");
+    navigate("/pwa-ceb/theme", { state: "/pwa-ceb/home" });
   };
   return (
     <div
-      className="relative shrink-0 w-full cursor-pointer"
+      className="relative shrink-0 w-full cursor-pointer pb-[51px]"
       onClick={handleBack}
     >
       <div className="relative size-full">

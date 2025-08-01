@@ -9,7 +9,7 @@ function CreditNavigation() {
   const location = useLocation();
 
   const handleBack = () => {
-    navigate("/pwa-ceb/");
+    navigate("/pwa-ceb/home");
   };
 
   const { theme } = useTheme();

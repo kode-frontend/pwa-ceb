@@ -6,13 +6,14 @@ import { colorOptions } from "@pages/ColorSelectionScreen";
 
 import { svgPaths } from "@shared/constants/svgPaths";
 import { BackArrow } from "@components/Content/BackArrow";
+import { SearchButton } from "@components/Content/SearchButton";
 
 function AddServiceNavigation() {
   const navigate = useNavigate();
   const { theme } = useTheme();
 
   const handleBack = () => {
-    navigate("/pwa-ceb/");
+    navigate("/pwa-ceb/home");
   };
   const backgroundColor =
     colorOptions.find((c) => c.id === theme)?.value || "#316dcc";
@@ -53,14 +54,7 @@ function AddServiceNavigation() {
             <div className="box-border content-stretch flex flex-row items-center justify-end pl-0 pr-1.5 py-0 relative w-full">
               <div className="box-border content-stretch flex flex-row gap-1 items-center justify-center overflow-clip p-[10px] relative shrink-0">
                 <div className="relative shrink-0 size-6">
-                  <svg
-                    className="block size-full"
-                    fill="none"
-                    preserveAspectRatio="none"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d={svgPaths.p2774e700} />
-                  </svg>
+                  <SearchButton />
                 </div>
               </div>
             </div>

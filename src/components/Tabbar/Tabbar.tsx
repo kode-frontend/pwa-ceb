@@ -12,7 +12,7 @@ const Tabbar = () => {
       className="box-border content-stretch flex flex-row items-center justify-start p-0 relative shrink-0 w-full !justify-around"
       data-name="tabbar"
     >
-      <Link to="/pwa-ceb/">
+      <Link to="/pwa-ceb/home">
         <TabbarItem active={location.pathname === "/pwa-ceb/"} />
       </Link>
       <Link to="/pwa-ceb/payments">

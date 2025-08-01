@@ -40,7 +40,7 @@ export function ServicesGrid() {
               <img
                 src="/pwa-ceb/assets/tree.png"
                 alt="Карта"
-                className="absolute inset-0 w-full h-full object-cover"
+                className="absolute object-cover"
               />
             </div>
           </div>
@@ -54,7 +54,7 @@ export function ServicesGrid() {
                 <img
                   src="/pwa-ceb/assets/books.png"
                   alt="Карта"
-                  className="absolute inset-0 w-full h-full object-cover"
+                 className="absolute object-cover"
                 />
               </div>
               <div className="absolute flex items-center justify-center left-[47.5px] size-[145px] top-2.5">
@@ -72,7 +72,7 @@ export function ServicesGrid() {
                 <img
                   src="/pwa-ceb/assets/q.png"
                   alt="Карта"
-                  className="absolute inset-0 w-full h-full object-cover"
+                  className="absolute object-cover"
                 />
               </div>
               <div className="absolute bg-center bg-cover bg-no-repeat left-[72.5px] size-[110px] top-[27px]" />
@@ -90,7 +90,7 @@ export function ServicesGrid() {
               <img
                 src="/pwa-ceb/assets/connections.png"
                 alt="Карта"
-                className="absolute inset-0 w-full h-full object-cover"
+                className="absolute object-cover"
               />
             </div>
             <div className="absolute bg-center bg-cover bg-no-repeat left-[47.5px] size-36 top-2.5" />
@@ -105,7 +105,7 @@ export function ServicesGrid() {
               <img
                 src="/pwa-ceb/assets/creditstoryimg.png"
                 alt="Карта"
-                className="absolute inset-0 w-full h-full object-cover"
+                className="absolute object-cover"
               />
             </div>
           </div>
@@ -120,7 +120,7 @@ export function ServicesGrid() {
               <img
                 src="/pwa-ceb/assets/officepic.png"
                 alt="Карта"
-                className="absolute inset-0 w-full h-full object-cover"
+                className="absolute object-cover"
               />
             </div>
           </div>

@@ -11,7 +11,7 @@ export default function CreditMomentScreen() {
       ? "momentcreditwrapperlight.png"
       : "momentcreditwrapper.png";
   return (
-    <div className="h-full">
+    <div className="h-full overflow-hidden relative">
       <div className="flex flex-col justify-around h-[100%] p-0 m-0 leading-none">
         <img
           src={`/pwa-ceb/assets/${wrapperImage}`}
@@ -19,12 +19,12 @@ export default function CreditMomentScreen() {
           className="block w-full z-1"
           style={{ backgroundColor }}
         />
-        <img
-          src="/pwa-ceb/assets/momentcredit.png"
-          alt="Картинка 3"
-          className="block w-full"
-        />
       </div>
+      <img
+        src="/pwa-ceb/assets/momentcredit.png"
+        alt="Картинка 3"
+        className="block w-full relative bottom-[-39px]"
+      />
     </div>
   );
 }

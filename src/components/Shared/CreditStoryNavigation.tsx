@@ -8,7 +8,7 @@ function CreditStoryNavigation() {
   const navigate = useNavigate();
 
   const handleBack = () => {
-    navigate("/pwa-ceb/");
+    navigate("/pwa-ceb/home");
   };
 
   const { theme } = useTheme();

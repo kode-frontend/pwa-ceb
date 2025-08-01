@@ -16,7 +16,7 @@ function Card12() {
         <img
           src="/pwa-ceb/assets/cardspic.png"
           alt="Карта"
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute object-cover"
         />
       </div>
       <div

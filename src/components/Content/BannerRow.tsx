@@ -12,7 +12,7 @@ function BannerRow() {
   return (
     <div className="relative shrink-0 w-full" data-name="banner_row">
       <div className="flex flex-row items-center relative size-full">
-        <div className="box-border content-stretch flex flex-row gap-2 items-center justify-start px-4 py-0 relative w-full overflow-x-auto scrollbar-hide">
+        <div className="box-border content-stretch flex flex-row gap-[8px] items-center justify-start px-4 py-0 relative w-full overflow-x-auto scrollbar-hide">
           <div onClick={banner} className="cursor-pointer">
             <div
               className="h-[132px] overflow-clip relative rounded-3xl shrink-0 w-[343px]"

@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 import { useTheme } from "@context/ThemeProvider";
 import { colorOptions } from "@pages/ColorSelectionScreen";
@@ -6,9 +6,11 @@ import { BackArrow } from "@components/Content/BackArrow";
 
 function ThemeNavigation() {
   const navigate = useNavigate();
+  const location = useLocation();
 
   const handleBack = () => {
-    navigate("/pwa-ceb/settings");
+    
+    navigate(location.state || "/pwa-ceb/settings");
   };
 
   const { theme } = useTheme();

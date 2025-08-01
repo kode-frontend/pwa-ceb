@@ -16,7 +16,7 @@ function Card11() {
         <img
           src="/pwa-ceb/assets/flower.png"
           alt="Карта"
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute object-cover"
         />
       </div>
       <div

@@ -48,7 +48,7 @@ export default function CreditCardScreen() {
         <img
           src="/pwa-ceb/assets/creditsheet.png"
           alt="Картинка 3"
-          className="block w-full"
+          className="block w-full h-full"
         />
       </div>
     </div>

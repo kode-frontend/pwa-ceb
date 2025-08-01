@@ -163,8 +163,13 @@ export const AppLayout = () => {
   }, []);
 
   useEffect(() => {
-    document.body.style.backgroundColor = backgroundColor;
-  }, [theme]);
+    if (path === "/pwa-ceb/home") {
+      document.body.style.background =
+        backgroundColor === "#FFFFFF" ? "#f1f5fc" : backgroundColor;
+    } else {
+      document.body.style.background = "#f2f3f5";
+    }
+  }, [path]);
 
   return (
     <div
@@ -179,7 +184,6 @@ export const AppLayout = () => {
         <ScrollRestoration getKey={(location) => location.pathname} />
         <Outlet key={location.pathname} />
       </div>
-
       {hasTabbar && <TabbarNavigation />}
     </div>
   );
@@ -199,7 +203,7 @@ export const router = createBrowserRouter([
     element: <AppLayout />,
     errorElement: <NotFoundScreen />,
     children: [
-      { index: true, element: <HomeScreen /> },
+      { index: true, path: "home", element: <HomeScreen /> },
       { path: "payments", element: <PaymentsScreen /> },
       { path: "settings", element: <SettingsScreen /> },
       { path: "profile", element: <ProfileScreen /> },

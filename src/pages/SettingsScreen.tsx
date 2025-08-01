@@ -204,26 +204,28 @@ export const SettingsScreen = () => {
 
           <SettingsRow
             icon={
-              <div className="relative size-6">
+              <div className="relative size-9">
                 <svg
-                  className="block size-full"
+                  width="37"
+                  height="36"
+                  viewBox="0 0 37 36"
                   fill="none"
-                  preserveAspectRatio="none"
-                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
+                  <rect x="0.5" width="36" height="36" rx="12" fill="#F1F5FC" />
                   <path
-                    d="M5 9L8 6M8 6L11 9M8 6V18"
+                    d="M21.5 11L24.5 14M24.5 14L21.5 17M24.5 14L12.5 14"
                     stroke="#191919"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                   />
                   <path
-                    d={svgPaths.p22a07d40}
+                    d="M15.5 25L12.5 22M12.5 22L15.5 19M12.5 22L24.5 22"
                     stroke="#191919"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                   />
                 </svg>
               </div>

@@ -1,18 +1,14 @@
 function Banner2() {
   return (
     <div
-      className="basis-0 grow h-[132px] min-h-px min-w-px overflow-clip relative rounded-3xl shrink-0"
+      className="basis-0 grow h-[132px] overflow-clip relative shrink-0 cursor-pointer"
       data-name="banner"
-      style={{
-        backgroundImage:
-          "linear-gradient(133.858deg, rgb(245, 94, 67) 0%, rgb(226, 66, 38) 100%)",
-      }}
     >
-      <div className="relative w-[100%] h-[100%] overflow-hidden">
+      <div className="relative w-[100%] h-[100%] overflow-hidden rounded-4xl">
         <img
           src="/pwa-ceb/assets/banner_row.png"
           alt="Карта"
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute object-cover"
         />
       </div>
     </div>
