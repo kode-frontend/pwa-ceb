@@ -17,31 +17,31 @@ const CARD_DATA: Record<CardType, CardData> = {
   current: {
     expenses: {
       amount: "240 030 ₽",
-      title: "Потрачено в июне",
+      title: "Потрачено в июле",
     },
     income: {
       amount: "343 482 ₽",
-      title: "Поступления в июне",
+      title: "Поступления в июле",
     },
   },
   credit1: {
     expenses: {
       amount: "72 843 ₽",
-      title: "Потрачено в июне",
+      title: "Потрачено в июле",
     },
     income: {
       amount: "12 482 ₽",
-      title: "Поступления в июне",
+      title: "Поступления в июле",
     },
   },
   credit2: {
     expenses: {
       amount: "112 312 ₽",
-      title: "Потрачено в июне",
+      title: "Потрачено в июле",
     },
     income: {
       amount: "1 841 ₽",
-      title: "Поступления в июне",
+      title: "Поступления в июле",
     },
   },
 };
@@ -154,34 +154,34 @@ export function ChartBlocks({ selectedCard }: ChartBlocksProps) {
 
   const analytics = () => {
     if (selectedCard === "credit1") {
-      navigate("/pwa-ceb/analytics", {
+      navigate("/analytics", {
         state: { image: "analytics2.png" },
       });
       return;
     }
     if (selectedCard === "credit2") {
-      navigate("/pwa-ceb/analytics", {
+      navigate("/analytics", {
         state: { image: "credit3.png" },
       });
       return;
     }
-    navigate("/pwa-ceb/analytics");
+    navigate("/analytics");
   };
 
   const analytics2 = () => {
     if (selectedCard === "credit1") {
-      navigate("/pwa-ceb/analytics", {
+      navigate("/analytics", {
         state: { image: "analytics3.png" },
       });
       return;
     }
     if (selectedCard === "credit2") {
-      navigate("/pwa-ceb/analytics", {
+      navigate("/analytics", {
         state: { image: "credit4.png" },
       });
       return;
     }
-    navigate("/pwa-ceb/analytics", {
+    navigate("/analytics", {
       state: { image: "analytics2wrapper.png" },
     });
   };

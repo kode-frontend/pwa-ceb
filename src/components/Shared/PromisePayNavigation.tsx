@@ -8,7 +8,7 @@ function PromisePayNavigation() {
   const navigate = useNavigate();
 
   const handleBack = () => {
-    navigate("/pwa-ceb/home");
+    navigate("/home");
   };
 
   const { theme } = useTheme();

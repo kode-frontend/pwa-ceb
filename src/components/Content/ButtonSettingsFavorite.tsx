@@ -7,7 +7,7 @@ function ButtonSettingsFavorite() {
   const navigate = useNavigate();
 
   const handleBack = () => {
-    navigate("/pwa-ceb/add-service");
+    navigate("/add-service");
   };
 
   const color = theme === 'standard' ? "black" : "white";

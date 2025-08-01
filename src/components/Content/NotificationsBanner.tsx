@@ -45,10 +45,10 @@ export function NotificationBanners() {
   const navigate = useNavigate();
 
   const handleCreditsBack = () => {
-    navigate("/pwa-ceb/moment");
+    navigate("/moment");
   };
   const handleCreditsCardBack = () => {
-    navigate("/pwa-ceb/credit-card");
+    navigate("/credit-card");
   };
   return (
     <div className="bg-[rgba(49, 109, 204, 0.1)] box-border content-stretch flex flex-col gap-2 items-start justify-start pb-4 pt-2 relative shrink-0 w-full">

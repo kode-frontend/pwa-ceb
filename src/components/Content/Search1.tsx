@@ -6,7 +6,7 @@ function Search1() {
   const { theme } = useTheme();
   const navigate = useNavigate();
   const handleClickSearch = () => {
-    navigate("/pwa-ceb/search");
+    navigate("/search", {state: { from: location.pathname } });
   };
   const svgStrokeColor = theme === "standard" ? "black" : "white";
   return (

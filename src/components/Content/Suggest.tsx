@@ -10,14 +10,14 @@ function Suggest() {
     {
       id: "card",
       title: "Обмен валюты",
-      navigateLink: "/pwa-ceb/count-change",
+      navigateLink: "/count-change",
       component: Card,
       icon: CurrencyExchangeIcon,
     },
     {
       id: "card1",
       title: "Перевод по СБП",
-      navigateLink: "/pwa-ceb/sbp",
+      navigateLink: "/sbp",
       component: Card,
       icon: TransferViaSBPIcon,
     },

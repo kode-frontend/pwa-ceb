@@ -10,18 +10,18 @@ function SectionHeader({ selectedCard = "current" }: SectionHeaderProps) {
 
   const handleBack = () => {
     if (selectedCard === "credit1") {
-      navigate("/pwa-ceb/analytics", {
+      navigate("/analytics", {
         state: { image: "analytics2.png" },
       });
       return;
     }
     if (selectedCard === "credit2") {
-      navigate("/pwa-ceb/analytics", {
+      navigate("/analytics", {
         state: { image: "credit3.png" },
       });
       return;
     }
-    navigate("/pwa-ceb/analytics");
+    navigate("/analytics");
   };
   return (
     <div className="relative shrink-0 w-full" data-name="section_header">

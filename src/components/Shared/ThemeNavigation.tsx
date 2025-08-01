@@ -10,7 +10,7 @@ function ThemeNavigation() {
 
   const handleBack = () => {
     
-    navigate(location.state || "/pwa-ceb/settings");
+    navigate(location.state || "/settings");
   };
 
   const { theme } = useTheme();

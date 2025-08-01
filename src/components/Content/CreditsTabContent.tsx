@@ -1,11 +1,13 @@
 import { svgPaths } from "@shared/constants/svgPaths";
 import { useNavigate } from "react-router-dom";
 
+import flowersmall from "/assets/flowersmall.png";
+
 function CreditAccount() {
     const navigate = useNavigate();
 
   const handleBack = () => {
-    navigate("/pwa-ceb/moment");
+    navigate("/moment");
   };
   return (
     <div
@@ -98,7 +100,7 @@ function CreditPromoCard() {
   const navigate = useNavigate();
 
   const handleBack = () => {
-    navigate("/pwa-ceb/credit");
+    navigate("/credit");
   };
   return (
     <div
@@ -121,7 +123,7 @@ function CreditPromoCard() {
               >
                 <div className="relative w-[100%] h-[100%] overflow-hidden">
                   <img
-                    src="/pwa-ceb/assets/flowersmall.png"
+                    src={flowersmall}
                     alt="Карта"
                     className="absolute inset-0 w-full h-full object-cover"
                   />

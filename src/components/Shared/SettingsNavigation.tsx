@@ -9,7 +9,7 @@ function SettingsNavigation() {
   const navigate = useNavigate();
 
   const handleBack = () => {
-    navigate("/pwa-ceb/settings");
+    navigate("/settings");
   };
 
   const backgroundColor =

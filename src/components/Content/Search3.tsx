@@ -7,7 +7,7 @@ function Search3(backgroundColor: any) {
   const { theme } = useTheme();
 
   const handleClick = () => {
-    navigate("/pwa-ceb/notifications");
+    navigate("/notifications", {state: { from: location.pathname } });
   };
   const svgStrokeColor = theme === "standard" ? "black" : "white";
   return (

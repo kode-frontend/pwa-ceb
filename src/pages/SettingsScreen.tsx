@@ -12,7 +12,7 @@ export const SettingsScreen = () => {
   const navigate = useNavigate();
 
   const settingsTheme = () => {
-    navigate("/pwa-ceb/theme");
+    navigate("/theme");
   };
 
   return (

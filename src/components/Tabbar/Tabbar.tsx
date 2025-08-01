@@ -12,20 +12,20 @@ const Tabbar = () => {
       className="box-border content-stretch flex flex-row items-center justify-start p-0 relative shrink-0 w-full !justify-around"
       data-name="tabbar"
     >
-      <Link to="/pwa-ceb/home">
-        <TabbarItem active={location.pathname === "/pwa-ceb/home"} />
+      <Link to="/home">
+        <TabbarItem active={location.pathname === "/home"} />
       </Link>
-      <Link to="/pwa-ceb/payments">
-        <TabbarItem1 active={location.pathname === "/pwa-ceb/payments"} />
+      <Link to="/payments">
+        <TabbarItem1 active={location.pathname === "/payments"} />
       </Link>
-      <Link to="/pwa-ceb/loans">
-        <TabbarItem2 active={location.pathname === "/pwa-ceb/loans"}/>
+      <Link to="/loans">
+        <TabbarItem2 active={location.pathname === "/loans"}/>
       </Link>
-      <Link to="/pwa-ceb/chats">
-        <TabbarItem3 active={location.pathname === "/pwa-ceb/chats"}/>
+      <Link to="/chats">
+        <TabbarItem3 active={location.pathname === "/chats"}/>
       </Link>
-      <Link to="/pwa-ceb/settings">
-        <TabbarItem4 active={location.pathname === "/pwa-ceb/settings"} />
+      <Link to="/settings">
+        <TabbarItem4 active={location.pathname === "/settings"} />
       </Link>
     </div>
   );

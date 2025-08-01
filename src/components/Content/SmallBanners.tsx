@@ -1,16 +1,20 @@
 import { useNavigate } from "react-router-dom";
 
+import stories1 from "/assets/stories1.png";
+import stories2 from "/assets/stories2.png";
+import ecosystem from "/assets/ecosystem.png";
+
 function SmallBanners() {
   const navigate = useNavigate();
 
   const storie1 = () => {
-    navigate("/pwa-ceb/bank-deposit");
+    navigate("/bank-deposit");
   };
   const storie2 = () => {
-    navigate("/pwa-ceb/promise-pay");
+    navigate("/promise-pay");
   };
   const storie3 = () => {
-    navigate("/pwa-ceb/promise-pay-points");
+    navigate("/promise-pay-points");
   };
   return (
     <div className="relative shrink-0 w-full" data-name="small_banners">
@@ -27,7 +31,7 @@ function SmallBanners() {
             >
               <div className="relativerounded-lg overflow-hidden">
                 <img
-                  src="/pwa-ceb/assets/stories1.png"
+                  src={stories1}
                   alt="Карта"
                   className="absolute inset-0 w-full h-full object-cover"
                 />
@@ -45,7 +49,7 @@ function SmallBanners() {
             >
               <div className="relativerounded-lg overflow-hidden">
                 <img
-                  src="/pwa-ceb/assets/stories2.png"
+                  src={stories2}
                   alt="Карта"
                   className="absolute inset-0 w-full h-full object-cover"
                 />
@@ -76,7 +80,7 @@ function SmallBanners() {
               </div>
               <div className="relative w-[100%] h-[100%] overflow-hidden">
                 <img
-                  src="/pwa-ceb/assets/ecosystem.png"
+                  src={ecosystem}
                   alt="Карта"
                   className="absolute inset-0 w-full h-full object-cover"
                 />

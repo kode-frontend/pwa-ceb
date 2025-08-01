@@ -2,13 +2,15 @@ import { BackArrow } from "@components/Content/BackArrow";
 import { useTheme } from "@context/ThemeProvider";
 import { colorOptions } from "@pages/ColorSelectionScreen";
 import { svgPaths } from "@shared/constants/svgPaths";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 function ScanQrNavigation() {
   const navigate = useNavigate();
-
+  const location = useLocation();
   const handleBack = () => {
-    navigate("/pwa-ceb/home");
+    const splitPath = location.state?.from?.split("/");
+    const correctPath = `/${splitPath[splitPath.length - 1]}`;
+    navigate(correctPath);
   };
 
   const { theme } = useTheme();

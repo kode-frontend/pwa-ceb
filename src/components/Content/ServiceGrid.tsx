@@ -1,25 +1,32 @@
 import { useNavigate } from "react-router-dom";
 
+import tree from "/assets/tree.png";
+import books from "/assets/books.png";
+import q from "/assets/q.png";
+import connections from "/assets/connections.png";
+import creditstoryimg from "/assets/creditstoryimg.png";
+import officepic from "/assets/officepic.png";
+
 export function ServicesGrid() {
   const navigate = useNavigate();
 
   const cashback = () => {
-    navigate("/pwa-ceb/cashback");
+    navigate("/cashback");
   };
   const formular = () => {
-    navigate("/pwa-ceb/formular");
+    navigate("/formular");
   };
   const questions = () => {
-    navigate("/pwa-ceb/questions");
+    navigate("/questions");
   };
   const connect = () => {
-    navigate("/pwa-ceb/connect");
+    navigate("/connect");
   };
   const creditStory = () => {
-    navigate("/pwa-ceb/story");
+    navigate("/story");
   };
   const office = () => {
-    navigate("/pwa-ceb/office");
+    navigate("/office");
   };
   return (
     <div className="bg-[#ffffff] box-border content-stretch flex flex-col items-start justify-start overflow-clip p-0 relative rounded-[32px] shrink-0 w-full">
@@ -38,7 +45,7 @@ export function ServicesGrid() {
           >
             <div className="relative w-[100%] h-[100%] rounded-lg overflow-hidden">
               <img
-                src="/pwa-ceb/assets/tree.png"
+                src={tree}
                 alt="Карта"
                 className="absolute object-cover"
               />
@@ -52,7 +59,7 @@ export function ServicesGrid() {
             >
               <div className="relative w-[100%] h-[100%] rounded-lg overflow-hidden">
                 <img
-                  src="/pwa-ceb/assets/books.png"
+                  src={books}
                   alt="Карта"
                  className="absolute object-cover"
                 />
@@ -70,7 +77,7 @@ export function ServicesGrid() {
             >
               <div className="relative w-[100%] h-[100%] rounded-lg overflow-hidden">
                 <img
-                  src="/pwa-ceb/assets/q.png"
+                  src={q}
                   alt="Карта"
                   className="absolute object-cover"
                 />
@@ -88,7 +95,7 @@ export function ServicesGrid() {
           >
             <div className="relative w-[100%] h-[100%] rounded-lg overflow-hidden">
               <img
-                src="/pwa-ceb/assets/connections.png"
+                src={connections}
                 alt="Карта"
                 className="absolute object-cover"
               />
@@ -103,7 +110,7 @@ export function ServicesGrid() {
             <div className="absolute bg-center bg-cover bg-no-repeat left-[57px] size-[132px] top-3" />
             <div className="relative w-[100%] h-[100%] rounded-lg overflow-hidden">
               <img
-                src="/pwa-ceb/assets/creditstoryimg.png"
+                src={creditstoryimg}
                 alt="Карта"
                 className="absolute object-cover"
               />
@@ -118,7 +125,7 @@ export function ServicesGrid() {
             <div className="absolute bg-center bg-cover bg-no-repeat left-[57px] size-[132px] top-3" />
             <div className="relative w-[100%] h-[100%] rounded-lg overflow-hidden">
               <img
-                src="/pwa-ceb/assets/officepic.png"
+                src={officepic}
                 alt="Карта"
                 className="absolute object-cover"
               />

@@ -1,10 +1,12 @@
 import { useNavigate } from "react-router-dom";
 
+import bankcontent from "/assets/bankcontent.png";
+
 function DepositPromoCard() {
   const navigate = useNavigate();
 
   const handleBack = () => {
-    navigate("/pwa-ceb/bank-deposit");
+    navigate("/bank-deposit");
   };
   return (
     <div
@@ -14,7 +16,7 @@ function DepositPromoCard() {
     >
       <div className="relative w-[100%] h-[100%] overflow-hidden">
         <img
-          src="/pwa-ceb/assets/bankcontent.png"
+          src={bankcontent}
           alt="Карта"
           className="absolute inset-0 w-full h-full object-cover"
         />

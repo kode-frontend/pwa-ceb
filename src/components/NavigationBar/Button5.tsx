@@ -8,7 +8,7 @@ function Button5({ scrollY = 0 }: { scrollY?: number }) {
   const isCompressed = scrollY > 99;
 
   const handleClick = () => {
-    navigate("/pwa-ceb/scan-qr");
+    navigate("/scan-qr", {state: { from: location.pathname } });
   };
 
   const backgroundColor = theme === "standard" ? "#316dcc" : "white";

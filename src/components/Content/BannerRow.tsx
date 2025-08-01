@@ -1,13 +1,16 @@
 import { useNavigate } from "react-router-dom";
 
+import banner1 from "/assets/banner1.png";
+import additionalpic from "/assets/additionalpic.png";
+
 function BannerRow() {
   const navigate = useNavigate();
 
   const banner = () => {
-    navigate("/pwa-ceb/invite");
+    navigate("/invite");
   };
-  const banner1 = () => {
-    navigate("/pwa-ceb/additional-points");
+  const goToAdditional = () => {
+    navigate("/additional-points");
   };
   return (
     <div className="relative shrink-0 w-full" data-name="banner_row">
@@ -24,14 +27,14 @@ function BannerRow() {
             >
               <div className="relativerounded-lg overflow-hidden">
                 <img
-                  src="/pwa-ceb/assets/banner1.png"
+                  src={banner1}
                   alt="Карта"
                   className="absolute inset-0 w-full h-full object-cover"
                 />
               </div>
             </div>
           </div>
-          <div onClick={banner1} className="cursor-pointer">
+          <div onClick={goToAdditional} className="cursor-pointer">
             <div
               className="h-[132px] overflow-clip relative rounded-3xl shrink-0 w-[343px]"
               data-name="banner"
@@ -42,7 +45,7 @@ function BannerRow() {
             >
               <div className="relativerounded-lg overflow-hidden">
                 <img
-                  src="/pwa-ceb/assets/additionalpic.png"
+                  src={additionalpic}
                   alt="Карта"
                   className="absolute inset-0 w-full h-full object-cover"
                 />

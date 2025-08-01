@@ -12,7 +12,7 @@ function AddServiceNavigation() {
   const { theme } = useTheme();
 
   const handleBack = () => {
-    navigate("/pwa-ceb/home");
+    navigate("/home");
   };
   const backgroundColor =
     colorOptions.find((c) => c.id === theme)?.value || "#316dcc";

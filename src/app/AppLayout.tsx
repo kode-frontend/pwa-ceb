@@ -164,7 +164,7 @@ export const AppLayout = () => {
   }, []);
 
   useEffect(() => {
-    if (path === "/pwa-ceb/home") {
+    if (path === "/home") {
       document.body.style.background =
         backgroundColor === "#FFFFFF" ? "#f1f5fc" : backgroundColor;
     } else {
@@ -201,10 +201,10 @@ export const App = () => {
 export const router = createBrowserRouter([
   {
       path: "/",
-      element: <Navigate to="/pwa-ceb/home" replace />
+      element: <Navigate to="home" replace />
   },
   {
-    path: "/pwa-ceb/",
+    path: "/",
     element: <AppLayout />,
     errorElement: <NotFoundScreen />,
     children: [
@@ -251,5 +251,5 @@ export const router = createBrowserRouter([
     ],
   },
 ], {
-  basename: "/pwa-ceb"
+  basename: "/pwa-ceb/"
 });

@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 export function EditButton() {
   const navigate = useNavigate();
   const handleBack = () => {
-    navigate("/pwa-ceb/theme", { state: "/pwa-ceb/home" });
+    navigate("/theme", { state: "home" });
   };
   return (
     <div

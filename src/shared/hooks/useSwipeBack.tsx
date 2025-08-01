@@ -2,11 +2,11 @@ import { useEffect, useRef } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 
 const DISABLED_SWIPE_BACK_ROUTES = [
-  "/pwa-ceb/",
-  "/pwa-ceb/payments",
-  "/pwa-ceb/loans",
-  "/pwa-ceb/chats",
-  "/pwa-ceb/settings",
+  "/home",
+  "/payments",
+  "/loans",
+  "/chats",
+  "/settings",
 ];
 
 export const useSwipeBack = () => {

@@ -1,3 +1,6 @@
+import chatInput1 from "/assets/chatInput1.png";
+import bodyChat from "/assets/bodyChat.png";
+
 export const ChatsScreen = () => {
   return (
     <div
@@ -10,14 +13,10 @@ export const ChatsScreen = () => {
       >
         <div className="bg-[#ffffff] flex flex-col w-full p-0 m-0 overflow-hidden">
           <div className="flex flex-col p-0 m-0 leading-none w-full h-[100vh]">
-            <img
-              src="/pwa-ceb/assets/bodyChat copy.png"
-              alt="Картинка 3"
-              className="block w-full"
-            />
+            <img src={bodyChat} alt="Картинка 3" className="block w-full" />
           </div>
           <img
-            src="/pwa-ceb/assets/chatInput (1).png"
+            src={chatInput1}
             alt="Картинка 3"
             style={{
               left: 0,

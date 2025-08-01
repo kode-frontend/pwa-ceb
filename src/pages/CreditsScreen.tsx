@@ -1,5 +1,7 @@
 import Overlay from "@components/Content/Overlay";
 
+import сontainercredits from "/assets/сontainercredits.png";
+
 export const CreditsScreen = () => {
   return (
     <div
@@ -12,7 +14,7 @@ export const CreditsScreen = () => {
         data-name="content"
       >
         <img
-          src={`/pwa-ceb/assets/сontainercredits.png`}
+          src={сontainercredits}
           alt="Картинка 3"
           className="block w-full"
         />

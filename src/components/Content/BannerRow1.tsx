@@ -5,7 +5,7 @@ function BannerRow1() {
   const navigate = useNavigate();
 
   const handleBack = () => {
-    navigate("/pwa-ceb/order");
+    navigate("/order");
   };
   return (
     <div className="relative shrink-0 w-full" data-name="banner_row">

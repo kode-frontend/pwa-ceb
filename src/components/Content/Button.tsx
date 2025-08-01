@@ -7,7 +7,7 @@ function Button() {
   const navigate = useNavigate();
 
   const handleBack = () => {
-    navigate("/pwa-ceb/add-service");
+    navigate("/add-service");
   };
 
   const backgroundColor = theme === "standard" ? "#316DCC" : "white";

@@ -13,7 +13,7 @@ function ToggleSwitch({
       className="h-8 overflow-clip relative rounded-[100px] shrink-0 w-[52px] cursor-pointer transition-colors"
       onClick={() => onChange(!enabled)}
       style={{
-        backgroundColor: location.pathname.includes("/pwa-ceb/settings")
+        backgroundColor: location.pathname.includes("/settings")
           ? "#E2E4EA"
           : "#191919",
       }}

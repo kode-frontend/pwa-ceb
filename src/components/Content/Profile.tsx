@@ -6,8 +6,9 @@ function Profile() {
   const navigate = useNavigate();
   const { theme } = useTheme();
 
+
   const handleClick = () => {
-    navigate("/pwa-ceb/profile");
+    navigate("/profile", {state: { from: location.pathname } });
   };
 
   const svgStrokeColor = theme === "standard" ? "black" : "white";

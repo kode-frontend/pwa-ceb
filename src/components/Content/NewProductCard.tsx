@@ -71,7 +71,7 @@ export function NewProductCard() {
   const navigate = useNavigate();
 
   const handleBack = () => {
-    navigate("/pwa-ceb/new-product");
+    navigate("/new-product");
   };
   return (
     <div

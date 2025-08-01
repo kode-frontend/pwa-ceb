@@ -2,6 +2,9 @@ import { svgPaths } from "@shared/constants/svgPaths";
 import { CardsTabContentProps } from "./InteractiveAccountCards";
 import { useNavigate } from "react-router-dom";
 
+import mir from "/assets/mir.png";
+import card1 from "/assets/card1.png";
+
 function IcnRub24() {
   return (
     <div className="absolute left-2 size-6 top-2" data-name="icn_rub_24">
@@ -27,7 +30,7 @@ function MainAccountCard() {
   const navigate = useNavigate();
 
   const handleBack = () => {
-    navigate("/pwa-ceb/debet-card");
+    navigate("/debet-card");
   };
   return (
     <div
@@ -110,7 +113,7 @@ function MainAccountCard() {
             </div>
             <div className="relative w-14 h-9 rounded-lg overflow-hidden">
               <img
-                src="/pwa-ceb/assets/card (1).png"
+                src={card1}
                 alt="Карта"
                 className="absolute inset-0 w-full h-full object-cover"
               />
@@ -202,7 +205,7 @@ function CreditCard() {
   const navigate = useNavigate();
 
   const handleBack = () => {
-    navigate("/pwa-ceb/credit-card");
+    navigate("/credit-card");
   };
   return (
     <div
@@ -216,7 +219,7 @@ function CreditCard() {
       >
         <div className="relative w-11 h-11 rounded-lg overflow-hidden">
           <img
-            src="/pwa-ceb/assets/mir.png"
+            src={mir}
             alt="Карта"
             className="absolute inset-0 w-full h-full object-cover"
           />

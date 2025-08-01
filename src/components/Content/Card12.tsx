@@ -1,10 +1,12 @@
 import { useNavigate } from "react-router-dom";
 
+import cardspic from "/assets/cardspic.png";
+
 function Card12() {
   const navigate = useNavigate();
 
   const handleBack = () => {
-    navigate("/pwa-ceb/new-product");
+    navigate("/new-product");
   };
   return (
     <div
@@ -14,7 +16,7 @@ function Card12() {
     >
       <div className="relative w-[100%] h-[100%] overflow-hidden">
         <img
-          src="/pwa-ceb/assets/cardspic.png"
+          src={cardspic}
           alt="Карта"
           className="absolute object-cover"
         />

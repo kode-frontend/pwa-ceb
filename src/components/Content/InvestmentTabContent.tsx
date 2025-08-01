@@ -1,10 +1,12 @@
 import { useNavigate } from "react-router-dom";
 
+import investcontent from "/assets/investcontent.png";
+
 export function InvestmentTabContent() {
   const navigate = useNavigate();
 
   const handleBack = () => {
-    navigate("/pwa-ceb/invest");
+    navigate("/invest");
   };
   return (
     <div
@@ -18,7 +20,7 @@ export function InvestmentTabContent() {
       >
         <div className="relative w-[100%] h-[100%] overflow-hidden">
           <img
-            src="/pwa-ceb/assets/investcontent.png"
+            src={investcontent}
             alt="Карта"
             className="absolute inset-0 w-full h-full object-cover"
           />

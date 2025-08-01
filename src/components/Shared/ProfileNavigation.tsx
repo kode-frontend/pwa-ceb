@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 import { svgPaths } from "@shared/constants/svgPaths";
 import { useTheme } from "@context/ThemeProvider";
@@ -7,9 +7,11 @@ import { BackArrow } from "@components/Content/BackArrow";
 
 function ProfileNavigation() {
   const navigate = useNavigate();
-
+  const location = useLocation();
   const handleBack = () => {
-    navigate("/pwa-ceb/home");
+    const splitPath = location.state?.from?.split("/");
+    const correctPath = `/${splitPath[splitPath.length - 1]}`;
+    navigate(correctPath);
   };
 
   const { theme } = useTheme();
@@ -17,7 +19,7 @@ function ProfileNavigation() {
   const backgroundColor =
     colorOptions.find((c) => c.id === theme)?.value || "#316dcc";
 
-  const svgColor = theme === "standard" ? 'black' : 'white'
+  const svgColor = theme === "standard" ? "black" : "white";
 
   return (
     <div
