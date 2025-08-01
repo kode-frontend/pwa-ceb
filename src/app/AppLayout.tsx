@@ -200,6 +200,10 @@ export const App = () => {
 
 export const router = createBrowserRouter([
   {
+      path: "/",
+      element: <Navigate to="/pwa-ceb/home" replace />
+  },
+  {
     path: "/pwa-ceb/",
     element: <AppLayout />,
     errorElement: <NotFoundScreen />,
