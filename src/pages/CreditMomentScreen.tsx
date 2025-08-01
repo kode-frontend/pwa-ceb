@@ -4,7 +4,6 @@ import { colorOptions } from "./ColorSelectionScreen";
 import momentcreditwrapperlight from "/assets/momentcreditwrapperlight.png";
 import momentcreditwrapper from "/assets/momentcreditwrapper.png";
 import momentcredit from "/assets/momentcredit.png";
-import conditions from "/assets/conditions.png";
 
 export default function CreditMomentScreen() {
   const { theme } = useTheme();
