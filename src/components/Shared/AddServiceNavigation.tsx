@@ -4,7 +4,6 @@ import { useTheme } from "@context/ThemeProvider";
 
 import { colorOptions } from "@pages/ColorSelectionScreen";
 
-import { svgPaths } from "@shared/constants/svgPaths";
 import { BackArrow } from "@components/Content/BackArrow";
 import { SearchButton } from "@components/Content/SearchButton";
 

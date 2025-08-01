@@ -1,6 +1,7 @@
 import { svgPaths } from "@shared/constants/svgPaths";
-import { Mir } from "./mir";
+
 import { Mir2 } from "./Mir2";
+import { Mir } from "./Mir";
 
 type CardType = "current" | "credit1" | "credit2";
 
