@@ -12,15 +12,16 @@ export const colorOptions: { id: ThemeId; name: string; value: string }[] = [
 const updateThemeColorMeta = (color: string) => {
   const metaTag = document.querySelector("meta[name=theme-color]");
   if (metaTag) {
+    if (color === "#FFFFFF") {
+      metaTag.setAttribute("content", "#f2f3f5");
+    }
     metaTag.setAttribute("content", color);
   }
 };
 
-
 export const ColorSelectionScreen = () => {
-  
   const { theme, setTheme } = useTheme();
-  
+
   return (
     <div className="bg-[#f2f3f5] box-border content-stretch flex flex-col items-start justify-start size-full  ">
       <div className="relative size-full">

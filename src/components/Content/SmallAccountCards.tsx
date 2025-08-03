@@ -145,7 +145,7 @@ function Container1({ isActive }: { isActive?: boolean }) {
                   rx="6.2"
                   stroke="#191919"
                   stroke-opacity="0.08"
-                  stroke-width="0.4"
+                  strokeWidth="0.4"
                 />
               </g>
               <defs>
@@ -296,7 +296,7 @@ function Container3({ isActive }: { isActive?: boolean }) {
                   rx="6.2"
                   stroke="#191919"
                   stroke-opacity="0.08"
-                  stroke-width="0.4"
+                  strokeWidth="0.4"
                 />
               </g>
               <defs>

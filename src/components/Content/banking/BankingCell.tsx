@@ -98,8 +98,8 @@ const renderIcon = (iconType: BankingIconType): JSX.Element => {
               fill="#F1F5FC"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M16.8321 7.24802C17.5779 6.91733 18.4221 6.91733 19.1679 7.24802L27.7995 11.0754C29.7751 11.9514 29.1703 15 27.0209 15H8.97906C6.82967 15 6.22489 11.9514 8.20047 11.0754L16.8321 7.24802ZM18.3893 9.12765C18.1407 9.01742 17.8593 9.01742 17.6107 9.12765L9.41076 12.7635C9.31198 12.8073 9.34324 12.9549 9.45129 12.9549H26.5487C26.6568 12.9549 26.688 12.8073 26.5892 12.7635L18.3893 9.12765Z"
               fill="#0F0F0F"
             />
@@ -138,8 +138,8 @@ const renderIcon = (iconType: BankingIconType): JSX.Element => {
               fill="#F1F5FC"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M16.8321 7.24802C17.5779 6.91733 18.4221 6.91733 19.1679 7.24802L27.7995 11.0754C29.7751 11.9514 29.1703 15 27.0209 15H8.97906C6.82967 15 6.22489 11.9514 8.20047 11.0754L16.8321 7.24802ZM18.3893 9.12765C18.1407 9.01742 17.8593 9.01742 17.6107 9.12765L9.41076 12.7635C9.31198 12.8073 9.34324 12.9549 9.45129 12.9549H26.5487C26.6568 12.9549 26.688 12.8073 26.5892 12.7635L18.3893 9.12765Z"
               fill="#0F0F0F"
             />
@@ -180,9 +180,9 @@ const renderIcon = (iconType: BankingIconType): JSX.Element => {
             <path
               d="M20 22H25V27M16 14H11V9M25.4176 15.0034C24.8569 13.6157 23.9181 12.413 22.708 11.5322C21.4979 10.6514 20.0652 10.1275 18.5723 10.0205C17.0794 9.9135 15.5861 10.2274 14.2627 10.9266C12.9393 11.6258 11.8388 12.6825 11.0859 13.9761M10.582 20.9971C11.1427 22.3848 12.0815 23.5874 13.2916 24.4682C14.5017 25.3491 15.9359 25.8723 17.4288 25.9793C18.9217 26.0863 20.4138 25.7725 21.7371 25.0732C23.0605 24.374 24.1603 23.3175 24.9131 22.0239"
               stroke="#191919"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
         </div>
@@ -205,40 +205,40 @@ const renderIcon = (iconType: BankingIconType): JSX.Element => {
             <path
               d="M8 18.6099H25"
               stroke="#191919"
-              stroke-width="1.8"
+              strokeWidth="1.8"
               stroke-miterlimit="10"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
             <path
               d="M25 16.2798V23.4298C24.97 26.2798 24.19 26.9998 21.22 26.9998H11.78C8.76003 26.9998 8 26.2498 8 23.2698V16.2798C8 13.5798 8.63 12.7098 11 12.5698C11.24 12.5598 11.5 12.5498 11.78 12.5498H21.22C24.24 12.5498 25 13.2998 25 16.2798Z"
               stroke="#191919"
-              stroke-width="1.8"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="1.8"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
             <path
               d="M28 12.73V19.72C28 22.42 27.37 23.29 25 23.43V16.28C25 13.3 24.24 12.55 21.22 12.55H11.78C11.5 12.55 11.24 12.56 11 12.57C11.03 9.72 11.81 9 14.78 9H24.22C27.24 9 28 9.75 28 12.73Z"
               stroke="#191919"
-              stroke-width="1.8"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="1.8"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
             <path
               d="M11.25 23.8101H12.97"
               stroke="#191919"
-              stroke-width="1.8"
+              strokeWidth="1.8"
               stroke-miterlimit="10"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
             <path
               d="M15.1094 23.8101H18.5494"
               stroke="#191919"
-              stroke-width="1.8"
+              strokeWidth="1.8"
               stroke-miterlimit="10"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
         </div>

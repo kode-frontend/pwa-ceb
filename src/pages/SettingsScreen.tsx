@@ -216,16 +216,16 @@ export const SettingsScreen = () => {
                   <path
                     d="M21.5 11L24.5 14M24.5 14L21.5 17M24.5 14L12.5 14"
                     stroke="#191919"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M15.5 25L12.5 22M12.5 22L15.5 19M12.5 22L24.5 22"
                     stroke="#191919"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </div>
