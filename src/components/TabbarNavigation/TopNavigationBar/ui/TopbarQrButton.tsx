@@ -2,7 +2,7 @@ import { useTheme } from "@context/ThemeProvider";
 import { useNavigate } from "react-router-dom";
 import { svgPaths } from "@shared/constants/svgPaths";
 
-function Button5({ scrollY = 0 }: { scrollY?: number }) {
+function TopbarQrButton({ scrollY = 0 }: { scrollY?: number }) {
   const { theme } = useTheme();
   const navigate = useNavigate();
   const isCompressed = scrollY > 99;
@@ -154,4 +154,4 @@ function Button5({ scrollY = 0 }: { scrollY?: number }) {
   );
 }
 
-export default Button5;
+export default TopbarQrButton;

@@ -5,7 +5,7 @@ interface SectionHeaderProps {
   selectedCard?: CardType;
 }
 
-function SectionHeader({ selectedCard = "current" }: SectionHeaderProps) {
+function AnalyticsSectionHeader({ selectedCard = "current" }: SectionHeaderProps) {
   const navigate = useNavigate();
 
   const handleBack = () => {
@@ -46,4 +46,4 @@ function SectionHeader({ selectedCard = "current" }: SectionHeaderProps) {
   );
 }
 
-export default SectionHeader;
+export default AnalyticsSectionHeader;

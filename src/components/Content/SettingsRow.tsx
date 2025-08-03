@@ -1,5 +1,5 @@
+import ToggleSwitch from "@components/Content/ToggleSwitch";
 import { svgPaths } from "@shared/constants/svgPaths";
-import ToggleSwitch from "./ToggleSwitch";
 
 function SettingsRow({
   icon,

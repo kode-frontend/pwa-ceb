@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { svgPaths } from "@shared/constants/svgPaths";
 import { useTheme } from "@context/ThemeProvider";
 
-function Search3(backgroundColor: any) {
+function TopbarNotificationButton(backgroundColor: any) {
   const navigate = useNavigate();
   const { theme } = useTheme();
 
@@ -49,4 +49,4 @@ function Search3(backgroundColor: any) {
   );
 }
 
-export default Search3;
+export default TopbarNotificationButton;

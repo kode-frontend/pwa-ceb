@@ -57,6 +57,7 @@ export default defineConfig({
       "@components": path.resolve(__dirname, "./src/components"),
       "@context": path.resolve(__dirname, "./src/context"),
       "@config": path.resolve(__dirname, "./src/config"),
+      "@router": path.resolve(__dirname, "./src/router")
     },
   },
   css: {

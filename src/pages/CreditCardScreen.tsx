@@ -1,5 +1,5 @@
 import { useTheme } from "@context/ThemeProvider";
-import ToggleSwitch from "@components/Shared/ToggleSwitch";
+import ToggleSwitch from "@components/Content/ToggleSwitch";
 import { useState } from "react";
 
 import wrapper1 from "/assets/wrapper1.png";

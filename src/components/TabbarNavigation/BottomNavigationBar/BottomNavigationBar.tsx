@@ -4,7 +4,7 @@ import TabbarScreenTitle from "./ui/TabbarScreenTitle";
 import TabbarIcon from "./ui/TabbarIcon";
 import { routes } from "./constants/tabbarRoutes";
 
-const Tabbar = () => {
+const BottomNavigationBar = () => {
   const location = useLocation();
 
   return (
@@ -31,4 +31,4 @@ const Tabbar = () => {
   );
 };
 
-export default Tabbar;
+export default BottomNavigationBar;

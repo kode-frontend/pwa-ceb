@@ -1,10 +1,9 @@
 import { useState } from "react";
 
-import SectionHeader from "@components/Shared/SectionHeader";
-import SettingsRow from "@components/Shared/SettingsRow";
-
 import { svgPaths } from "@shared/constants/svgPaths";
 import { useNavigate } from "react-router-dom";
+import SettingsSectionHeader from "@components/Content/SettingsSectionHeader";
+import SettingsRow from "@components/Content/SettingsRow";
 
 export const SettingsScreen = () => {
   const [showBlockedCards, setShowBlockedCards] = useState(false);
@@ -19,7 +18,7 @@ export const SettingsScreen = () => {
     <div className="bg-[#f2f3f5] box-border content-stretch flex flex-col items-start justify-start size-full  pt-[51px] pb-[51px]">
       <div className="box-border content-stretch flex flex-col gap-2 items-start justify-start left-0 px-4 py-3 w-full">
         <div className="bg-[#ffffff] box-border content-stretch flex flex-col items-start justify-start overflow-clip p-0 relative rounded-[20px] w-full">
-          <SectionHeader title="Главный экран" />
+          <SettingsSectionHeader title="Главный экран" />
 
           <SettingsRow
             icon={
@@ -109,9 +108,8 @@ export const SettingsScreen = () => {
           />
         </div>
 
-        {/* Additional Options */}
         <div className="bg-[#ffffff] box-border content-stretch flex flex-col items-start justify-start overflow-clip p-0 relative rounded-[20px] shrink-0 w-full">
-          <SectionHeader title="Дополнительные опции" />
+          <SettingsSectionHeader title="Дополнительные опции" />
 
           <SettingsRow
             icon={

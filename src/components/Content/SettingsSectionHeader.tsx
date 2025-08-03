@@ -1,4 +1,4 @@
-function SectionHeader({ title }: { title: string }) {
+function SettingsSectionHeader({ title }: { title: string }) {
   return (
     <div className="box-border content-stretch flex flex-col items-start justify-start p-0 relative shrink-0 w-[343px]">
       <div className="relative shrink-0 w-full">
@@ -15,4 +15,4 @@ function SectionHeader({ title }: { title: string }) {
     </div>
   );
 }
-export default SectionHeader;
+export default SettingsSectionHeader;

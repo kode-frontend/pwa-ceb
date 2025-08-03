@@ -1,7 +1,7 @@
 import InfoPanel from "@components/Content/InfoPanel";
 import Camera from "@components/Content/Camera";
-import ScanQrNavigation from "@components/Shared/ScanQrNavigation";
 import SelectPhotoButton from "@components/Content/SelectPhotoButton";
+import ScanQrNavigation from "@components/TabbarNavigation/TopNavigationBar/ScanQrNavigation";
 
 export default function ScanQrScreen() {
   return (

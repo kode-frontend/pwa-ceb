@@ -1,6 +1,6 @@
 import PersonalDataSection from "@components/Content/PersonalDataSection";
 import PhoneNumberSection from "@components/Content/PhoneNumberSection";
-import ProfileNavigation from "@components/Shared/ProfileNavigation";
+import ProfileNavigation from "@components/TabbarNavigation/TopNavigationBar/ProfileNavigation";
 
 export default function ProfileScreen() {
   return (

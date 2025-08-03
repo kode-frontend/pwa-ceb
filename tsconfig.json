@@ -32,6 +32,7 @@
       "@components/*": ["src/components/*"],
       "@context/*": ["src/context/*"],
       "@config/*": ["src/config/*"],
+      "@router/*": ["src/router/*"],
     }
   },
   "include": ["src"],

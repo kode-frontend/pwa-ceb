@@ -102,9 +102,9 @@ function Container1({ isActive }: { isActive?: boolean }) {
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
             >
-              <g clip-path="url(#clip0_4384_17354)">
+              <g clipPath="url(#clip0_4384_17354)">
                 <rect x="0.5" width="32" height="32" rx="16" />
-                <g clip-path="url(#clip1_4384_17354)">
+                <g clipPath="url(#clip1_4384_17354)">
                   <rect
                     x="6.89844"
                     y="6.4"
@@ -144,7 +144,7 @@ function Container1({ isActive }: { isActive?: boolean }) {
                   height="28.4"
                   rx="6.2"
                   stroke="#191919"
-                  stroke-opacity="0.08"
+                  strokeOpacity="0.08"
                   strokeWidth="0.4"
                 />
               </g>
@@ -252,9 +252,9 @@ function Container3({ isActive }: { isActive?: boolean }) {
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
             >
-              <g clip-path="url(#clip0_4706_6537)">
+              <g clipPath="url(#clip0_4706_6537)">
                 <rect x="0.5" width="32" height="32" rx="16" />
-                <g clip-path="url(#clip1_4706_6537)">
+                <g clipPath="url(#clip1_4706_6537)">
                   <rect
                     x="6.89844"
                     y="6.4"
@@ -295,7 +295,7 @@ function Container3({ isActive }: { isActive?: boolean }) {
                   height="28.4"
                   rx="6.2"
                   stroke="#191919"
-                  stroke-opacity="0.08"
+                  strokeOpacity="0.08"
                   strokeWidth="0.4"
                 />
               </g>

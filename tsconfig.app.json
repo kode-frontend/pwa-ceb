@@ -29,6 +29,7 @@
       "@context/*": ["context/*"],
       "@config/*": ["config/*"],
       "@components/*": ["components/*"],
+      "@router/*": ["router/*"],
     }
   },
   "include": ["src"]
