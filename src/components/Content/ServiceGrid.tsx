@@ -31,8 +31,8 @@ export function ServicesGrid() {
   return (
     <div className="bg-[#ffffff] box-border content-stretch flex flex-col items-start justify-start overflow-clip p-0 relative rounded-[32px] shrink-0 w-full">
       <div className="box-border content-stretch flex flex-row gap-2.5 items-center justify-center pb-1 pt-4 px-4 relative shrink-0 w-full">
-        <div className="basis-0 font-sans grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#191919] text-[16px] text-left tracking-[-0.16px]">
-          <p className="block leading-[24px] font-semibold">Сервисы</p>
+        <div className="basis-0 font-sans grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#191919]  text-left tracking-[-0.16px]">
+          <p className="block leading-[24px] font-semibold typography">Сервисы</p>
         </div>
       </div>
 

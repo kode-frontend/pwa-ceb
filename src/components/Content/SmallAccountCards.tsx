@@ -20,18 +20,18 @@ function Text({
       data-name="text"
     >
       <div
-        className={`font-sans relative shrink-0 text-[14px] tracking-[-0.28px] w-full ${
+        className={`font-sans relative shrink-0  tracking-[-0.28px] w-full ${
           isActive ? "text-[#ffffff]" : "text-[#191919]"
         }`}
       >
-        <p className="block leading-[20px]">{number}</p>
+        <p className="block leading-[20px] subheader">{number}</p>
       </div>
       <div
-        className={`font-sans relative shrink-0 text-[12px] tracking-[-0.12px] w-full ${
+        className={`font-sans relative shrink-0  tracking-[-0.12px] w-full ${
           isActive ? "text-[rgba(255,255,255,0.7)]" : "text-[#6f7884]"
         }`}
       >
-        <p className="block leading-[16px]">{type}</p>
+        <p className="block leading-[16px] caption">{type}</p>
       </div>
     </div>
   );
@@ -191,21 +191,21 @@ function Text1({ isActive }: { isActive?: boolean }) {
       data-name="text"
     >
       <div
-        className={`font-sans relative shrink-0 text-[14px] tracking-[-0.28px] w-full ${
+        className={`font-sans relative shrink-0  tracking-[-0.28px] w-full ${
           isActive ? "text-[#ffffff]" : "text-[#191919]"
         }`}
       >
-        <p className="leading-[20px]">
+        <p className="leading-[20px] subheader">
           <span>{`**** `}</span>
           <span className="font-sans not-italic">3312</span>
         </p>
       </div>
       <div
-        className={`font-sans relative shrink-0 text-[12px] tracking-[-0.12px] w-full ${
+        className={`font-sans relative shrink-0  tracking-[-0.12px] w-full ${
           isActive ? "text-[rgba(255,255,255,0.7)]" : "text-[#6f7884]"
         }`}
       >
-        <p className="block leading-[16px]">Кредитная карта</p>
+        <p className="block leading-[16px] caption">Кредитная карта</p>
       </div>
     </div>
   );
@@ -342,18 +342,18 @@ function Text2({ isActive }: { isActive?: boolean }) {
       data-name="text"
     >
       <div
-        className={`font-sans relative shrink-0 text-[14px] tracking-[-0.28px] w-full ${
+        className={`font-sans relative shrink-0  tracking-[-0.28px] w-full ${
           isActive ? "text-[#ffffff]" : "text-[#191919]"
         }`}
       >
-        <p className="block leading-[20px]">**** 2345</p>
+        <p className="block leading-[20px] subheader">**** 2345</p>
       </div>
       <div
-        className={`font-sans relative shrink-0 text-[12px] tracking-[-0.12px] w-full ${
+        className={`font-sans relative shrink-0  tracking-[-0.12px] w-full ${
           isActive ? "text-[rgba(255,255,255,0.7)]" : "text-[#6f7884]"
         }`}
       >
-        <p className="block leading-[16px]">Кредитная карта</p>
+        <p className="block leading-[16px] caption">Кредитная карта</p>
       </div>
     </div>
   );

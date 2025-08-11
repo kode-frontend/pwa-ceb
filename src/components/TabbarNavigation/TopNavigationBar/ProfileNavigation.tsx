@@ -43,7 +43,7 @@ function ProfileNavigation() {
       </div>
 
       <div className="basis-0 box-border content-stretch flex flex-col grow h-11 md:h-12 items-center justify-center min-h-px min-w-px p-0 relative shrink-0">
-        <div className="font-sans leading-[0] not-italic relative shrink-0 text-[16px] md:text-[18px] lg:text-[20px] text-center text-nowrap tracking-[-0.16px]">
+        <div className="font-sans leading-[0] not-italic relative shrink-0    text-center text-nowrap tracking-[-0.16px]">
           <h3 className="adjustLetterSpacing block leading-[24px] whitespace-pre">
             Профиль клиента
           </h3>

@@ -7,8 +7,8 @@ function PersonalDataSection() {
         <div className="relative size-full">
           <div className="box-border content-stretch flex flex-col gap-2 items-start justify-start px-4 md:px-6 lg:px-8 py-3 md:py-4 relative w-full">
             <div className="box-border content-stretch flex flex-row gap-1 items-center justify-start p-0 relative shrink-0 w-full">
-              <div className="basis-0 font-sans grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#191919] text-[16px] md:text-[17px] lg:text-[18px] text-left tracking-[-0.16px]">
-                <p className="block leading-[24px] md:leading-[26px]">
+              <div className="basis-0 font-sans grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#191919]    text-left tracking-[-0.16px]">
+                <p className="block leading-[24px] md:leading-[26px] typography">
                   Персональные данные
                 </p>
               </div>
@@ -36,41 +36,42 @@ function PersonalDataSection() {
                   <div className="bg-[#f1f5fc] box-border content-stretch flex flex-row items-center justify-center min-h-9 min-w-9 md:min-h-10 md:min-w-10 overflow-clip p-[6px] relative rounded-xl shrink-0 size-9 md:size-10">
                     <div className="relative shrink-0 size-6 md:size-7">
                       <svg
-                        className="block size-full"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
                         fill="none"
-                        preserveAspectRatio="none"
-                        viewBox="0 0 16 20"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
                         <ellipse
-                          cx="8"
-                          cy="15.5"
+                          cx="12"
+                          cy="17.5"
                           rx="7"
                           ry="3.5"
                           stroke="#191919"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
+                          stroke-width="2"
+                          stroke-linejoin="round"
                         />
                         <circle
-                          cx="8"
-                          cy="5"
+                          cx="12"
+                          cy="7"
                           r="4"
                           stroke="#191919"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
+                          stroke-width="2"
+                          stroke-linejoin="round"
                         />
                       </svg>
                     </div>
                   </div>
                   <div className="basis-0 box-border content-stretch flex flex-col grow items-start justify-center min-h-px min-w-px p-0 relative shrink-0">
                     <div className="box-border content-stretch flex flex-row gap-1.5 items-center justify-start p-0 relative shrink-0 w-full">
-                      <div className="-webkit-box basis-0 css-3k2ayj font-sans grow leading-[0] min-h-px min-w-px not-italic overflow-ellipsis overflow-hidden relative shrink-0 text-[#191919] text-[16px] md:text-[17px] lg:text-[18px] text-left tracking-[-0.16px]">
+                      <div className="-webkit-box basis-0 css-3k2ayj font-sans grow leading-[0] min-h-px min-w-px not-italic overflow-ellipsis overflow-hidden relative shrink-0 text-[#191919]    text-left tracking-[-0.16px]">
                         <p className="block leading-[24px] md:leading-[26px]">
                           Паспорт
                         </p>
                       </div>
                     </div>
                     <div className="box-border content-stretch flex flex-row items-center justify-start p-0 relative shrink-0 w-full">
-                      <div className="basis-0 font-sans grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#6f7884] text-[12px] md:text-[13px] text-left tracking-[-0.12px]">
+                      <div className="basis-0 font-sans grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#6f7884]   text-left tracking-[-0.12px]">
                         <p className="block leading-[16px] md:leading-[18px]">
                           Если паспортные данные изменились, обновите их здесь
                         </p>
@@ -129,7 +130,7 @@ function PersonalDataSection() {
                   </div>
                   <div className="basis-0 box-border content-stretch flex flex-col gap-1 grow items-start justify-center min-h-px min-w-px p-0 relative shrink-0">
                     <div className="box-border content-stretch flex flex-row gap-1.5 items-center justify-start p-0 relative shrink-0 w-full">
-                      <div className="-webkit-box basis-0 css-3k2ayj font-sans grow leading-[0] min-h-px min-w-px not-italic overflow-ellipsis overflow-hidden relative shrink-0 text-[#191919] text-[16px] md:text-[17px] lg:text-[18px] text-left tracking-[-0.16px]">
+                      <div className="-webkit-box basis-0 css-3k2ayj font-sans grow leading-[0] min-h-px min-w-px not-italic overflow-ellipsis overflow-hidden relative shrink-0 text-[#191919]    text-left tracking-[-0.16px]">
                         <p className="block leading-[24px] md:leading-[26px]">
                           Адрес проживания
                         </p>
@@ -164,14 +165,14 @@ function PersonalDataSection() {
               <div className="basis-0 box-border content-stretch flex flex-row grow items-center justify-start min-h-px min-w-px p-0 relative shrink-0">
                 <div className="basis-0 box-border content-stretch flex flex-col gap-1 grow items-start justify-center min-h-px min-w-px p-0 relative shrink-0">
                   <div className="box-border content-stretch flex flex-row gap-1.5 items-center justify-start p-0 relative shrink-0 w-full">
-                    <div className="basis-0 font-sans grow leading-[0] min-h-px min-w-px not-italic overflow-ellipsis overflow-hidden relative shrink-0 text-[#6f7884] text-[12px] md:text-[13px] text-left text-nowrap tracking-[-0.12px]">
+                    <div className="basis-0 font-sans grow leading-[0] min-h-px min-w-px not-italic overflow-ellipsis overflow-hidden relative shrink-0 text-[#6f7884]   text-left text-nowrap tracking-[-0.12px]">
                       <p className="block leading-[16px] md:leading-[18px] overflow-inherit">
                         Email
                       </p>
                     </div>
                   </div>
                   <div className="box-border content-stretch flex flex-row gap-1.5 items-center justify-start p-0 relative shrink-0 w-full">
-                    <div className="-webkit-box basis-0 css-3k2ayj font-sans grow leading-[0] min-h-px min-w-px not-italic overflow-ellipsis overflow-hidden relative shrink-0 text-[#191919] text-[16px] md:text-[17px] lg:text-[18px] text-left tracking-[-0.16px]">
+                    <div className="-webkit-box basis-0 css-3k2ayj font-sans grow leading-[0] min-h-px min-w-px not-italic overflow-ellipsis overflow-hidden relative shrink-0 text-[#191919]    text-left tracking-[-0.16px]">
                       <p className="block leading-[24px] md:leading-[26px]">
                         nikolaskingston@gmail.com
                       </p>
@@ -191,14 +192,14 @@ function PersonalDataSection() {
               <div className="basis-0 box-border content-stretch flex flex-row grow items-center justify-start min-h-px min-w-px p-0 relative shrink-0">
                 <div className="basis-0 box-border content-stretch flex flex-col gap-1 grow items-start justify-center min-h-px min-w-px p-0 relative shrink-0">
                   <div className="box-border content-stretch flex flex-row gap-1.5 items-center justify-start p-0 relative shrink-0 w-full">
-                    <div className="basis-0 font-sans grow leading-[0] min-h-px min-w-px not-italic overflow-ellipsis overflow-hidden relative shrink-0 text-[#6f7884] text-[12px] md:text-[13px] text-left text-nowrap tracking-[-0.12px]">
+                    <div className="basis-0 font-sans grow leading-[0] min-h-px min-w-px not-italic overflow-ellipsis overflow-hidden relative shrink-0 text-[#6f7884]   text-left text-nowrap tracking-[-0.12px]">
                       <p className="block leading-[16px] md:leading-[18px] overflow-inherit">
                         СНИЛС
                       </p>
                     </div>
                   </div>
                   <div className="box-border content-stretch flex flex-row gap-1.5 items-center justify-start p-0 relative shrink-0 w-full">
-                    <div className="-webkit-box basis-0 css-3k2ayj font-sans grow leading-[0] min-h-px min-w-px not-italic overflow-ellipsis overflow-hidden relative shrink-0 text-[#191919] text-[16px] md:text-[17px] lg:text-[18px] text-left tracking-[-0.16px]">
+                    <div className="-webkit-box basis-0 css-3k2ayj font-sans grow leading-[0] min-h-px min-w-px not-italic overflow-ellipsis overflow-hidden relative shrink-0 text-[#191919]    text-left tracking-[-0.16px]">
                       <p className="block leading-[24px] md:leading-[26px]">
                         123-456-789 12
                       </p>
@@ -218,14 +219,14 @@ function PersonalDataSection() {
               <div className="basis-0 box-border content-stretch flex flex-row grow items-center justify-start min-h-px min-w-px p-0 relative shrink-0">
                 <div className="basis-0 box-border content-stretch flex flex-col gap-1 grow items-start justify-center min-h-px min-w-px p-0 relative shrink-0">
                   <div className="box-border content-stretch flex flex-row gap-1.5 items-center justify-start p-0 relative shrink-0 w-full">
-                    <div className="basis-0 font-sans grow leading-[0] min-h-px min-w-px not-italic overflow-ellipsis overflow-hidden relative shrink-0 text-[#6f7884] text-[12px] md:text-[13px] text-left text-nowrap tracking-[-0.12px]">
+                    <div className="basis-0 font-sans grow leading-[0] min-h-px min-w-px not-italic overflow-ellipsis overflow-hidden relative shrink-0 text-[#6f7884]   text-left text-nowrap tracking-[-0.12px]">
                       <p className="block leading-[16px] md:leading-[18px] overflow-inherit">
                         ИНН
                       </p>
                     </div>
                   </div>
                   <div className="box-border content-stretch flex flex-row gap-1.5 items-center justify-start p-0 relative shrink-0 w-full">
-                    <div className="-webkit-box basis-0 css-3k2ayj font-sans grow leading-[0] min-h-px min-w-px not-italic overflow-ellipsis overflow-hidden relative shrink-0 text-[#191919] text-[16px] md:text-[17px] lg:text-[18px] text-left tracking-[-0.16px]">
+                    <div className="-webkit-box basis-0 css-3k2ayj font-sans grow leading-[0] min-h-px min-w-px not-italic overflow-ellipsis overflow-hidden relative shrink-0 text-[#191919]    text-left tracking-[-0.16px]">
                       <p className="block leading-[24px] md:leading-[26px]">
                         772776543210
                       </p>
@@ -245,14 +246,14 @@ function PersonalDataSection() {
               <div className="basis-0 box-border content-stretch flex flex-row grow items-center justify-start min-h-px min-w-px p-0 relative shrink-0">
                 <div className="basis-0 box-border content-stretch flex flex-col gap-1 grow items-start justify-center min-h-px min-w-px p-0 relative shrink-0">
                   <div className="box-border content-stretch flex flex-row gap-1.5 items-center justify-start p-0 relative shrink-0 w-full">
-                    <div className="basis-0 font-sans grow leading-[0] min-h-px min-w-px not-italic overflow-ellipsis overflow-hidden relative shrink-0 text-[#6f7884] text-[12px] md:text-[13px] text-left text-nowrap tracking-[-0.12px]">
+                    <div className="basis-0 font-sans grow leading-[0] min-h-px min-w-px not-italic overflow-ellipsis overflow-hidden relative shrink-0 text-[#6f7884]   text-left text-nowrap tracking-[-0.12px]">
                       <p className="block leading-[16px] md:leading-[18px] overflow-inherit">
                         Версия приложения:
                       </p>
                     </div>
                   </div>
                   <div className="box-border content-stretch flex flex-row gap-1.5 items-center justify-start p-0 relative shrink-0 w-full">
-                    <div className="-webkit-box basis-0 css-3k2ayj font-sans grow leading-[0] min-h-px min-w-px not-italic overflow-ellipsis overflow-hidden relative shrink-0 text-[#191919] text-[16px] md:text-[17px] lg:text-[18px] text-left tracking-[-0.16px]">
+                    <div className="-webkit-box basis-0 css-3k2ayj font-sans grow leading-[0] min-h-px min-w-px not-italic overflow-ellipsis overflow-hidden relative shrink-0 text-[#191919]    text-left tracking-[-0.16px]">
                       <p className="block leading-[24px] md:leading-[26px]">
                         2.0.5 (12)
                       </p>

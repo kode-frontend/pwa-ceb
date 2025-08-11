@@ -85,13 +85,13 @@ export function NewProductCard() {
 
         <div className="basis-0 box-border content-stretch flex flex-row gap-4 grow items-start justify-start min-h-px min-w-px p-0 relative shrink-0">
           <div className="basis-0 box-border content-stretch flex flex-col gap-0.5 grow items-start justify-start leading-[0] min-h-px min-w-px not-italic p-0 relative shrink-0 text-left">
-            <div className="font-sans relative shrink-0 text-[#191919] text-[14px] tracking-[-0.28px] w-full">
-              <p className="block leading-[20px] font-medium">
+            <div className="font-sans relative shrink-0 text-[#191919]  tracking-[-0.28px] w-full">
+              <p className="block leading-[20px] font-medium subheader">
                 Открыть новый продукт
               </p>
             </div>
-            <div className="font-sans relative shrink-0 text-[#6f7884] text-[12px] tracking-[-0.12px] w-full">
-              <p className="block leading-[16px]">
+            <div className="font-sans relative shrink-0 text-[#6f7884]  tracking-[-0.12px] w-full">
+              <p className="block leading-[16px] caption">
                 Откройте счёт, карту, вклад или кредит
               </p>
             </div>

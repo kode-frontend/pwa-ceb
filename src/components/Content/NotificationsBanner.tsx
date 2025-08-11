@@ -32,9 +32,9 @@ function AlertIcon() {
 // Notification Banner Component
 function NotificationBanner({ children }: { children: React.ReactNode }) {
   return (
-    <div className="bg-[#316DCC1A] box-border content-stretch flex flex-row gap-2.5 items-center justify-center p-[12px] relative rounded-2xl shrink-0 w-[100%] h-[72px]">
+    <div className="bg-[#316DCC1A] box-border content-stretch flex flex-row gap-2.5 items-center justify-center relative rounded-2xl shrink-0 w-[100%]" style={{padding: "clamp(12px, 3vw, 16px)", height: "clamp(90px, 3vw, 90px)"}}>
       <AlertIcon />
-      <div className="basis-0 font-sans grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#191919] text-[12px] text-left tracking-[-0.12px]">
+      <div className="basis-0 font-sans grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#191919]  text-left tracking-[-0.12px]">
         {children}
       </div>
     </div>
@@ -58,7 +58,7 @@ export function NotificationBanners() {
         style={{ width: "100%" }}
       >
         <NotificationBanner>
-          <p className="leading-[16px] font-sans font-medium">
+          <p className="leading-[16px] font-sans font-medium caption-2">
             26 августа 2025 спишется платеж по Кредит Моментальный в размере 36 571.28 ₽. Не забудьте пополнить счет
           </p>
         </NotificationBanner>
@@ -70,7 +70,7 @@ export function NotificationBanners() {
         style={{ width: "100%" }}
       >
         <NotificationBanner>
-          <p className="leading-[16px] font-sans font-medium">
+          <p className="leading-[16px] font-sans font-medium caption-2">
             29 августа 2025 спишется платеж по Urban Card *3312 в размере 12 311.00 ₽. Не забудьте пополнить счет
           </p>
         </NotificationBanner>

@@ -56,13 +56,13 @@ function MainAccountCard() {
                 className="basis-0 box-border content-stretch flex flex-col grow items-start justify-start leading-[0] min-h-px min-w-px not-italic p-0 relative shrink-0 text-left"
                 data-name="text"
               >
-                <div className=" relative shrink-0 text-[#191919] text-[16px] tracking-[-0.16px] w-full">
-                  <p className="block leading-[24px] font-sans font-semibold">
+                <div className=" relative shrink-0 text-[#191919]  tracking-[-0.16px] w-full">
+                  <p className="block leading-[24px] font-sans font-semibold typography">
                     67 538.00 ₽
                   </p>
                 </div>
-                <div className="font-sans relative shrink-0 text-[#6f7884] text-[14px] tracking-[-0.14px] w-full">
-                  <p className="block leading-[20px]">Текущий счет · 1766</p>
+                <div className="font-sans relative shrink-0 text-[#6f7884]  tracking-[-0.14px] w-full">
+                  <p className="block leading-[20px] subheader">Текущий счет · 1766</p>
                 </div>
               </div>
               <div
@@ -70,12 +70,12 @@ function MainAccountCard() {
                 data-name="bonus"
               >
                 <div className="absolute border-[0.5px] border-[rgb(25 25 25 / 14%)] border-solid inset-0 pointer-events-none rounded-[100px]" />
-                <div className="font-sans font-semibold leading-[0] not-italic relative shrink-0 text-[#191919] text-[12px] text-left text-nowrap tracking-[-0.1px]">
-                  <p className="adjustLetterSpacing block leading-[12px] whitespace-pre">
+                <div className="font-sans font-semibold leading-[0] not-italic relative shrink-0 text-[#191919]  text-left text-nowrap tracking-[-0.1px]">
+                  <p className="adjustLetterSpacing block leading-[12px] whitespace-pre caption">
                     1 321.37
                   </p>
                 </div>
-                <div className="font-sans leading-[0] not-italic relative shrink-0 text-[#191919] text-[12px] text-left text-nowrap tracking-[-0.12px]">
+                <div className="font-sans leading-[0] not-italic relative shrink-0 text-[#191919]  text-left text-nowrap tracking-[-0.12px]">
                   <p className="adjustLetterSpacing block leading-[16px] whitespace-pre">
                     💎
                   </p>
@@ -105,8 +105,8 @@ function MainAccountCard() {
               className="absolute box-border content-stretch flex flex-row gap-2.5 h-[22px] items-start justify-start left-0 p-[4px] top-0 w-14"
               data-name="label"
             >
-              <div className="basis-0 font-sans grow leading-[0] min-h-px min-w-px not-italic overflow-ellipsis overflow-hidden relative shrink-0 text-[#191919] text-[10px] text-left text-nowrap tracking-[-0.1px]">
-                <p className="[text-overflow:inherit] [text-wrap-mode:inherit] [white-space-collapse:inherit] block leading-[12px] overflow-inherit px-1">
+              <div className="basis-0 font-sans grow leading-[0] min-h-px min-w-px not-italic overflow-ellipsis overflow-hidden relative shrink-0 text-[#191919]  text-left text-nowrap tracking-[-0.1px]">
+                <p className="[text-overflow:inherit] [text-wrap-mode:inherit] [white-space-collapse:inherit] block leading-[12px] overflow-inherit px-1 caption-3">
                   Моя
                 </p>
               </div>
@@ -131,8 +131,8 @@ function MainAccountCard() {
           >
             <div className="relative size-full">
               <div className="box-border content-stretch flex flex-row gap-2.5 items-start justify-start p-[4px] relative size-full">
-                <div className="basis-0 font-sans grow leading-[0] min-h-px min-w-px not-italic overflow-ellipsis overflow-hidden relative shrink-0 text-[#6f7884] text-[10px] text-left text-nowrap tracking-[-0.1px]">
-                  <p className="[text-overflow:inherit] [text-wrap-mode:inherit] [white-space-collapse:inherit] block leading-[12px] overflow-inherit px-1">
+                <div className="basis-0 font-sans grow leading-[0] min-h-px min-w-px not-italic overflow-ellipsis overflow-hidden relative shrink-0 text-[#6f7884]  text-left text-nowrap tracking-[-0.1px]">
+                  <p className="[text-overflow:inherit] [text-wrap-mode:inherit] [white-space-collapse:inherit] block leading-[12px] overflow-inherit caption-3">
                     Жены
                   </p>
                 </div>
@@ -237,8 +237,8 @@ function CreditCard() {
             className="box-border content-stretch flex flex-row items-center justify-start p-0 relative shrink-0 w-full"
             data-name="title"
           >
-            <div className="basis-0 grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#191919] text-[16px] text-left tracking-[-0.16px]">
-              <p className="block leading-[24px] font-sans font-semibold">
+            <div className="basis-0 grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#191919]  text-left tracking-[-0.16px]">
+              <p className="block leading-[24px] font-sans font-semibold typography">
                 90 938.00 ₽
               </p>
             </div>
@@ -247,23 +247,23 @@ function CreditCard() {
               data-name="bonus"
             >
               <div className="absolute border-[0.5px] border-[rgb(25 25 25 / 14%)] border-solid inset-0 pointer-events-none rounded-[100px]" />
-              <div className="font-sans font-semibold leading-[0] not-italic relative shrink-0 text-[#191919] text-[12px] text-left text-nowrap tracking-[-0.1px]">
-                <p className="adjustLetterSpacing block leading-[12px] whitespace-pre">
+              <div className="font-sans font-semibold leading-[0] not-italic relative shrink-0 text-[#191919]  text-left text-nowrap tracking-[-0.1px]">
+                <p className="adjustLetterSpacing block leading-[12px] whitespace-pre caption">
                   753.42
                 </p>
               </div>
-              <div className="font-sans leading-[0] not-italic relative shrink-0 text-[#191919] text-[12px] text-left text-nowrap tracking-[-0.12px]">
+              <div className="font-sans leading-[0] not-italic relative shrink-0 text-[#191919]  text-left text-nowrap tracking-[-0.12px]">
                 <p className="adjustLetterSpacing block leading-[16px] whitespace-pre">
                   💎
                 </p>
               </div>
             </div>
           </div>
-          <div className="font-sans leading-[0] not-italic relative shrink-0 text-[#6f7884] text-[14px] text-left tracking-[-0.14px] w-full">
-            <p className="block leading-[20px]">Кредитная карта · 3312</p>
+          <div className="font-sans leading-[0] not-italic relative shrink-0 text-[#6f7884]  text-left tracking-[-0.14px] w-full">
+            <p className="block leading-[20px] subheader">Кредитная карта · 3312</p>
           </div>
-          <div className="font-sans leading-[0] not-italic relative shrink-0 text-[#6f7884] text-[14px] text-left tracking-[-0.14px] w-full">
-            <p className="block leading-[20px]">Urban Card</p>
+          <div className="font-sans leading-[0] not-italic relative shrink-0 text-[#6f7884]  text-left tracking-[-0.14px] w-full">
+            <p className="block leading-[20px] subheader">Urban Card</p>
           </div>
         </div>
       </div>
@@ -348,8 +348,8 @@ function ToggleButton({
                 <ArrowIcon />
               </div>
             </div>
-            <div className="font-sans leading-[0] not-italic relative shrink-0 text-[#6f7884] text-[12px] text-left text-nowrap tracking-[-0.12px]">
-              <p className="adjustLetterSpacing block leading-[16px] whitespace-pre font-semibold">
+            <div className="font-sans leading-[0] not-italic relative shrink-0 text-[#6f7884]  text-left text-nowrap tracking-[-0.12px]">
+              <p className="adjustLetterSpacing block leading-[16px] whitespace-pre font-semibold caption-2">
                 Скрыть
               </p>
             </div>
@@ -398,11 +398,11 @@ function AdditionalAccount() {
                 className="basis-0 box-border content-stretch flex flex-col grow items-start justify-start leading-[0] min-h-px min-w-px not-italic p-0 relative shrink-0 text-left"
                 data-name="text"
               >
-                <div className="font-sans relative shrink-0 text-[#191919] text-[16px] tracking-[-0.16px] w-full">
-                  <p className="block leading-[24px] font-semibold">0.00 ₽</p>
+                <div className="font-sans relative shrink-0 text-[#191919]  tracking-[-0.16px] w-full">
+                  <p className="block leading-[24px] font-semibold typography">0.00 ₽</p>
                 </div>
-                <div className="font-sans relative shrink-0 text-[#6f7884] text-[14px] tracking-[-0.14px] w-full">
-                  <p className="block leading-[20px]">Текущий счет · 3813</p>
+                <div className="font-sans relative shrink-0 text-[#6f7884]  tracking-[-0.14px] w-full">
+                  <p className="block leading-[20px] subheader">Текущий счет · 3813</p>
                 </div>
               </div>
             </div>

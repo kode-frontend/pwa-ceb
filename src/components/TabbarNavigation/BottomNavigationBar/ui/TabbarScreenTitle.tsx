@@ -8,9 +8,9 @@ function TabbarScreenTitle({ active, screenName }: TabbarScreenTitleProps) {
     <div
       className={`flex flex-col font-sans justify-center leading-[0] not-italic relative shrink-0 text-[${
         active ? "#191919" : "#9ba5b3"
-      }] text-[10px] text-left text-nowrap tracking-[-0.1px]`}
+      }]  text-left text-nowrap tracking-[-0.1px]`}
     >
-      <p className="adjustLetterSpacing block leading-[12px] whitespace-pre">
+      <p className="adjustLetterSpacing block leading-[12px] whitespace-pre caption-3">
         {screenName}
       </p>
     </div>

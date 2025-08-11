@@ -15,7 +15,7 @@ export function Tabs({ activeTab, onTabChange }: TabsProps) {
   return (
     <div className="relative shrink-0 w-full" data-name="tabs">
       <div className="relative size-full">
-        <div className="box-border content-stretch flex flex-row flex-nowrap gap-4 items-start justify-start leading-[0] not-italic overflow-x-auto pb-1 pt-4 px-4 relative scrollbar-hide text-[16px] text-left text-nowrap tracking-[-0.16px] w-full">
+        <div className="box-border content-stretch flex flex-row flex-nowrap gap-4 items-start justify-start leading-[0] not-italic overflow-x-auto pb-1 pt-4 px-4 relative scrollbar-hide  text-left text-nowrap tracking-[-0.16px] w-full">
           {TABS.map((tab) => (
             <button
               key={tab.id}
@@ -26,7 +26,7 @@ export function Tabs({ activeTab, onTabChange }: TabsProps) {
                   : "text-[#9ba5b3] hover:text-[#6f7884] font-semibold"
               }`}
             >
-              <h4 className="adjustLetterSpacing block leading-[24px] text-nowrap whitespace-pre font-sans">
+              <h4 className="adjustLetterSpacing block leading-[24px] text-nowrap whitespace-pre font-sans typography">
                 {tab.label}
               </h4>
             </button>

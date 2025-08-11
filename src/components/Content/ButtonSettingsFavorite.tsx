@@ -46,7 +46,7 @@ function ButtonSettingsFavorite() {
           </svg>
         </div>
       </div>
-      <div className={`font-sans leading-[0] not-italic relative shrink-0 text-[${color}] text-[14px] text-left text-nowrap tracking-[-0.28px]`}>
+      <div className={`font-sans leading-[0] not-italic relative shrink-0 text-[${color}]  text-left text-nowrap tracking-[-0.28px]`}>
         <p className="adjustLetterSpacing block leading-[20px] whitespace-pre">
           Настроить избранное
         </p>

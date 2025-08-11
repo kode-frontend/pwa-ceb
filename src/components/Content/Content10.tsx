@@ -13,7 +13,7 @@ function Content10() {
     <>
       <div className="w-full py-2" data-name="suggest">
         <h1
-          className=" font-sans font-medium mb-3 relative pl-4  z-1"
+          className=" font-sans font-medium mb-3 relative pl-4  z-1 typography"
           style={{ color: textColor }}
         >
           Мои операции
@@ -27,7 +27,7 @@ function Content10() {
             className="box-border content-stretch flex flex-col items-start justify-around p-0 relative rounded-[20px] shrink-0 size-[110px]  z-1"
             data-name="card"
             style={{
-              width: "153px",
+              width: "auto",
               height: "140px",
               minHeight: "120px",
               border: "0.5px solid var(--colorMode-border-primary, #C9E6F94D)",
@@ -63,11 +63,11 @@ function Content10() {
                   />
                 </svg>
               </div>
-              <span className=" text-xs font-medium pr-2">20 000,00 ₽</span>
+              <span className=" text-xs font-medium pr-2 caption-3">20 000,00 ₽</span>
             </div>
             <div className=" p-2">
-              <div className="text-sm font-medium">Ефим</div>
-              <div className="text-sm font-medium">Владиславович...</div>
+              <div className="text-sm font-medium subheader">Ефим</div>
+              <div className="text-sm font-medium subheader">Владиславович...</div>
             </div>
           </div>
 
@@ -76,7 +76,7 @@ function Content10() {
             className="box-border content-stretch flex flex-col items-start justify-around p-0 relative rounded-[20px] shrink-0 size-[110px]  z-1"
             data-name="card"
             style={{
-              width: "153px",
+              width: "auto",
               height: "140px",
               minHeight: "120px",
               border: "0.5px solid var(--colorMode-border-primary, #C9E6F94D)",
@@ -112,11 +112,11 @@ function Content10() {
                   />
                 </svg>
               </div>
-              <span className=" text-xs font-medium pr-2">20 000,00 ₽</span>
+              <span className=" text-xs font-medium pr-2 caption-3">15 000,00 ₽</span>
             </div>
-            <div className=" p-2">
-              <div className="text-sm font-medium">Ефим</div>
-              <div className="text-sm font-medium">Владиславович...</div>
+            <div className="p-2">
+              <div className="text-sm font-medium subheader">Максим</div>
+              <div className="text-sm font-medium subheader">Олегович Мохов</div>
             </div>
           </div>
 
@@ -125,7 +125,7 @@ function Content10() {
             className="box-border content-stretch flex flex-col items-start justify-around p-0 relative rounded-[20px] shrink-0 size-[110px]  z-1"
             data-name="card"
             style={{
-              width: "153px",
+              width: "auto",
               height: "140px",
               minHeight: "120px",
               border: "0.5px solid var(--colorMode-border-primary, #C9E6F94D)",
@@ -161,11 +161,11 @@ function Content10() {
                   />
                 </svg>
               </div>
-              <span className=" text-xs font-medium pr-2">20 000,00 ₽</span>
+              <span className=" text-xs font-medium pr-2 caption-3">24 000,00 ₽</span>
             </div>
             <div className=" p-2">
-              <div className="text-sm font-medium">Ефим</div>
-              <div className="text-sm font-medium">Владиславович...</div>
+              <div className="text-sm font-medium subheader">Алина Евгеньевна</div>
+              <div className="text-sm font-medium subheader">Кингстон...</div>
             </div>
           </div>
         </div>
@@ -179,7 +179,7 @@ function Content10() {
             }}
           >
             <div className="flex items-center justify-between p-4">
-              <h4 className="text-gray-900 font-medium">
+              <h4 className="text-gray-900 font-medium typography">
                 Шаблоны и автоплатежи
               </h4>
               <ChevronDownIcon />
@@ -221,7 +221,7 @@ function Content10() {
                   />
                 </svg>
 
-                <span className="text-gray-900 font-small w-full">Шаблоны</span>
+                <span className="text-gray-900 font-small w-full typographyBody">Шаблоны</span>
               </div>
 
               <div className="flex items-center gap-4 w-full">
@@ -238,7 +238,7 @@ function Content10() {
                     fill="#191919"
                   />
                 </svg>
-                <span className="text-gray-900 font-small w-full">
+                <span className="text-gray-900 font-small w-full typographyBody">
                   Автоплатежи
                 </span>
               </div>
@@ -252,7 +252,7 @@ function Content10() {
             }}
           >
             <div className="flex items-center justify-between p-4">
-              <h4 className="text-gray-900 font-medium">Перевести</h4>
+              <h4 className="text-gray-900 font-medium typography">Перевести</h4>
               <ChevronDownIcon />
             </div>
 
@@ -296,7 +296,7 @@ function Content10() {
                   </defs>
                 </svg>
 
-                <span className="text-gray-900 font-small w-full">
+                <span className="text-gray-900 font-small w-full typographyBody">
                   Переводы по номеру телефона
                 </span>
               </div>
@@ -328,7 +328,7 @@ function Content10() {
                   />
                 </svg>
 
-                <span className="text-gray-900 font-small w-full">
+                <span className="text-gray-900 font-small w-full typographyBody">
                   Пополнение с моего счета в другом банке
                 </span>
               </div>
@@ -351,7 +351,7 @@ function Content10() {
                   />
                 </svg>
 
-                <span className="text-gray-900 font-small w-full">
+                <span className="text-gray-900 font-small w-full typographyBody">
                   Операции по QR коду
                 </span>
               </div>

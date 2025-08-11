@@ -13,7 +13,7 @@ const renderHeaderContent = (section: BankingSection): JSX.Element => {
   switch (section.title) {
     case "Переводы":
       return (
-        <div className="font-sans font-semibold leading-[0] not-italic relative shrink-0 text-[#191919] text-[16px] text-left text-nowrap tracking-[-0.4px]">
+        <div className="font-sans font-semibold leading-[0] not-italic relative shrink-0 text-[#191919]  text-left text-nowrap tracking-[-0.4px]">
           <p className="adjustLetterSpacing block leading-[24px] whitespace-pre">
             Переводы
           </p>
@@ -22,7 +22,7 @@ const renderHeaderContent = (section: BankingSection): JSX.Element => {
     
     case "Платежи":
       return (
-        <div className="font-sans font-semibold leading-[0] not-italic relative shrink-0 text-[#191919] text-[16px] text-left text-nowrap tracking-[-0.4px]">
+        <div className="font-sans font-semibold leading-[0] not-italic relative shrink-0 text-[#191919]  text-left text-nowrap tracking-[-0.4px]">
           <p className="adjustLetterSpacing block leading-[24px] whitespace-pre">
             Платежи
           </p>
@@ -31,7 +31,7 @@ const renderHeaderContent = (section: BankingSection): JSX.Element => {
     
     default:
       return (
-        <div className="font-sans leading-[0] not-italic relative shrink-0 text-[#191919] text-[16px] text-left text-nowrap tracking-[-0.4px]">
+        <div className="font-sans leading-[0] not-italic relative shrink-0 text-[#191919]  text-left text-nowrap tracking-[-0.4px]">
           <p className="adjustLetterSpacing block leading-[24px] whitespace-pre">
             {section.title}
           </p>

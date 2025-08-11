@@ -48,7 +48,7 @@ function TextBody({ text }: { text: string }) {
       className="box-border content-stretch flex flex-row items-center justify-start p-0 relative shrink-0 w-full"
       data-name="--textBody 👉"
     >
-      <div className="basis-0 font-sans grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#316dcc] text-[16px] text-left tracking-[-0.4px]">
+      <div className="basis-0 font-sans grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#316dcc]  text-left tracking-[-0.4px]">
         <p className="block leading-[24px]">
           {text}
         </p>

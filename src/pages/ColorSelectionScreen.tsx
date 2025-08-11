@@ -32,7 +32,7 @@ export const ColorSelectionScreen = () => {
               <div className="relative size-full">
                 <div className="box-border content-stretch flex flex-col gap-2 items-start justify-start px-4 py-3 relative w-full">
                   <div className="box-border content-stretch flex flex-row gap-1 items-center justify-start p-0 relative shrink-0 w-full">
-                    <div className="font-medium text-[#191919] text-[16px] leading-[24px] tracking-[-0.16px]">
+                    <div className="font-medium text-[#191919]  leading-[24px] tracking-[-0.16px]">
                       <p>Выберите тему</p>
                     </div>
                   </div>
@@ -82,7 +82,7 @@ const ColorOptionItem = ({
             <div className="flex flex-row grow items-center gap-3 min-w-0">
               <div className="flex flex-col gap-1 grow items-start justify-center min-w-0">
                 <div className="flex flex-row gap-1.5 items-center justify-start w-full">
-                  <div className="text-[#191919] text-[16px] leading-[24px] truncate">
+                  <div className="text-[#191919]  leading-[24px] truncate">
                     <p>{option.name}</p>
                   </div>
                 </div>

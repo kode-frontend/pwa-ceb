@@ -135,14 +135,14 @@ function TopbarQrButton({ scrollY = 0 }: { scrollY?: number }) {
           <div
             onClick={handleClick}
             role="button"
-            className="font-sans leading-[0] not-italic text-[#191919] text-[12px] text-left text-nowrap tracking-[-0.12px] transition-opacity duration-300 whitespace-nowrap cursor-pointer"
+            className="font-sans leading-[0] not-italic text-[#191919]  text-left text-nowrap tracking-[-0.12px] transition-opacity duration-300 whitespace-nowrap cursor-pointer"
             style={{
               opacity: isCompressed ? 0 : 1,
               width: isCompressed ? 0 : "auto",
             }}
           >
             <p
-              className="adjustLetterSpacing block leading-[16px]"
+              className="adjustLetterSpacing block leading-[16px] caption"
               style={{ color: textColor }}
             >
               Оплата по QR
