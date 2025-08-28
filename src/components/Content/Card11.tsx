@@ -10,15 +10,14 @@ function Card11() {
   };
   return (
     <div
-      className="basis-0 bg-[#ffffff] grow h-[132px] min-h-px min-w-px overflow-clip relative rounded-3xl shrink-0 cursor-pointer"
+      className="basis-0 bg-[#ffffff] grow min-h-px min-w-px overflow-clip relative rounded-3xl shrink-0 cursor-pointer"
       data-name="card"
       onClick={handleBack}
     >
-      <div className="relative w-[100%] h-[100%] overflow-hidden">
+      <div className="overflow-hidden">
         <img
           src={flower}
           alt="Карта"
-          className="absolute object-cover"
         />
       </div>
       <div

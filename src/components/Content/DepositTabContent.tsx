@@ -10,15 +10,14 @@ function DepositPromoCard() {
   };
   return (
     <div
-      className="bg-[#f1f5fc] h-[220px] overflow-clip relative rounded-2xl shrink-0 w-full cursor-pointer"
+      className="bg-[#f1f5fc] overflow-clip relative rounded-2xl shrink-0 w-full cursor-pointer"
       data-name="content"
       onClick={handleBack}
     >
-      <div className="relative w-[100%] h-[100%] overflow-hidden">
+      <div className="overflow-hidden">
         <img
           src={bankcontent}
           alt="Карта"
-          className="absolute inset-0 w-full h-full object-cover"
         />
       </div>
     </div>

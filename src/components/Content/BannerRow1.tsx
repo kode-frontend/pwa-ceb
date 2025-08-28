@@ -10,7 +10,7 @@ function BannerRow1() {
   return (
     <div className="relative shrink-0 w-full" data-name="banner_row">
       <div className="flex flex-row items-center relative size-full cursor-pointer" onClick={handleBack}>
-        <div className="box-border p-[16px] relative w-[100%] rounded-3xl overflow-hidden">
+        <div className="box-border pl-[16px] pr-[16px] pb-[16px] relative w-[100%] rounded-3xl overflow-hidden">
           <Banner2 />
         </div>
       </div>

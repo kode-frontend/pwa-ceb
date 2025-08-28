@@ -83,7 +83,7 @@ function ExpenseChart() {
 function ExpenseBlock({ data }: { data: CardData["expenses"] }) {
   return (
     <div
-      className="bg-[#f1f5fc] box-border content-stretch flex flex-col gap-3 items-start justify-start p-[16px] relative rounded-[20px] shrink-0 w-auto"
+      className="bg-[#f1f5fc] box-border content-stretch flex flex-col gap-3 items-start justify-start p-[12px] relative rounded-[20px] shrink-0 w-auto max-w-[140px] max-h-[92px]"
       data-name="block"
     >
       <Title amount={data.amount} title={data.title} />
@@ -100,7 +100,7 @@ function ExpenseBlock({ data }: { data: CardData["expenses"] }) {
 function IncomeTitle({ amount, title }: { amount: string; title: string }) {
   return (
     <div
-      className="box-border content-stretch flex flex-col items-center justify-center leading-[0] not-italic p-0 relative shrink-0 text-left w-full"
+      className="box-border content-stretch flex flex-col items-center justify-center leading-[0] not-italic p-0 relative shrink-0 text-left w-[max-content]"
       data-name="title"
     >
       <div className="font-sans relative shrink-0 text-[#191919]  tracking-[-0.16px] w-full">
@@ -131,11 +131,11 @@ function IncomeChart() {
 function IncomeBlock({ data }: { data: CardData["income"] }) {
   return (
     <div
-      className="basis-0 bg-[#f1f5fc] grow min-h-px relative rounded-[20px] shrink-0 w-auto"
+      className="basis-0 bg-[#f1f5fc] grow rounded-[20px] shrink-0"
       data-name="block"
     >
-      <div className="relative size-full">
-        <div className="box-border content-stretch flex flex-col gap-3 items-start justify-start p-[16px] relative w-full">
+      <div>
+        <div className="box-border content-stretch flex flex-col gap-3 items-start justify-start p-[12px] w-full">
           <IncomeTitle amount={data.amount} title={data.title} />
           <IncomeChart />
         </div>
@@ -194,7 +194,7 @@ export function ChartBlocks({ selectedCard }: ChartBlocksProps) {
       <div onClick={analytics} className="cursor-pointer">
         <ExpenseBlock data={cardData.expenses} />
       </div>
-      <div onClick={analytics2} className="cursor-pointer w-full">
+      <div onClick={analytics2} className="cursor-pointer">
         <IncomeBlock data={cardData.income} />
       </div>
     </div>
