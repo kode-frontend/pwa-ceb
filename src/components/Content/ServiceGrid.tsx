@@ -36,9 +36,9 @@ export function ServicesGrid() {
         </div>
       </div>
 
-      <div className="box-border content-stretch flex flex-col gap-2 items-start justify-start pb-4 pt-2 px-4 relative shrink-0 w-full">
+      <div className="box-border content-stretch flex flex-col gap-[8px] items-start justify-start pb-4 pt-2 px-4 relative shrink-0 w-full">
         {/* First Row */}
-        <div className="basis-0 box-border content-stretch flex flex-row gap-2 items-center justify-start p-0 relative shrink-0 w-full">
+        <div className="basis-0 box-border content-stretch flex flex-row gap-[8px] items-center justify-start p-0 relative shrink-0 w-full">
           <div
             className="basis-0 bg-[#f1f5fc] grow relative rounded-[20px] cursor-pointer"
             onClick={cashback}
@@ -51,7 +51,7 @@ export function ServicesGrid() {
             </div>
           </div>
 
-          <div className="basis-0 box-border content-stretch flex flex-col gap-2 grow items-start justify-start min-h-px min-w-px p-0 relative shrink-0">
+          <div className="basis-0 box-border content-stretch flex flex-col gap-[8px] grow items-start justify-start min-h-px min-w-px p-0 relative shrink-0">
             <div
               className="basis-0 bg-[#f1f5fc] overflow-clip relative rounded-[20px] shrink-0 w-full cursor-pointer"
               onClick={formular}
@@ -85,7 +85,7 @@ export function ServicesGrid() {
         </div>
 
         {/* Second Row */}
-        <div className="basis-0 box-border content-stretch flex flex-row gap-2 items-center justify-start p-0 relative shrink-0 w-full">
+        <div className="basis-0 box-border content-stretch flex flex-row gap-[8px] items-center justify-start p-0 relative shrink-0 w-full">
           <div
             className="basis-0 bg-[#f1f5fc] grow min-h-px min-w-px overflow-clip relative rounded-[20px] shrink-0 cursor-pointer"
             onClick={connect}
@@ -113,7 +113,7 @@ export function ServicesGrid() {
           </div>
         </div>
         <div
-          className="box-border content-stretch flex flex-row gap-2 items-center justify-start p-0 relative shrink-0 w-full cursor-pointer"
+          className="box-border content-stretch flex flex-row gap-[8px] items-center justify-start p-0 relative shrink-0 w-full cursor-pointer"
           onClick={office}
         >
           <div className="basis-0 bg-[#f1f5fc] grow min-h-px min-w-px overflow-clip relative rounded-[20px] shrink-0">
