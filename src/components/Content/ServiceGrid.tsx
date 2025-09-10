@@ -46,20 +46,20 @@ export function ServicesGrid() {
             <div className="rounded-lg overflow-hidden">
               <img
                 src={tree}
-                alt="Карта"
+                alt="Дерево"
               />
             </div>
           </div>
 
-          <div className="basis-0 box-border content-stretch flex flex-col gap-[8px] grow items-start justify-start min-h-px min-w-px p-0 relative shrink-0">
+          <div className="basis-0 gap-[16px] grow min-h-px min-w-px overflow-clip relative rounded-[20px] shrink-0">
             <div
-              className="basis-0 bg-[#f1f5fc] overflow-clip relative rounded-[20px] shrink-0 w-full cursor-pointer"
+              className="basis-0 grow min-h-px min-w-px overflow-clip relative rounded-[20px] shrink-0 cursor-pointer mb-[8px]"
               onClick={formular}
             >
               <div className="rounded-lg overflow-hidden">
                 <img
                   src={books}
-                  alt="Карта"
+                  alt="Книги"
                 />
               </div>
               <div className="absolute flex items-center justify-center left-[47.5px] size-[145px] top-2.5">
@@ -70,7 +70,7 @@ export function ServicesGrid() {
             </div>
 
             <div
-              className="basis-0 bg-[#f1f5fc] overflow-clip relative rounded-[20px] shrink-0 w-full cursor-pointer"
+              className="basis-0 grow min-h-px min-w-px overflow-clip relative rounded-[20px] shrink-0 cursor-pointer"
               onClick={questions}
             >
               <div className="rounded-lg overflow-hidden">
@@ -108,7 +108,7 @@ export function ServicesGrid() {
                 src={creditstoryimg}
                 alt="Карта"
               />
-            <div className="absolute bg-center bg-cover bg-no-repeat left-[57px] size-[132px] top-3" />
+              <div className="absolute bg-center bg-cover bg-no-repeat left-[57px] size-[132px] top-3" />
             </div>
           </div>
         </div>
